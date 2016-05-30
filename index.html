@@ -11,10 +11,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
                 
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="slick/slick.css">
         
         <!-- Main CSS -->
         <link rel="stylesheet" href="css/main.css">        
         <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <!-- Linea Basic -->
         <link rel="stylesheet" href="css/lineabasic.css">        
@@ -34,23 +36,38 @@
     .header::before {
         background: transparent;
     }
-        .estado path,
+    .estado path,
     .estado rect,
     .estado polygon {
-        fill: #ccc;
+        fill: #54205F;
+    }
+    .estado {
+        fill:#ccc;
     }
 
+     /*#SP {stroke:#EE3A81;stroke-width:1; stroke-location:inside;}*/
+
+    .estado:hover {
+        fill:#fff;
+    }
+    .teste:hover {
+        fill:#fff;
+    }
     .estado:hover path,
     .estado:hover rect,
     .estado:hover polygon {
-        fill: blue;
+        fill: #EE3A81;
     }
 
-    #DF rect {
-        stroke: white;
-        stroke-width: 1;
+    #contato input {
+        border-radius: 9px;
+        padding-top: 20px;
+        padding-bottom: 20px
     }
 
+    .navbar-default .navbar-nav > li.active:first-child > a {
+        color: PURPLE
+    }
 
 </style>
     </head>
@@ -77,13 +94,11 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li class="dropdown">
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#servicos">Servicos</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <!--<li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Extra<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="bloglist.html">Blog List</a></li>
@@ -103,22 +118,21 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </div>
         </nav>
 
         <!-- Header -->
-        <header id="home" class="header hero" style="background:url(img/backgrounds/bg2.png); background-repeat: no-repeat;; background-position: center center; background-size: cover">
-            <div class="container">
+        <header id="home" class="header " style="background:url(img/backgrounds/bg2.png); background-repeat: no-repeat; background-position: center center; background-size: cover">
+            <div class="container" style=" position: relative; width: 100%; text-align: center">
                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
+                    <div class="col-md-6 col-md-offset-3" style=" color: #54205F">
                         <div class="banner">
                             <h4>We are Lemonage</h4>
                             <h1>Hello everybody</h1>
-                            <p>Here we are. Vintage looks and modern ideas.</p>
-                            <a href="#about" class="btn btn-warning" role="button">Learn More</a>
+                           <a href="#" class="btn btn-default" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; font-size: 24px; padding-left: 10%; padding-right: 10%">Conheça a OnPago</a>
                         </div>
                     </div>
                     
@@ -133,7 +147,7 @@
                     <div class="col-md-6 col-md-offset-3">
                         <header class="section-header">
                          <div class="col-md-3   " style="">
-                            <img src="img/logo2.png" class="center-block" width="100%" style="padding:0; margin: 0; padding-top: 10px">
+                            <img src="img/logo2.png" class="center-block img-responsive" style="padding:0; margin: 0; padding-top: 10px; width: 100%; max-width: 200px">
                         </div>
                        <div class="col-md-9" style="text-align: left; padding-:0; margin: 0;">
                             <h3 class="" style="font-size: 33.2px; font-weight: 100;text-align: left; line-height: 20px">
@@ -165,85 +179,85 @@
         </section>
 
         <!-- Features -->
-        <section class="features">
-            <div class="container-fluid">
+        <section class="features" id="servicos">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-2 car">
+                    <div class="col-md-2 col-sm-3 car">
                         <div class="feature">
                             <!--<i class="icon icon-basic-lightbulb"></i>-->
-                            <img src="https://queropago.com.br/img/icon-gprs.png" width="50">
+                            <img src="img/icons/icon-gprs.png" width="50">
                             <h4 class="">Conexão GPRS</h4>
                             <p>Chip e plano de dados inclusos. Não precisa de celular.</p>
                         </div>
                     </div>
-                    <div class="col-md-2 car">
+                    <div class="col-md-2 col-sm-3 col-xs-6 car">
                         <div class="feature">
-                            <img src="https://queropago.com.br/img/icon-apoio.png" width="50">
+                            <img src="img/icons/icon-apoio.png" width="50">
                             <h4 class="">Apoio ao Cliente</h4>
                             <p>Centro de Relacionamento e suporte 0800 940 3029.</p>
                         </div>
                     </div>
 
 
-                    <div class="col-md-2 car">
+                    <div class="col-md-2 col-sm-3 col-xs-6 car">
                         <div class="feature">
-                             <img src="https://queropago.com.br/img/icon-cpf.png" width="50">
+                             <img src="img/icons/icon-cpf.png" width="50">
                             <h4 class="">CPF ou CNPJ</h4>
                             <p>Maior flexibilidade, pode ser contratada por pessoas físicas ou jurídicas.</p>
                         </div>
                     </div>
-                    <div class="col-md-2 car">
+                     <div class="col-md-2 col-sm-3 col-xs-6 car">
                         <div class="feature">
-                            <img src="https://queropago.com.br/img/icon-dinheiro.png" width="50">
+                            <img src="img/icons/icon-dinheiro.png" width="50">
                             <h4 class="">Dinheiro na Conta</h4>
                             <p>Recebimento automático sem taxas extras em sua conta corrente.</p>
                         </div>
                     </div>
-                    <div class="col-md-2 car">
+                     <div class="col-md-2 col-sm-3 col-xs-6 car">
                         <div class="feature">
-                             <img src="https://queropago.com.br/img/icon-taxas.png" width="50">
+                             <img src="img/icons/icon-taxas.png" width="50">
                             <h4 class="">Melhores Taxas</h4>
                             <p>Taxas adequadas de acordo com seu ramo de atividade.</p>
                         </div>
                     </div>
-                    <div class="col-md-2 car">
+                     <div class="col-md-2 col-sm-3 col-xs-6 car">
                         <div class="feature">
-                             <img src="https://queropago.com.br/img/icon-garantia.png" width="50">
+                             <img src="img/icons/icon-garantia.png" width="50">
                             <h4 class="">3 anos de Garantia</h4>
                             <p>Contra defeitos de fabricação. Garantia de recompra.</p>
                         </div>
                     </div>
-                    <div class="col-md-2 car">
+                     <div class="col-md-2 col-sm-3 col-xs-6 car">
                         <div class="feature">
-                             <img src="https://queropago.com.br/img/icon-portal-novo.png" width="50">
+                             <img src="img/icons/icon-portal-novo.png" width="50">
                             <h4 class="">Portal Web</h4>
                             <p>Todas as informações de vendas e relatórios em um só lugar.</p>
                         </div>
                     </div>
-                    <div class="col-md-2 car">
+                    <div class="col-md-2 col-sm-3 col-xs-6 car">
                         <div class="feature">
-                             <img src="https://queropago.com.br/img/icon-debito.png" width="50">
+                             <img src="img/icons/icon-debito.png" width="50">
                             <h4 class="">Débito e Crédito</h4>
                             <p>Aceitar cartões de débito e de crédito com parcelamento em até 12x.</p>
                         </div>
                     </div>
-                    <div class="col-md-2 car">
+                     <div class="col-md-2 col-sm-3 col-xs-6 car">
                         <div class="feature">
-                             <img src="https://queropago.com.br/img/icon-frete.png" width="50">
+                             <img src="img/icons/icon-frete.png" width="50">
                             <h4 class="">Frete Grátis</h4>
                             <p>Frete grátis para todo Brasil. Receba em até 15 dias.</p>
                         </div>
                     </div>
-                    <div class="col-md-2 car">
+                     <div class="col-md-2 col-sm-3 col-xs-6 car">
                         <div class="feature">
-                             <img src="https://queropago.com.br/img/icon-impressora.png" width="50">
+                             <img src="img/icons/icon-impressora.png" width="50">
                             <h4>Impressora Integrada</h4>
                             <p>Comprovante impresso ou enviado por SMS.</p>
                         </div>
                     </div>
-                    <div class="col-md-2 car">
+                     <div class="col-md-2 col-sm-3 col-xs-6 car">
                         <div class="feature">
-                             <img src="https://queropago.com.br/img/icon-multiusuario.png" width="50">
+                             <img src="img/icons/icon-multiusuario.png" width="50">
                             <h4>Multiusuário</h4>
                             <p>Cadastro de até 6 usuários CPF ou CNPJ.</p>
                         </div>
@@ -276,7 +290,7 @@
         </section>
 
         <!-- Portfolio -->
-        <section id="portfolio" class="portfolio">
+        <section class="portfolio" id="produtos">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -288,307 +302,79 @@
                 
             </div>
         </section>
-        <div class="container-fluid" style="padding-bottom: 90px">
-            <div class="container" style="">
+        <div class="container" style="padding-bottom: 40px" >
+            <div class="col-md-6" style="">
                <div class="col-md-4">
-                    <img src="img/d200.png" width="300px" class="center-block" data-animation="flipInY" data-animation-delay="02">
+                    <img src="img/d200.png" width="100%" class="center-block" data-animation="flipInY" data-animation-delay="02">
                 </div>
                <div class="col-md-8" style="">
-                   <ul class="pricing-table list-unstyled" data-animation="flipInY" data-animation-delay="02" style="height: 100px; text-align: left; padding-top: 0">
+                   <ul class="list-unstyled" data-animation="flipInY" data-animation-delay="02" style=" text-align: left; padding-top: 0">
                             <li class="title" style="color:#54205F"><h3>Máquina de cartão PAGO D200 mPOS multiusuário</h3></li>
                             <li>SEM ALUGUEL!</li>
                             <li class="price" style=" font-size: 22px; color:black"><span style="color:black">De: <s>R$ 1.137<sup>,60</sup></s></span><br>Por: <span style="color:#531f5f;">12X</span> de <span style="font-size: 36px;color:#531f5f;">R$72</span><sup>,90</sup><br><span style="font-size: 18px">ou <span style="color:#531f5f">R$ 787<sup>,32</sup></span> no boleto.</span></li>
                             <li class="description">*1 chip para serviço GPRS</li>
                             <li class="description">*Plano de dados incluso</li>
+                            <br>
                             <li class="cta-button"><a class="btn btn-warning" href="#" style="background: #531f5f; border:none; border-radius: 20px; width: 50%; padding-top: 20px; padding-bottom: 20px">Compre aqui</a></li>
                         </ul>
                    
                </div>
             </div>
 
-            <div class="container" style="">
-               
-               <div class="col-md-8" style="">
-                   <ul class="pricing-table list-unstyled" data-animation="flipInY" data-animation-delay="02" style="height: 100px; text-align: right">
-                            <li class="title" style="color:#EE3A81"><h3>Máquina de cartão PAGO D200 mPOS multiusuário</h3></li>
+            <div class="col-md-6" style="">
+               <div class="col-md-4">
+                    <img src="img/d210.png" width="300px" class="center-block" data-animation="flipInY" data-animation-delay="02">
+                </div>
+                <div class="col-md-8" style="">
+                   <ul class="list-unstyled" data-animation="flipInY" data-animation-delay="02" style=" text-align: left">
+                            <li class="title" style="color:#EE3A81"><h3>Máquina de cartão PAGO D210 POS multiusuário</h3></li>
                             <li>SEM ALUGUEL!</li>
-                            <li class="price" style=" font-size: 22px; color:black"><span style="color:black">De: <s>R$ 1.137<sup>,60</sup></s></span><br>Por: <span style="color:#EE3A81;">12X</span> de <span style="font-size: 36px;color:#EE3A81;">R$72</span><sup>,90</sup><br><span style="font-size: 18px">ou <span style="color:#EE3A81">R$ 787<sup>,32</sup></span> no boleto.</span></li>
-                            <li class="description">*2 chip para serviço GPRS</li>
+                            <li class="price" style=" font-size: 22px; color:black"><span style="color:black">De: <s>R$ 1.557<sup>,60</sup></s></span><br>Por: <span style="color:#EE3A81;">12X</span> de <span style="font-size: 36px;color:#EE3A81;">R$109</span><sup>,90</sup><br><span style="font-size: 18px">ou <span style="color:#EE3A81">R$ 1.186<sup>,92</sup></span> no boleto.</span></li>
+                            <li class="description">*2 chips para serviço GPRS</li>
                             <li class="description">*Plano de dados incluso</li>
+                            <br>
                             <li class="cta-button"><a class="btn btn-warning" href="#" style="background: #EE3A81; border:none; border-radius: 20px; width: 50%;padding-top: 20px; padding-bottom: 20px">Compre aqui</a></li>
                         </ul>
                    
                </div>
-               <div class="col-md-4">
-                    <img src="img/d210.png" width="300px" class="center-block" data-animation="flipInY" data-animation-delay="02">
+            </div>
+        </div>
+            <div style="padding-bottom: 50px; text-align: center">
+                   <h3>Frete gratis para todo Brasil</h3>
+            </div>
+
+
+
+        <div class="container-fluid" style="padding-top:100px; padding-bottom:100px; background:#00ABB5; color: #fff">
+            <div class="container">
+                <div class="col-md-6">
+                    <img src="img/computadores.png" class="center-block" width="100%">
+                </div>
+                
+                    <p style="color: #fff">No Portal Web PAGO, você vê transação por transação, com todos os detalhes. Acompanhe 24 horas por dia suas vendas realizadas e sua agenda de pagamentos. Transparência total de suas vendas. Veja o valor bruto e líquido de cada transação. Acesse do seu computador, tablet e smartphone.
+                    </p>
+                    <p style="color: #fff">Todo cliente credenciado à PAGO possui acesso ao seu Portal. Nele, você pode ver suas vendas realizadas, transações recebidas, lançamentos futuros, cancelamentos, e muito mais!
+                    </p>
+                    <p style="color: #fff">Todas as informações das suas vendas, em um só lugar. No Portal PAGO você pode acompanhar dia a dia sua operação e seu extrato financeiro</p>
+                    <div style="text-align:center; padding-top:30px">
+                    <a class="btn btn-warning" href="#" style="background: #EE3A81; border:none; border-radius: 20px; width: 200px;padding-top: 20px; padding-bottom: 20px">Acessar portal</a><br><br>
+                    <p><h3>Veja suas vendas em tempo real!</h3></p>
                 </div>
             </div>
         </div>
 
-
-
-
-
-        <!-- Counters 
-        <section class="counters">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="numbers">
-                            <span class="number" data-from="0" data-to="987" data-speed="5000" data-refresh-interval="50"></span>
-                            <span class="number-info">Creative Ideas</span>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="numbers">
-                            <span class="number" data-from="0" data-to="218" data-speed="5000" data-refresh-interval="50"></span>
-                            <span class="number-info">Projects Designed</span>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="numbers">
-                            <span class="number" data-from="0" data-to="1356" data-speed="5000" data-refresh-interval="50"></span>
-                            <span class="number-info">Pizzas Eaten</span>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="numbers">
-                            <span class="number" data-from="0" data-to="1856" data-speed="5000" data-refresh-interval="50"></span>
-                            <span class="number-info">Coffee Drunk</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>-->
-
-        <!-- Team
-        <section id="team" class="team">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <header class="section-header">
-                            <h4 class="section-title" data-text="Meet the Team">We are awesome</h4>
-                            <p>Suspendisse ultricies vitae sapien quis egestas. Phasellus porttitor <br>est ac sem porta vestibulum. Integer a felis sapien.</p>
-                        </header>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-md-3">
-                        <figure class="team-figure">
-                            <img src="img/thumbs/placeholder2.jpg" class="img-responsive" alt="img">
-                            <figcaption class="team-overlay">
-                                <ul class="social-list">
-                                    <li><a href="#" class="fa fa-facebook"></a></li>
-                                    <li><a href="#" class="fa fa-twitter"></a></li>
-                                    <li><a href="#" class="fa fa-behance"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin"></a></li>
-                                </ul>
-                            </figcaption>
-                        </figure>
-                        <h5 class="member-name" data-text="Creative Director">Kristin Stevens</h5>
-                        <p class="text-center">Maecenas quis bibendum ex. Phasellus porttitor est ac sem porta vestibulum.</p>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <figure class="team-figure">
-                            <img src="img/thumbs/placeholder2.jpg" class="img-responsive" alt="img">
-                            <figcaption class="team-overlay">
-                                <ul class="social-list">
-                                    <li><a href="#" class="fa fa-facebook"></a></li>
-                                    <li><a href="#" class="fa fa-twitter"></a></li>
-                                    <li><a href="#" class="fa fa-behance"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin"></a></li>
-                                </ul>
-                            </figcaption>
-                        </figure>
-                        <h5 class="member-name" data-text="Lead Developer">Robert Anderson</h5>
-                        <p class="text-center">Maecenas quis bibendum ex. Phasellus porttitor est ac sem porta vestibulum.</p>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <figure class="team-figure">
-                            <img src="img/thumbs/placeholder2.jpg" class="img-responsive" alt="img">
-                            <figcaption class="team-overlay">
-                                <ul class="social-list">
-                                    <li><a href="#" class="fa fa-facebook"></a></li>
-                                    <li><a href="#" class="fa fa-twitter"></a></li>
-                                    <li><a href="#" class="fa fa-behance"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin"></a></li>
-                                </ul>
-                            </figcaption>
-                        </figure>
-                        <h5 class="member-name" data-text="Marketing Manager">Patricia Graham</h5>
-                        <p class="text-center">Maecenas quis bibendum ex. Phasellus porttitor est ac sem porta vestibulum.</p>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <figure class="team-figure">
-                            <img src="img/thumbs/placeholder2.jpg" class="img-responsive" alt="img">
-                            <figcaption class="team-overlay">
-                                <ul class="social-list">
-                                    <li><a href="#" class="fa fa-facebook"></a></li>
-                                    <li><a href="#" class="fa fa-twitter"></a></li>
-                                    <li><a href="#" class="fa fa-behance"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin"></a></li>
-                                </ul>
-                            </figcaption>
-                        </figure>
-                        <h5 class="member-name" data-text="Creative Designer">Jack Williams</h5>
-                        <p class="text-center">Maecenas quis bibendum ex. Phasellus porttitor est ac sem porta vestibulum.</p>
-                    </div>
-                </div>
-            </div>
-        </section>-->
-
-        <!-- Skills 
-        <section class="skills">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3">
-                        <div class="chart" data-percent="89">
-                            <span class="percent" data-from="0" data-to="89"></span>
-                        </div>
-                        <h5>HTML5</h5>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="chart" data-percent="85">
-                            <span class="percent" data-from="0" data-to="85"></span>
-                        </div>
-                        <h5>CSS3</h5>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="chart" data-percent="75">
-                            <span class="percent" data-from="0" data-to="75"></span>
-                        </div>
-                        <h5>jQuery</h5>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="chart" data-percent="80">
-                            <span class="percent" data-from="0" data-to="80"></span>
-                        </div>
-                        <h5>Adobe</h5>
-                    </div>
-                </div>
-            </div>
-        </section>-->
-
-        <!-- Blog
-        <section id="blog" class="blog">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <header class="section-header">
-                            <h4 class="section-title" data-text="Blog">Our stories</h4>
-                            <p>Suspendisse ultricies vitae sapien quis egestas. Phasellus porttitor <br>est ac sem porta vestibulum. Integer a felis sapien.</p>
-                        </header>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <article class="post preview gridview">
-                            <div class="post-media">
-                                <ul class="slider">
-                                    <li><a href="#"><img src="img/thumbs/placeholder3.jpg" alt="..."></a></li>
-                                    <li><a href="#"><img src="img/thumbs/placeholder3a.jpg" alt="..."></a></li>
-                                    <li><a href="#"><img src="img/thumbs/placeholder3b.jpg" alt="..."></a></li>
-                                </ul>
-                            </div>
-                            <div class="caption">
-                                <ul class="meta-list">
-                                    <li><span class="meta">December 26, 2014</span></li>
-                                    <li><span class="meta">Photography</span></li>
-                                </ul>
-                                <h5 class="post-title"><a href="post-sample.html">Mountains adventure</a></h5>
-                                <p>Phasellus a nisl libero. Pellentesque palacerat viverra felis a maximus. Nulla etat porttitor lorem lacus.</p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <article class="post preview gridview">
-                            <div class="post-media">
-                                <a href="#"><img src="img/thumbs/placeholder3.jpg" alt="..."></a>
-                            </div>
-                            <div class="caption">
-                                <ul class="meta-list">
-                                    <li><span class="meta">December 12, 2014</span></li>
-                                    <li><span class="meta">Inspiration</span></li>
-                                </ul>
-                                <h5 class="post-title"><a href="post-sample.html">5 Morning ideas</a></h5>
-                                <p>Phasellus a nisl libero. Pellentesque palacerat viverra felis a maximus. Nulla etat porttitor lorem lacus.</p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <article class="post preview gridview">
-                            <div class="post-media">
-                                <a href="#"><img src="img/thumbs/placeholder3.jpg" alt="..."></a>
-                            </div>
-                            <div class="caption">
-                                <ul class="meta-list">
-                                    <li><span class="meta">November 23, 2014</span></li>
-                                    <li><span class="meta">Web Design</span></li>
-                                </ul>
-                                <h5 class="post-title"><a href="post-sample.html">Active Dashboard</a></h5>
-                                <p>Phasellus a nisl libero. Pellentesque palacerat viverra felis a maximus. Nulla etat porttitor lorem lacus.</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-    
-
-        <!-- Pricing 
-        <section class="pricing">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <ul class="pricing-table list-unstyled" data-animation="flipInY" data-animation-delay="02">
-                            <li class="title">Beginner</li>
-                            <li class="price">19.99<sup>$</sup></li>
-                            <li class="description">1 Database</li>
-                            <li class="description">5GB Storage</li>
-                            <li class="description">20 Users</li>
-                            <li class="cta-button"><a class="btn btn-warning btn-block" href="#">Buy Now</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="pricing-table list-unstyled" data-animation="flipInY" data-animation-delay="02">
-                            <li class="title">Standard</li>
-                            <li class="price">39.99<sup>$</sup></li>
-                            <li class="description">1 Database</li>
-                            <li class="description">5GB Storage</li>
-                            <li class="description">20 Users</li>
-                            <li class="cta-button"><a class="btn btn-danger btn-block" href="#">Buy Now</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="pricing-table list-unstyled" data-animation="flipInY" data-animation-delay="02">
-                            <li class="title">Premium</li>
-                            <li class="price">69.99<sup>$</sup></li>
-                            <li class="description">1 Database</li>
-                            <li class="description">5GB Storage</li>
-                            <li class="description">20 Users</li>
-                            <li class="cta-button"><a class="btn btn-warning btn-block" href="#">Buy Now</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>-->
-
-        
-       
-
         <!-- Contact -->
-        <section id="contact" class="contact" style="background:#54205F; color:#fff">
+        <section id="contato" class="contact" style="background:#54205F; color:#fff">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <header class="section-header">
-                            <h4 class="">Saiba quais taxas pagará. Sem surpresas!</h4>
+                            <h3 class="">Saiba quais taxas pagará. Sem surpresas!</h3>
                             <p style="color:#fff">Enviaremos taxas justas de acordo com sua atividade.</p>
                         </header>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="">
                     <div class="col-md-7">
                         <article class="form-detached">
                             <form action="php/contact-form.php" id="contact-form">
@@ -610,7 +396,7 @@
                                  
                                 
                             
-                        </article>
+                        
                     </div>
                     <div class="col-md-5">
                                 <div class="form-group">
@@ -625,11 +411,11 @@
                        </form> 
                     </div>
                 </div>
-                <div class="container">
+                <div class="container" style="margin: 0; padding:0; width: 100%">
                     <div>
                         <div class="form-group">
                             <label class="sr-only" for="name"></label>
-                            <input type="mail" class="form-control" value="" placeholder="Segmento" data-msg-required="Please enter your name." name="seguimento" id="segmento">
+                            <input type="mail" class="form-control" value="" placeholder="Segmento" data-msg-required="Please enter your name." name="seguimento" id="segmento" style="width:">
                         </div>
                     </div>
                     <div class="col-md-6" style="">
@@ -648,67 +434,25 @@
 
                                 <a href="#" class="btn btn-default load-more" role="button" style="background:transparent; color: #fff; border:1px solid #ccc; border-radius: 5px; font-size: 28px; padding-top:0; margin:0; width:100%">Enviar</a>
                     </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <div class="container-fluid" style="padding-top:100px; padding-bottom:100px">
-            <div class="container">
-                <div class="col-md-6">
-                    <img src="img/computadores.png" class="center-block" width="100%">
-                </div>
-                
-                    <p>No Portal Web PAGO, você vê transação por transação, com todos os detalhes. Acompanhe 24 horas por dia suas vendas realizadas e sua agenda de pagamentos. Transparência total de suas vendas. Veja o valor bruto e líquido de cada transação. Acesse do seu computador, tablet e smartphone.
-                    </p>
-                    <p>Todo cliente credenciado à PAGO possui acesso ao seu Portal. Nele, você pode ver suas vendas realizadas, transações recebidas, lançamentos futuros, cancelamentos, e muito mais!
-                    </p>
-                    <p>Todas as informações das suas vendas, em um só lugar. No Portal PAGO você pode acompanhar dia a dia sua operação e seu extrato financeiro</p>
-                    <div style="text-align:center; padding-top:30px">
-                    <a class="btn btn-warning" href="#" style="background: #EE3A81; border:none; border-radius: 20px; width: 200px;padding-top: 20px; padding-bottom: 20px">Acessar portal</a><br><br>
-                    <p><h3>Veja suas vendas em tempo real!</h3></p>
-                </div>
-            </div>
-        </div>
 
-        <div class="container-fluid" style="background:#00ABB5;padding-top:100px; padding-bottom:100px; text-align:center">
-            <div class="container">
-                <h2 style="color:#fff;padding-bottom:50px">Atendimento quando e como você quiser</h2>
-            <div class="col-md-4">
-                <p>
-                    <span><img src="https://queropago.com.br/img/whatsapp-atendimento.png" width="60"></span> <br>
-                    <span style="color:#fff; font-size:26px">44 9165-4301</span>
-                </p>
-            </div>
-            <div class="col-md-4">
-                <p>
-                    <span><img src="https://queropago.com.br/img/email-atendimento.png" width="60"></span> <br>
-                    <span style="color:#fff; font-size:26px">contato@queropago.com.br</span>
-                </p>
-            </div>
-            <div class="col-md-4">
-                <p>
-                    <span><img src="https://queropago.com.br/img/telefone-atendimento.png" width="60"></span> <br>
-                    <span style="color:#fff; font-size:26px">11 3522-3532</span>
-                </p>
-            </div>
-            
-            </div>
+        
 
-            <div style="color:#fff; padding-top:50px">
-                <br>
-                <span>CENTRAL DE RELACIONAMENTO PAGO<br><span style="font-size:30px">0800 940 3029</span></span>
-            </div>
-        </div>
+        
 
         <div class="container-fluid" style=";padding-top:100px; padding-bottom:100px; text-align:center">
             <div class="container">
-                <h3>Confira aonde estamos!</h3>
-            <div class="col-md-8">
+               <h2 style="color:;padding-bottom:50px">Atendimento quando e como você quiser</h2>
+            <div class="col-md-8" data-animation="zoomInTop" data-animation-delay="01">
 
 <svg width="566px" height="550px" style="font-size:6px">
     <g transform="translate(0, -180) scale(2)">
         <g class="regiao norte">
-            <g class="estado" id="AC">
+            <g class="estado teste" id="AC">
                 <path d="M10.462,179.719c0,0,10.152,4.6,19.986,5.234c2.062,1.427,3.807,2.22,3.807,2.22s16.02,8.724,19.668,9.676
                     l-0.158,1.11l-2.062,1.269l-1.903,0.952l-1.11,1.269l-2.062,0.317l-1.586,0.634l-1.269,1.745l-0.952,0.476l-1.269-0.159
                     l-1.745-0.793h-2.696h-4.441l-2.062-0.159l-0.476-1.586l-0.159-3.014l0.476-2.062v-2.221l-0.159-1.428l-2.062,1.428l-2.379,1.903
@@ -1023,7 +767,7 @@
         </g>
         <g class="regiao sul">
             <a href="parana.html" target="estados">
-                <g class="estado" id="PR">
+                <g class="estado" id="PR" style="fill:#00ABB5;">
                 <polygon points="140.449,291.465 140.449,294.479 140.29,296.858 140.29,299.476 139.259,300.665 138.783,300.981
                     139.338,301.299 140.052,301.299 140.607,300.823 141.083,301.061 142.035,302.568 142.59,303.678 142.908,305.186
                     144.414,305.899 146.238,306.216 147.983,306.375 149.887,306.454 151.79,306.692 152.504,307.247 154.169,307.723
@@ -1069,7 +813,8 @@
             </g>
         </g>
         <g class="regiao suldeste">
-            <g class="estado" id="SP">
+        <a href="saopaulo.html" target="estados">
+            <g class="estado" id="SP" style="fill:#00ABB5">
                 <path d="M149.648,281.234l2.301,0.158l2.379,0.158h1.903l1.824,0.159l1.428,0.316l1.507,0.952l1.11,0.317h2.221
                     h1.744h2.062l1.11,0.238l0.476,0.714l0.714,0.714l0.634,0.634l0.318,0.873v1.269v0.951l0.079,1.032l0.316,0.792l0.397,0.159
                     l0.237,0.793l0.556,0.714l0.158,0.872l-0.079,1.27l0.079,0.713l1.666,0.079h2.22l0.714,0.159l0.397,0.793l0.079,1.11l0.237,0.476
@@ -1086,6 +831,7 @@
                     l-0.714,1.109l-0.078,1.032l-0.714,1.189l-1.428,1.03l-1.508,1.349L149.648,281.234z"/>
                 <text transform="translate(173, 281)">SP</text>
             </g>
+            </a>
             <g class="estado" id="RJ">
                 <path d="M204.928,281.075l2.141-1.269l1.27-0.238l2.379-0.159l1.586-0.396h0.872h1.189l1.587-0.476l1.349-0.714
                     l0.714-0.318l0.871-0.396l0.635-0.635l0.873-1.031l0.317-1.427l0.316-1.032l0.08-0.951l1.109-0.714l0.477,0.317l0.396,0.872
@@ -1123,7 +869,7 @@
                     c-0.179,0.595-1.726,2.379-1.726,2.379s-1.13,1.428-1.309,1.726C162.358,261.645,162.358,262.597,162.358,262.597z"/>
                 <text transform="translate(199, 258)">MG</text>
             </g>
-            <g class="estado" id="ES">
+            <g class="estado" id="ES" >
                 <path d="M223.962,271.479l0.951,0.397l0.872,0.396l2.538-0.317l0.635-0.714l0.793-0.793l0.635-0.873l1.03-1.269
                     l0.952-1.349l0.476-0.871l0.635-1.666l0.317-1.508l1.586-0.792c0,0,0.555-0.318,0.555-0.635c0-0.317,0.238-1.982,0.238-1.982
                     l0.238-2.696v-2.062l-0.555-1.587l-1.032-0.634l-1.189-0.872l-0.952-0.238h-1.823l-0.794,0.317l-0.713,0.476l-0.714,0.556v0.951
@@ -1136,62 +882,62 @@
 </svg>
 
             </div>
-            <div class="col-md-4">
+
+            <div class="container">
+                <div class="col-md-4">
                 <iframe src="estados.html" id="estados" name="estados" widht="100%" height="399" frameborder="0"></iframe>
             </div>
             </div>
         </div>
-                <!-- Call To Action 
-        <section class="call-to">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <article class="action">
-                            <h5>Have you big idea or interesant project?</h5>
-                            <a href="#" class="btn btn-danger" role="button">Lets talk</a>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>-->
-
-        <!-- Gmap 
-        <section class="map">
-            <a class="show-map"><div class="helper"><i class="fa fa-plus"></i><span>Show Map</span></div></a>
-            <div id="my-map"></div>
-        </section>-->
+                
+        </div>
 
         <!-- Footer -->
         <footer class="footer" style="background:#54205F; color:#fff; border:none">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12" data-animation="zoomInRight" data-animation-delay="01">
+                    <div class="col-md-12">
                        
-                        <div class="col-md-8">
-                            <ul class="list-inline" style="font-size:12px">
+                        <div class="col-md-4">
+                        <h2 style="text-align: left; opacity: 0.5">Links</h2>
+                            <ul class="list-unstyled" style="font-size:12px; text-align: left">
                                 <li><a href="" style="color:#fff">OS PRODUTOS</a></li>
                                 <li><a href="" style="color:#fff">AS TAXAS</a></li>
                                 <li><a href="" style="color:#fff">DUVIDAS FREQUENTES</a></li>
                                 <li><a href="" style="color:#fff">CONTATO</a></li>
                             </ul>
                         </div>
+                         <div class="col-md-4">
+                         <h2 style="text-align: left; opacity: 0.5">Informações</h2>
+                            <ul class="list-unstyled" style="text-align: left">
+                                 <li><a href="#" class="fa fa-phone-square fa-1x" style="color:#fff"></a><span style="color:; font-size:12px"> 44 9165-4301</span></li>
+                                 <li><a href="#" class="fa fa-comments-o fa-1x" style="color:#fff"></a><span style="color:; font-size:12px"> contato@onpago<wbr>.com.br</span></li>
+                                 <li><a href="#" class="fa fa-phone fa-1x" style="color:#fff"></a><span style="color:; font-size:12px"> 11 3522-3532</span></li><br>
+                                 <li style="font-weight: 900">Central de relacionamento PAGO: </li>
+                                 <li><a href="#" class="fa fa-phone fa-1x" style="color:#fff"></a><span style="color:; font-size:12px"> 0800 940 3029</span></li>
+                            </ul>
+
+                        </div>
                         <div class="col-md-4">
-                            <ul class="social-list">
-                            <li><a href="#" class="fa fa-facebook"></a></li>
-                            <li><a href="#" class="fa fa-twitter"></a></li>
-                            <li><a href="#" class="fa fa-pinterest"></a></li>
-                            <li><a href="#" class="fa fa-flickr"></a></li>
-                            <li><a href="#" class="fa fa-dribbble"></a></li>
-                            <li><a href="#" class="fa fa-behance"></a></li>
+                        <h2 style="text-align: left; opacity: 0.5">Redes sociais</h2>
+                            <ul class="list-inline" style="color:#fff; text-align: left">
+                            <li><a href="#" class="fa fa-facebook fa-3x" style="color:#fff"></a></li>
+                            <li><a href="#" class="fa fa-twitter fa-3x" style="color:#fff"></a></li>
+                            <li><a href="#" class="fa fa-pinterest fa-3x" style="color:#fff"></a></li>
+                            <li><a href="#" class="fa fa-flickr fa-3x" style="color:#fff"></a></li>
                         </ul>
                         </div>
+                       
                     </div>
                 </div>
-                <div style="padding-top:50px">
-                    <img src="img/logo2.png" width="50" class="center-block" data-animation="zoomInLeft" data-animation-delay="02">
-                </div>
+                
             </div>
+           
         </footer>
+         <div class="container-fluid" style="padding-top:50px;padding-bottom:50px; background:#411949; width: 100%">
+
+                    <img src="img/logo2.png" width="50" class="center-block" data-animation="zoomInLeft" data-animation-delay="01">
+                </div>
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -1205,15 +951,30 @@
         <script src="js/vendor/imagesloaded.pkgd.min.js"></script>          <!-- Imagesloaded -->
         <script src="js/vendor/isotope.pkgd.min.js"></script>               <!-- Isotope -->
         <script src="js/vendor/slick.min.js"></script>                      <!-- Slick carousel -->
-        <script src="js/vendor/jquery.tweet.min.js"></script>               <!-- Tweet.js-Mod -->
         <script src="js/vendor/jquery.countTo.js"></script>                 <!-- Count To -->
-        <script src="js/vendor/jquery.easypiechart.min.js"></script>        <!-- easyPieChart -->
-        <script src="js/vendor/jquery.magnific-popup.min.js"></script>      <!-- Magnific Popup -->
 
         <script src="js/main.js"></script>
 
         <script src="js/vendor/jquery.validate.min.js"></script>            <!-- jQuery Validate -->
         <script src="js/contact.js"></script>
+              <script src="slick/slick.min.js"></script>
+      <script>
+          jQuery(function () {
+              // Init page helpers (Slick Slider plugin)
+              App.initHelpers('slick');
+          });
+          $('.autoplay').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true
+          });
+
+
+
+      </script>
 
         <!--<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <script src="js/vendor/gmap3.min.js"></script>
