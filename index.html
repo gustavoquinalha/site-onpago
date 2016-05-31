@@ -12,6 +12,7 @@
                 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="slick/slick.css">
+        <link rel="stylesheet" href="css/beeuz.css"> 
         
         <!-- Main CSS -->
         <link rel="stylesheet" href="css/main.css">        
@@ -28,48 +29,13 @@
         <link rel="stylesheet" href="css/magnific-popup.css">
         
         <script src="js/vendor/modernizr.js"></script>
-<style type="text/css">
-    .car {height: 270px; padding-bottom: 50px}
-    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+        <style type="text/css">
+              .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
         color:#ed3981;
     }
-    .header::before {
-        background: transparent;
-    }
-    .estado path,
-    .estado rect,
-    .estado polygon {
-        fill: #54205F;
-    }
-    .estado {
-        fill:#ccc;
-    }
 
-     /*#SP {stroke:#EE3A81;stroke-width:1; stroke-location:inside;}*/
+        </style>
 
-    .estado:hover {
-        fill:#fff;
-    }
-    .teste:hover {
-        fill:#fff;
-    }
-    .estado:hover path,
-    .estado:hover rect,
-    .estado:hover polygon {
-        fill: #EE3A81;
-    }
-
-    #contato input {
-        border-radius: 9px;
-        padding-top: 20px;
-        padding-bottom: 20px
-    }
-
-    .navbar-default .navbar-nav > li.active:first-child > a {
-        color: PURPLE
-    }
-
-</style>
     </head>
     <body data-spy="scroll" data-offset="50" data-target=".navbar-default">
 
@@ -80,7 +46,7 @@
         </div>
 
         <!-- Navbar -->
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="padding-top: 10px; padding-bottom: 10px">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -93,46 +59,26 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">Sobre</a></li>
-                        <li><a href="#servicos">Servicos</a></li>
-                        <li><a href="#produtos">Produtos</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                        <!--<li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Extra<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="bloglist.html">Blog List</a></li>
-                                <li><a href="bloglist-sidebar.html">Blog List Sidebar</a></li>
-                                <li><a href="post-centered.html">Post centered</a></li>
-                                <li><a href="post-sample.html">Post with Sidebar</a></li>
-                                <li><a href="404.html">404 Page</a></li>
-                                <li><a href="comingsoon.html">Coming Soon</a></li>
-                                <li><a href="shortcodes.html">Shortcodes</a></li>
-                                <li class="has-dropdown">
-                                    <a href="#">Submenu Level<span class="caret"></span></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">Submenu item</a></li>
-                                        <li><a href="#">Another item</a></li>
-                                        <li><a href="#">Something item</a></li>
-                                        <li><a href="#">Last menu item</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>-->
+                        <li><a href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                        <li><a href="#about"><i class="fa fa-info" aria-hidden="true"></i> Sobre</a></li>
+                        <li><a href="#servicos"><i class="fa fa-asterisk" aria-hidden="true"></i></i> Servicos</a></li>
+                        <li><a href="#produtos"><i class="fa fa-gift" aria-hidden="true"></i> Produtos</a></li>
+                        <li><a href="#contato"><i class="fa fa-envelope" aria-hidden="true"></i> Contato</a></li>
+                        <li><a href="#" class="btn btn-default prin" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; margin: 0; ">Acessar portal</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
         <!-- Header -->
-        <header id="home" class="header " style="background:url(img/backgrounds/bg2.png); background-repeat: no-repeat; background-position: center center; background-size: cover">
+        <header id="home" class="header" style="background:url(img/backgrounds/bg2.png); background-repeat: no-repeat; background-position: center center; background-size: cover">
             <div class="container" style=" position: relative; width: 100%; text-align: center">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3" style=" color: #54205F">
                         <div class="banner">
                             <h4>We are Lemonage</h4>
                             <h1>Hello everybody</h1>
-                           <a href="#" class="btn btn-default" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; font-size: 24px; padding-left: 10%; padding-right: 10%">Conheça a OnPago</a>
+                           <a href="#" class="btn btn-default" data-animation="tada" data-animation-delay="02" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; font-size: 24px; padding-left: 10%; padding-right: 10%">Conheça a OnPago</a>
                         </div>
                     </div>
                     
@@ -141,31 +87,31 @@
         </header>
 
         <!-- About -->
-        <section id="about" class="about" style="background: #54205F; color:#fff">
+        <section id="about" class="about" style="background: #54205F; color:#fff; padding-bottom: 50px">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <header class="section-header">
                          <div class="col-md-3   " style="">
-                            <img src="img/logo2.png" class="center-block img-responsive" style="padding:0; margin: 0; padding-top: 10px; width: 100%; max-width: 200px">
+                            <img src="img/logo2.png" class="center-block img-responsive" style="padding:0; margin: 0; padding-top: 10px; width: 100%; max-width: 200px" data-animation="bounceInLeft" data-animation-delay="02">
                         </div>
                        <div class="col-md-9" style="text-align: left; padding-:0; margin: 0;">
-                            <h3 class="" style="font-size: 33.2px; font-weight: 100;text-align: left; line-height: 20px">
+                            <h3 data-animation="fadeInRight" data-animation-delay="02" class="" style="font-size: 33.2px; font-weight: 100;text-align: left; line-height: 20px">
                                 Um novo conceito
                                 <span style="font-size:26px; line-height: 50px">de máquinas de cartão<br></span>
                                 <span style="font-size: 31.4px">de débito e crédito</span>
                             </h3>
                         </div>
                             <div class="col-md-12" style="padding-top: 30px; opacity: 0.6">
-                                <p style="color: #fff"><span style="font-weight: 900">As máquinas de cartao pago </span>foram criadas para facilitar a vida do micro, pequeno
+                                <div style="color: #fff"><span style="font-weight: 900">As máquinas de cartao pago </span>foram criadas para facilitar a vida do micro, pequeno
                                 e médio empreendedor. Com elas é possível receber pagamentos via cartão de débito e
                                 crédito onde você estiver, aumentando suas vendas e o sucesso do seu negócio de forma
-                                rápida, simples e segura.<br>
-                                
-                            </p>
+                                rápida, simples e segura.
+                                 
+                            </div>
 
                             </div>
-                            <a href="#" class="btn btn-default load-more" role="button" style="background:transparent; color: #fff; border:1px solid #ccc; border-radius: 5px; font-size: 28px">Compre Agora</a>
+                           <a data-animation="pulse" data-animation-delay="03" href="#" class="btn btn-default load-more"  role="button" style="background:transparent; color: #fff; border:1px solid #ccc; border-radius: 5px; font-size: 28px">Compre Agora</a>
 
                         </header>
                     </div>
@@ -182,6 +128,7 @@
         <section class="features" id="servicos">
             <div class="container">
                 <div class="row">
+                <div data-animation="fadeInLeft" data-animation-delay="01">
                     <div class="col-md-2 col-sm-3 car">
                         <div class="feature">
                             <!--<i class="icon icon-basic-lightbulb"></i>-->
@@ -227,6 +174,8 @@
                             <p>Contra defeitos de fabricação. Garantia de recompra.</p>
                         </div>
                     </div>
+                    </div>
+                    <div data-animation="fadeInRight" data-animation-delay="01">
                      <div class="col-md-2 col-sm-3 col-xs-6 car">
                         <div class="feature">
                              <img src="img/icons/icon-portal-novo.png" width="50">
@@ -262,15 +211,12 @@
                             <p>Cadastro de até 6 usuários CPF ou CNPJ.</p>
                         </div>
                     </div>
-
-
-
                     <div class="col-md-2 car">
                         <div class="feature">
                              <a href="#" class="btn btn-default load-more" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; font-size: 24px">Compre Agora</a>
                         </div>
                     </div>
-                    
+                    </div>
                 </div>
             </div>
         </section>
@@ -305,10 +251,10 @@
         <div class="container" style="padding-bottom: 40px" >
             <div class="col-md-6" style="">
                <div class="col-md-4">
-                    <img src="img/d200.png" width="100%" class="center-block" data-animation="flipInY" data-animation-delay="02">
+                    <img src="img/d200.png" width="100%" class="center-block" data-animation="fadeInLeft" data-animation-delay="01">
                 </div>
                <div class="col-md-8" style="">
-                   <ul class="list-unstyled" data-animation="flipInY" data-animation-delay="02" style=" text-align: left; padding-top: 0">
+                   <ul class="list-unstyled" data-animation="fadeInLeft" data-animation-delay="02" style=" text-align: left; padding-top: 0">
                             <li class="title" style="color:#54205F"><h3>Máquina de cartão PAGO D200 mPOS multiusuário</h3></li>
                             <li>SEM ALUGUEL!</li>
                             <li class="price" style=" font-size: 22px; color:black"><span style="color:black">De: <s>R$ 1.137<sup>,60</sup></s></span><br>Por: <span style="color:#531f5f;">12X</span> de <span style="font-size: 36px;color:#531f5f;">R$72</span><sup>,90</sup><br><span style="font-size: 18px">ou <span style="color:#531f5f">R$ 787<sup>,32</sup></span> no boleto.</span></li>
@@ -323,10 +269,10 @@
 
             <div class="col-md-6" style="">
                <div class="col-md-4">
-                    <img src="img/d210.png" width="300px" class="center-block" data-animation="flipInY" data-animation-delay="02">
+                    <img src="img/d210.png" width="300px" class="center-block" data-animation="fadeInRight" data-animation-delay="01">
                 </div>
                 <div class="col-md-8" style="">
-                   <ul class="list-unstyled" data-animation="flipInY" data-animation-delay="02" style=" text-align: left">
+                   <ul class="list-unstyled" data-animation="fadeInRight" data-animation-delay="02" style=" text-align: left">
                             <li class="title" style="color:#EE3A81"><h3>Máquina de cartão PAGO D210 POS multiusuário</h3></li>
                             <li>SEM ALUGUEL!</li>
                             <li class="price" style=" font-size: 22px; color:black"><span style="color:black">De: <s>R$ 1.557<sup>,60</sup></s></span><br>Por: <span style="color:#EE3A81;">12X</span> de <span style="font-size: 36px;color:#EE3A81;">R$109</span><sup>,90</sup><br><span style="font-size: 18px">ou <span style="color:#EE3A81">R$ 1.186<sup>,92</sup></span> no boleto.</span></li>
@@ -340,18 +286,19 @@
             </div>
         </div>
             <div style="padding-bottom: 50px; text-align: center">
-                   <h3>Frete gratis para todo Brasil</h3>
+                   <h3 data-animation="fadeInUp" data-animation-delay="03">Frete gratis para todo Brasil</h3>
             </div>
 
 
 
-        <div class="container-fluid" style="padding-top:100px; padding-bottom:100px; background:#00ABB5; color: #fff">
+        <div class="container-fluid" style="padding-top:100px; padding-bottom:100px; background:#00a6a2; color: #fff">
             <div class="container">
                 <div class="col-md-6">
-                    <img src="img/computadores.png" class="center-block" width="100%">
+                    <img src="img/computadores.png" class="center-block" width="100%" data-animation="fadeInUp" data-animation-delay="02">
                 </div>
                 
-                    <p style="color: #fff">No Portal Web PAGO, você vê transação por transação, com todos os detalhes. Acompanhe 24 horas por dia suas vendas realizadas e sua agenda de pagamentos. Transparência total de suas vendas. Veja o valor bruto e líquido de cada transação. Acesse do seu computador, tablet e smartphone.
+                   <div class="col-md-6" data-animation="fadeInUp" data-animation-delay="03">
+                        <p style="color: #fff">No Portal Web PAGO, você vê transação por transação, com todos os detalhes. Acompanhe 24 horas por dia suas vendas realizadas e sua agenda de pagamentos. Transparência total de suas vendas. Veja o valor bruto e líquido de cada transação. Acesse do seu computador, tablet e smartphone.
                     </p>
                     <p style="color: #fff">Todo cliente credenciado à PAGO possui acesso ao seu Portal. Nele, você pode ver suas vendas realizadas, transações recebidas, lançamentos futuros, cancelamentos, e muito mais!
                     </p>
@@ -359,91 +306,12 @@
                     <div style="text-align:center; padding-top:30px">
                     <a class="btn btn-warning" href="#" style="background: #EE3A81; border:none; border-radius: 20px; width: 200px;padding-top: 20px; padding-bottom: 20px">Acessar portal</a><br><br>
                     <p><h3>Veja suas vendas em tempo real!</h3></p>
+                   </div>
                 </div>
             </div>
         </div>
 
-        <!-- Contact -->
-        <section id="contato" class="contact" style="background:#54205F; color:#fff">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <header class="section-header">
-                            <h3 class="">Saiba quais taxas pagará. Sem surpresas!</h3>
-                            <p style="color:#fff">Enviaremos taxas justas de acordo com sua atividade.</p>
-                        </header>
-                    </div>
-                </div>
-                <div class="row" style="">
-                    <div class="col-md-7">
-                        <article class="form-detached">
-                            <form action="php/contact-form.php" id="contact-form">
-                                <div class="alert alert-success hidden" id="contact-alert-success">
-                                    <strong>Success!</strong> Thank you for your message. Reply will be in a while!
-                                </div>
-                                <div class="alert alert-danger hidden" id="contact-alert-error">
-                                    <strong>Error!</strong> Something went wrong sending your message.
-                                </div>
-                                <div class="form-group">
-                                    <label class="sr-only" for="name"></label>
-                                    <input type="text" class="form-control" value="" placeholder="Name" data-msg-required="Please enter your name." name="name" id="name">
-                                </div>
-                                 <div class="form-group">
-                                    <label class="sr-only" for="name"></label>
-                                    <input type="mail" class="form-control" value="" placeholder="Email" data-msg-required="Please enter your name." name="email" id="email">
-                                </div>
-                                 
-                                 
-                                
-                            
-                        
-                    </div>
-                    <div class="col-md-5">
-                                <div class="form-group">
-                                    <label class="sr-only" for="email"></label>
-                                    <input type="email" value="" placeholder="E-mail" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." class="form-control" name="email" id="email">
-                                </div>
-                                 <div class="form-group">
-                                    <label class="sr-only" for="email"></label>
-                                    <input type="tel" value="" placeholder="Telefone ou Celular" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." class="form-control" name="email" id="email">
-                                </div>
-                               
-                       </form> 
-                    </div>
-                </div>
-                <div class="container" style="margin: 0; padding:0; width: 100%">
-                    <div>
-                        <div class="form-group">
-                            <label class="sr-only" for="name"></label>
-                            <input type="mail" class="form-control" value="" placeholder="Segmento" data-msg-required="Please enter your name." name="seguimento" id="segmento" style="width:">
-                        </div>
-                    </div>
-                    <div class="col-md-6" style="">
-                        <div class="form-group" style="text-align:left">
-                                    <label class="sr-only" for="name"></label>
-                                    <span>Qual é a média de faturamento mensal do seu negócio?</span><br>  
-                                    <ul class="list-inline">
-                                        <li><input type="checkbox" aria-label="..."> Até 30 mil</li>
-                                        <li><input type="checkbox" aria-label="..."> Até 30 mil</li>
-                                        <li><input type="checkbox" aria-label="..."> Até 30 mil</li>
-                                        <li><input type="checkbox" aria-label="..."> Até 30 mil</li>
-                                </ul> 
-                            </div>
-                    </div>
-                    <div class="col-md-6" style="">
-
-                                <a href="#" class="btn btn-default load-more" role="button" style="background:transparent; color: #fff; border:1px solid #ccc; border-radius: 5px; font-size: 28px; padding-top:0; margin:0; width:100%">Enviar</a>
-                    </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-
         
-
-        
-
         <div class="container-fluid" style=";padding-top:100px; padding-bottom:100px; text-align:center">
             <div class="container">
                <h2 style="color:;padding-bottom:50px">Atendimento quando e como você quiser</h2>
@@ -892,6 +760,82 @@
                 
         </div>
 
+        <!-- Contact -->
+        <section id="contato" class="contact" style="background:#60286d; color:#fff">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header class="section-header">
+                            <h3 class="">Saiba quais taxas pagará. Sem surpresas!</h3>
+                            <p style="color:#fff">Enviaremos taxas justas de acordo com sua atividade.</p>
+                        </header>
+                    </div>
+                </div>
+                <div class="row" style="">
+                    <div class="col-md-7">
+                        <article class="form-detached">
+                            <form action="php/contact-form.php" id="contact-form">
+                                <div class="alert alert-success hidden" id="contact-alert-success">
+                                    <strong>Success!</strong> Thank you for your message. Reply will be in a while!
+                                </div>
+                                <div class="alert alert-danger hidden" id="contact-alert-error">
+                                    <strong>Error!</strong> Something went wrong sending your message.
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="name"></label>
+                                    <input type="text" class="form-control" value="" placeholder="Name" data-msg-required="Please enter your name." name="name" id="name">
+                                </div>
+                                 <div class="form-group">
+                                    <label class="sr-only" for="name"></label>
+                                    <input type="mail" class="form-control" value="" placeholder="Email" data-msg-required="Please enter your name." name="email" id="email">
+                                </div>
+                                 
+                                 
+                                
+                            
+                        
+                    </div>
+                    <div class="col-md-5">
+                                <div class="form-group">
+                                    <label class="sr-only" for="email"></label>
+                                    <input type="email" value="" placeholder="E-mail" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." class="form-control" name="email" id="email">
+                                </div>
+                                 <div class="form-group">
+                                    <label class="sr-only" for="email"></label>
+                                    <input type="tel" value="" placeholder="Telefone ou Celular" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." class="form-control" name="email" id="email">
+                                </div>
+                               
+                       </form> 
+                    </div>
+                </div>
+                <div class="container" style="margin: 0; padding:0; width: 100%">
+                    <div>
+                        <div class="form-group">
+                            <label class="sr-only" for="name"></label>
+                            <input type="mail" class="form-control" value="" placeholder="Segmento" data-msg-required="Please enter your name." name="seguimento" id="segmento" style="width:">
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="">
+                        <div class="form-group" style="text-align:left">
+                                    <label class="sr-only" for="name"></label>
+                                    <span>Qual é a média de faturamento mensal do seu negócio?</span><br>  
+                                    <ul class="list-inline">
+                                        <li><input type="checkbox" aria-label="..."> Até 30 mil</li>
+                                        <li><input type="checkbox" aria-label="..."> Até 30 mil</li>
+                                        <li><input type="checkbox" aria-label="..."> Até 30 mil</li>
+                                        <li><input type="checkbox" aria-label="..."> Até 30 mil</li>
+                                </ul> 
+                            </div>
+                    </div>
+                    <div class="col-md-6" style="">
+
+                                <a href="#" class="btn btn-default load-more" role="button" style="background:transparent; color: #fff; border:1px solid #ccc; border-radius: 5px; font-size: 28px; padding-top:0; margin:0; width:100%">Enviar</a>
+                    </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer class="footer" style="background:#54205F; color:#fff; border:none">
             <div class="container">
@@ -921,10 +865,10 @@
                         <div class="col-md-4">
                         <h2 style="text-align: left; opacity: 0.5">Redes sociais</h2>
                             <ul class="list-inline" style="color:#fff; text-align: left">
-                            <li><a href="#" class="fa fa-facebook fa-3x" style="color:#fff"></a></li>
-                            <li><a href="#" class="fa fa-twitter fa-3x" style="color:#fff"></a></li>
-                            <li><a href="#" class="fa fa-pinterest fa-3x" style="color:#fff"></a></li>
-                            <li><a href="#" class="fa fa-flickr fa-3x" style="color:#fff"></a></li>
+                            <li><a href="#" class="fa fa-facebook fa-1x" style="color:#fff"></a></li>
+                            <li><a href="#" class="fa fa-twitter fa-1x" style="color:#fff"></a></li>
+                            <li><a href="#" class="fa fa-pinterest fa-1x" style="color:#fff"></a></li>
+                            <li><a href="#" class="fa fa-flickr fa-1x" style="color:#fff"></a></li>
                         </ul>
                         </div>
                        

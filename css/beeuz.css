@@ -1,0 +1,42 @@
+
+    .car {height: 270px; padding-bottom: 50px}
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+        color:#ed3981;
+    }
+
+    
+    .header::before {
+        background: transparent;
+    }
+    .estado path,
+    .estado rect,
+    .estado polygon {
+        fill: #54205F;
+    }
+    .estado {
+        fill:#ccc;
+    }
+
+     /*#SP {stroke:#EE3A81;stroke-width:1; stroke-location:inside;}*/
+
+    .estado:hover {
+        fill:#fff;
+    }
+    .teste:hover {
+        fill:#fff;
+    }
+    .estado:hover path,
+    .estado:hover rect,
+    .estado:hover polygon {
+        fill: #EE3A81;
+    }
+
+    #contato input {
+        border-radius: 9px;
+        padding-top: 20px;
+        padding-bottom: 20px
+    }
+
+    .navbar-default .navbar-nav > li.active:first-child > a {
+        color: PURPLE
+    }
