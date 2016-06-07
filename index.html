@@ -3,926 +3,1305 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>OnPago</title>
-        <meta name="description" content="HTML5 Design Template">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-                
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="slick/slick.css">
-        <link rel="stylesheet" href="css/beeuz.css"> 
-        
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="css/main.css">        
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <!-- Linea Basic -->
-        <link rel="stylesheet" href="css/lineabasic.css">        
-        <!-- Animate.css -->
-        <link rel="stylesheet" href="css/animate.min.css">
-        <!-- Slick carousel -->
-        <link rel="stylesheet" href="css/slick.css">
-        <!-- Magnific Popup -->
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        
-        <script src="js/vendor/modernizr.js"></script>
-        <style type="text/css">
-              .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-        color:#ed3981;
-    }
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>OnPago</title>
+		<meta name="description" content="HTML5 Design Template">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+				
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="slick/slick.css">
+		<link rel="stylesheet" href="css/beeuz.css"> 
+		
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="css/main.css">        
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+	 
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="css/animate.min.css">
+	   
+		<link rel="stylesheet" href="css/full-slider.min.css">
+		
+		<script src="js/vendor/modernizr.js"></script>
+		<style type="text/css">
+			  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+		color:#ed3981;
+	}
 
-        </style>
+		</style>
 
-    </head>
-    <body data-spy="scroll" data-offset="50" data-target=".navbar-default">
+	</head>
+	<body data-spy="scroll" data-offset="50" data-target=".navbar-default">
+		<!--<div class="preloader"><img src="img/logo.png"></div>-->
 
-        <!-- Preloader -->
-        <div class="preloader">
-            <span></span>
-            <span></span>
-        </div>
+		<!-- Preloader 
+		<div class="preloader">
+			<span></span>
+			<span></span>
+		</div>-->
 
-        <!-- Navbar -->
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="padding-top: 10px; padding-bottom: 10px">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="100"></a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                        <li><a href="#about"><i class="fa fa-info" aria-hidden="true"></i> Sobre</a></li>
-                        <li><a href="#servicos"><i class="fa fa-asterisk" aria-hidden="true"></i></i> Servicos</a></li>
-                        <li><a href="#produtos"><i class="fa fa-gift" aria-hidden="true"></i> Produtos</a></li>
-                        <li><a href="#contato"><i class="fa fa-envelope" aria-hidden="true"></i> Contato</a></li>
-                        <li><a href="#" class="btn btn-default prin" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; margin: 0; ">Acessar portal</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+		<!-- Navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="padding-top: 10px; padding-bottom: 10px">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="img/logo.png" width="100"></a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">Sobre</a></li>
+						<li><a href="#servicos">Servicos</a></li>
+						<li><a href="#produtos">Produtos</a></li>
+						<li><a href="#rep">Representantes</a></li>
+						<li><a href="#contato">Contato</a></li>
+						<li><a href="login.html" data-animation="rubberBand" data-animation-delay="06" class="btn btn-default prin" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; margin: 0; ">Acessar portal</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-        <!-- Header -->
-        <header id="home" class="header" style="background:url(img/backgrounds/bg2.png); background-repeat: no-repeat; background-position: center center; background-size: cover">
-            <div class="container" style=" position: relative; width: 100%; text-align: center">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3" style=" color: #54205F">
-                        <div class="banner">
-                            <h4>We are Lemonage</h4>
-                            <h1>Hello everybody</h1>
-                           <a href="#" class="btn btn-default" data-animation="tada" data-animation-delay="02" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; font-size: 24px; padding-left: 10%; padding-right: 10%">Conheça a OnPago</a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </header>
+<section id="home" class="hidden-xs">
+	<div class="container-fluid" style="margin:0; padding: 0;">
+				<!-- Full Page Image Background Carousel Header -->
+	<header id="myCarousel" class="carousel slide" style="height: 700px">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>  
+		</ol>
 
-        <!-- About -->
-        <section id="about" class="about" style="background: #54205F; color:#fff; padding-bottom: 50px">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <header class="section-header">
-                         <div class="col-md-3   " style="">
-                            <img src="img/logo2.png" class="center-block img-responsive" style="padding:0; margin: 0; padding-top: 10px; width: 100%; max-width: 200px" data-animation="bounceInLeft" data-animation-delay="02">
-                        </div>
-                       <div class="col-md-9" style="text-align: left; padding-:0; margin: 0;">
-                            <h3 data-animation="fadeInRight" data-animation-delay="02" class="" style="font-size: 33.2px; font-weight: 100;text-align: left; line-height: 20px">
-                                Um novo conceito
-                                <span style="font-size:26px; line-height: 50px">de máquinas de cartão<br></span>
-                                <span style="font-size: 31.4px">de débito e crédito</span>
-                            </h3>
-                        </div>
-                            <div class="col-md-12" style="padding-top: 30px; opacity: 0.6">
-                                <div style="color: #fff"><span style="font-weight: 900">As máquinas de cartao pago </span>foram criadas para facilitar a vida do micro, pequeno
-                                e médio empreendedor. Com elas é possível receber pagamentos via cartão de débito e
-                                crédito onde você estiver, aumentando suas vendas e o sucesso do seu negócio de forma
-                                rápida, simples e segura.
-                                 
-                            </div>
+		<!-- Wrapper for Slides -->
+		<div class="carousel-inner">
+			<div class="item active" style="width: 100%">
+				<!-- Set the first background image using inline CSS below. -->
+				<div class="fill" style="height: 700px;background:url(img/backgrounds/bg2.png) 100% 100%; width: 100%; background-size: cover; background-position: center center; background-repeat: no-repeat;"></div>
+				<div class="carousel-caption">
+				 <h1 style="font-size: 18px; color: #fff" data-animation="bounce" data-animation-delay="01">
+					 Facilidade para a vida do<br>micro, pequeno
+					e médio empreendedor.
+				</h1>
+							
+				 <a href="#about" class="btn btn-default hidden-xs" data-animation="flipInX" data-animation-delay="01" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; font-size: 24px;width: 50%">Conheça</a>
+				<a href="#about" class="btn btn-default visible-xs" data-animation="flipInX" data-animation-delay="01" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; font-size: 24px;width: 100%">Conheça</a>
+				</div>
+			</div>
+			<div class="item" style="width: 100%">
+				<!-- Set the first background image using inline CSS below. -->
+				<div class="fill" style="height: 700px;background:url(img/backgrounds/bg3.png) 100% 100%; width: 100%; background-size: cover; background-position: center center; background-repeat: no-repeat;"></div>
+				<div class="carousel-caption">
+				 <h1 style="font-size: 36px; color: #54205F" data-animation="bounce" data-animation-delay="01">
+					 Na medida do<br>seu negócio
+				</h1>
+							
+				 <a href="#about" class="btn btn-default hidden-xs" data-animation="flipInX" data-animation-delay="01" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; font-size: 24px; width: 300px">Conheça</a>
+				<a href="#about" class="btn btn-default visible-xs" data-animation="flipInX" data-animation-delay="01" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; font-size: 24px;width: 100%">Conheça</a>
+				</div>
+			</div>
+			
+		</div>
 
-                            </div>
-                           <a data-animation="pulse" data-animation-delay="03" href="#" class="btn btn-default load-more"  role="button" style="background:transparent; color: #fff; border:1px solid #ccc; border-radius: 5px; font-size: 28px">Compre Agora</a>
+		<!-- Controls -->
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="icon-prev"></span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="icon-next"></span>
+		</a>
+	</header>   
 
-                        </header>
-                    </div>
-                    <!--<div class="col-md-12">
-                        <div class="mockup" data-animation="fadeInUp" data-animation-delay="02">
-                            <img src="img/stationery.jpg" alt="mockup" />
-                        </div>
-                    </div>-->
-                </div>
-            </div>
-        </section>
+		</div>
+	</section>
 
-        <!-- Features -->
-        <section class="features" id="servicos">
-            <div class="container">
-                <div class="row">
-                <div data-animation="fadeInLeft" data-animation-delay="01">
-                    <div class="col-md-2 col-sm-3 car">
-                        <div class="feature">
-                            <!--<i class="icon icon-basic-lightbulb"></i>-->
-                            <img src="img/icons/icon-gprs.png" width="50">
-                            <h4 class="">Conexão GPRS</h4>
-                            <p>Chip e plano de dados inclusos. Não precisa de celular.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-3 col-xs-6 car">
-                        <div class="feature">
-                            <img src="img/icons/icon-apoio.png" width="50">
-                            <h4 class="">Apoio ao Cliente</h4>
-                            <p>Centro de Relacionamento e suporte 0800 940 3029.</p>
-                        </div>
-                    </div>
+	<!--mobile-->
+	<section id="home" class="visible-xs">
+	<div class="container-fluid" style="margin:0; padding: 0;">
+				<!-- Full Page Image Background Carousel Header -->
+	<header id="myCarousel" class="carousel slide" style="height: 300px">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>  
+		</ol>
 
+		<!-- Wrapper for Slides -->
+		<div class="carousel-inner">
+			<div class="item active" style="width: 100%">
+				<!-- Set the first background image using inline CSS below. -->
+				<div class="fill" style="height: 300px;background:url(img/backgrounds/bg2.png) 100% 100%; width: 100%; background-size: cover; background-position: center center; background-repeat: no-repeat;"></div>
+				<div class="carousel-caption">
+				 <h1 style="font-size: 18px; color: #fff">
+					 Facilidade para a vida do<br>micro, pequeno
+					e médio empreendedor.
+				</h1>
+							
+				 <a href="#" class="btn btn-default hidden-xs" data-animation="tada" data-animation-delay="02" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; font-size: 24px;width: 50%">Conheça</a>
+				<a href="#" class="btn btn-default visible-xs" data-animation="tada" data-animation-delay="02" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; font-size: 24px;width: 100%">Conheça</a>
+				</div>
+			</div>
+			<div class="item">
+				<!-- Set the second background image using inline CSS below. -->
+				<div class="fill" style="background:url('images/bg2.jpg') 100% 100%; width: 100%; background-size: 100%; background-position: center center; background-repeat: no-repeat;"></div>
+				<div class="carousel-caption">
+					<h2 style="color: #fff; font-size: 48px">Aquecedor Solar</h2>
+				</div>
+			</div>
+			
+		</div>
 
-                    <div class="col-md-2 col-sm-3 col-xs-6 car">
-                        <div class="feature">
-                             <img src="img/icons/icon-cpf.png" width="50">
-                            <h4 class="">CPF ou CNPJ</h4>
-                            <p>Maior flexibilidade, pode ser contratada por pessoas físicas ou jurídicas.</p>
-                        </div>
-                    </div>
-                     <div class="col-md-2 col-sm-3 col-xs-6 car">
-                        <div class="feature">
-                            <img src="img/icons/icon-dinheiro.png" width="50">
-                            <h4 class="">Dinheiro na Conta</h4>
-                            <p>Recebimento automático sem taxas extras em sua conta corrente.</p>
-                        </div>
-                    </div>
-                     <div class="col-md-2 col-sm-3 col-xs-6 car">
-                        <div class="feature">
-                             <img src="img/icons/icon-taxas.png" width="50">
-                            <h4 class="">Melhores Taxas</h4>
-                            <p>Taxas adequadas de acordo com seu ramo de atividade.</p>
-                        </div>
-                    </div>
-                     <div class="col-md-2 col-sm-3 col-xs-6 car">
-                        <div class="feature">
-                             <img src="img/icons/icon-garantia.png" width="50">
-                            <h4 class="">3 anos de Garantia</h4>
-                            <p>Contra defeitos de fabricação. Garantia de recompra.</p>
-                        </div>
-                    </div>
-                    </div>
-                    <div data-animation="fadeInRight" data-animation-delay="01">
-                     <div class="col-md-2 col-sm-3 col-xs-6 car">
-                        <div class="feature">
-                             <img src="img/icons/icon-portal-novo.png" width="50">
-                            <h4 class="">Portal Web</h4>
-                            <p>Todas as informações de vendas e relatórios em um só lugar.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-3 col-xs-6 car">
-                        <div class="feature">
-                             <img src="img/icons/icon-debito.png" width="50">
-                            <h4 class="">Débito e Crédito</h4>
-                            <p>Aceitar cartões de débito e de crédito com parcelamento em até 12x.</p>
-                        </div>
-                    </div>
-                     <div class="col-md-2 col-sm-3 col-xs-6 car">
-                        <div class="feature">
-                             <img src="img/icons/icon-frete.png" width="50">
-                            <h4 class="">Frete Grátis</h4>
-                            <p>Frete grátis para todo Brasil. Receba em até 15 dias.</p>
-                        </div>
-                    </div>
-                     <div class="col-md-2 col-sm-3 col-xs-6 car">
-                        <div class="feature">
-                             <img src="img/icons/icon-impressora.png" width="50">
-                            <h4>Impressora Integrada</h4>
-                            <p>Comprovante impresso ou enviado por SMS.</p>
-                        </div>
-                    </div>
-                     <div class="col-md-2 col-sm-3 col-xs-6 car">
-                        <div class="feature">
-                             <img src="img/icons/icon-multiusuario.png" width="50">
-                            <h4>Multiusuário</h4>
-                            <p>Cadastro de até 6 usuários CPF ou CNPJ.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2 car">
-                        <div class="feature">
-                             <a href="#" class="btn btn-default load-more" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; font-size: 24px">Compre Agora</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+		<!-- Controls -->
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="icon-prev"></span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="icon-next"></span>
+		</a>
+	</header>   
 
-        <!-- Quotes -->
-        <section class="quotes" style="background: url(img/backgrounds/verde1.png); background-size: cover; background-repeat: no-repeat; background-position: center; padding-bottom: 250px; padding-top: 250px">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>ACEITE DÉBITO E CRÉDITO COM<br>AS MÁQUINAS DE CARTÕES PAGO!</h3>
-                        <div style="height: 100px"></div>
-                        <h4 style="font-weight: 200!important; letter-spacing: 5px; line-height: 30px">Na medida do seu negócio.<br>Não importa o tamanho.<br>CPF ou CNPJ</h4>
-                       <a href="#" class="btn btn-default load-more" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; font-size: 28px">Compre Agora</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+		</div>
+	</section>
+	<!--mobile-->
+			 
+	<!-- Header -->
+	   <!-- <header id="home" class="header" style="background:url(img/backgrounds/bg2.png); background-repeat: no-repeat; background-position: center center; background-size: cover">
+			<div class="container" style=" position: relative; width: 100%; text-align: center">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3" style=" color: #54205F">
+						<div class="banner">
+						<div class="visible-xs" style="height: 50px"></div>
+							<h1 style="font-size: 18px; color: #fff">
+								Facilidade para a vida do<br>micro, pequeno
+								e médio empreendedor.
+							</h1>
+							
+						   <a href="#" class="btn btn-default hidden-xs" data-animation="tada" data-animation-delay="02" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; font-size: 24px;width: 50%">Conheça</a>
+						   <a href="#" class="btn btn-default visible-xs" data-animation="tada" data-animation-delay="02" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; font-size: 24px;width: 100%">Conheça</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</header>-->
 
-        <!-- Portfolio -->
-        <section class="portfolio" id="produtos">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                       <h4 style="font-size: 38px; color: #00B0AC; font-weight:800; padding-top: 70px">Máquinas de cartão de crédito e débito PAGO<br>
-                            <span style="font-size: 16px">As únicas no mundo com sistema multiusuário | até 6 usuários por máquina</span>
-                            </h4>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-        <div class="container" style="padding-bottom: 40px" >
-            <div class="col-md-6" style="">
-               <div class="col-md-4">
-                    <img src="img/d200.png" width="100%" class="center-block" data-animation="fadeInLeft" data-animation-delay="01">
-                </div>
-               <div class="col-md-8" style="">
-                   <ul class="list-unstyled" data-animation="fadeInLeft" data-animation-delay="02" style=" text-align: left; padding-top: 0">
-                            <li class="title" style="color:#54205F"><h3>Máquina de cartão PAGO D200 mPOS multiusuário</h3></li>
-                            <li>SEM ALUGUEL!</li>
-                            <li class="price" style=" font-size: 22px; color:black"><span style="color:black">De: <s>R$ 1.137<sup>,60</sup></s></span><br>Por: <span style="color:#531f5f;">12X</span> de <span style="font-size: 36px;color:#531f5f;">R$72</span><sup>,90</sup><br><span style="font-size: 18px">ou <span style="color:#531f5f">R$ 787<sup>,32</sup></span> no boleto.</span></li>
-                            <li class="description">*1 chip para serviço GPRS</li>
-                            <li class="description">*Plano de dados incluso</li>
-                            <br>
-                            <li class="cta-button"><a class="btn btn-warning" href="#" style="background: #531f5f; border:none; border-radius: 20px; width: 50%; padding-top: 20px; padding-bottom: 20px">Compre aqui</a></li>
-                        </ul>
-                   
-               </div>
-            </div>
+		<!-- About -->
+		<section id="about" class="hidden-xs" style="background: #54205F; color:#fff; padding-bottom: 50px">
+			<div class="container">
+				<div class="">
+					<div class="col-md-6 col-md-offset-3">
+						<header class="section-header">
+						 <div class="col-md-3" style="">
+							<img src="img/logo2.png" class="center-block img-responsive" style="padding:0; margin: 0; padding-top: 10px; width: 100%; max-width: 200px" data-animation="bounceInLeft" data-animation-delay="02">
+						</div>
+					   <div class="col-md-9" style="text-align: left; padding:0; margin: 0;">
+							<h3 data-animation="fadeInRight" data-animation-delay="02" class="" style="font-size: 33.2px; font-weight: 100;text-align: left; line-height: 20px">
+								Um novo conceito
+								<span style="font-size:26px; line-height: 50px">de máquinas de cartão<br></span>
+								<span style="font-size: 31.4px">de débito e crédito</span>
+							</h3>
+						</div>
+						  <!--  <div class="col-md-12" style="padding-top: 30px; opacity: 0.6">
+								<div style="color: #fff"><span style="font-weight: 900">As máquinas de cartao pago </span>foram criadas para facilitar a vida do micro, pequeno
+								e médio empreendedor. Com elas é possível receber pagamentos via cartão de débito e
+								crédito onde você estiver, aumentando suas vendas e o sucesso do seu negócio de forma
+								rápida, simples e segura.-->
+				</div>
+			</div>
+		</section>
 
-            <div class="col-md-6" style="">
-               <div class="col-md-4">
-                    <img src="img/d210.png" width="300px" class="center-block" data-animation="fadeInRight" data-animation-delay="01">
-                </div>
-                <div class="col-md-8" style="">
-                   <ul class="list-unstyled" data-animation="fadeInRight" data-animation-delay="02" style=" text-align: left">
-                            <li class="title" style="color:#EE3A81"><h3>Máquina de cartão PAGO D210 POS multiusuário</h3></li>
-                            <li>SEM ALUGUEL!</li>
-                            <li class="price" style=" font-size: 22px; color:black"><span style="color:black">De: <s>R$ 1.557<sup>,60</sup></s></span><br>Por: <span style="color:#EE3A81;">12X</span> de <span style="font-size: 36px;color:#EE3A81;">R$109</span><sup>,90</sup><br><span style="font-size: 18px">ou <span style="color:#EE3A81">R$ 1.186<sup>,92</sup></span> no boleto.</span></li>
-                            <li class="description">*2 chips para serviço GPRS</li>
-                            <li class="description">*Plano de dados incluso</li>
-                            <br>
-                            <li class="cta-button"><a class="btn btn-warning" href="#" style="background: #EE3A81; border:none; border-radius: 20px; width: 50%;padding-top: 20px; padding-bottom: 20px">Compre aqui</a></li>
-                        </ul>
-                   
-               </div>
-            </div>
-        </div>
-            <div style="padding-bottom: 50px; text-align: center">
-                   <h3 data-animation="fadeInUp" data-animation-delay="03">Frete gratis para todo Brasil</h3>
-            </div>
+		<!--mobile-->
+		 <section id="about" class="visible-xs" style="background: #54205F; color:#fff; padding-bottom: 20px;padding-top: 20px">
+			<div class="container">
+				   
+
+						 <div class="col-md-3" style="text-align: center;">
+							<img src="img/logo2.png" class="center-block img-responsive" style="padding:0; margin: 0 auto; padding-top: 10px; width: 100px;">
+						</div>
+					   <div class="col-md-9" style="text-align: center; padding-:0; margin: 0;">
+							<h3>   
+								<span style="font-size:18px; line-height: 30px">Um novo conceito de máquinas de cartão de débito e crédito</span>
+				   </h3>
+				</div>               
+			</div>
+		</section>
+
+		<!-- Quotes -->
+		<section class="quotes hidden-xs" style="background: #00b0ac; padding-bottom: 100px; padding-top: 100px; text-align: left">
+			<div class="container">
+			   <div class="col-md-4">
+				   <img src="img/backgrounds/verde1.png" class="center-block img-responsive" style="width: 100%">
+			   </div>
+			   <div class="col-md-8">
+					<h3 style="font-size: 38px">ACEITE DÉBITO E CRÉDITO COM AS MÁQUINAS DE CARTÕES PAGO!</h3>
+						<div style="height: 10px"></div>
+						<span style="font-weight: 200!important; letter-spacing: 1px; line-height: 18px;  font-size: 22px;text-transform: none">Na medida do seu negócio.<br>Não importa o tamanho. <br>CPF ou CNPJ</span><br><br>
+					   <a href="#servicos" class="btn btn-default" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; font-size: 18px; width:200px">Serviços</a>
+			   </div>
+			</div>
+		</section>
+
+		<!--mobile-->
+		<section class="quotes visible-xs" style="background:#00b0ac; background-size: cover; background-repeat: no-repeat; background-position: center; padding-bottom: 60px; padding-top: 60px; text-transform: none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 style="font-size: 20px">ACEITE DÉBITO E CRÉDITO COM AS MÁQUINAS DE CARTÕES PAGO!</h3>
+						<div style="height: 10px"></div>
+						<span style="font-weight: 200!important; letter-spacing: 1px; line-height: 12px;  font-size: 12px;text-transform: none">Na medida do seu negócio. Não importa o tamanho. <br>CPF ou CNPJ</span><br><br>
+					   <a href="#" class="btn btn-default" role="button" style="background:#54205F; color: #fff; border:none; border-radius: 5px; font-size: 18px; width: 100%">Compre Agora</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Features -->
+		<section class="features hidden-xs" id="servicos">
+			<div class="container">
+			 <h2 style="color:#54205F" data-animation="swing" data-animation-delay="02">Máquina de cartão PAGO</h2>
+				<div class="row">
+				<div data-animation="fadeInLeft" data-animation-delay="01">
+					<div class="col-md-2 col-sm-3 col-xs-6 car">
+						<div class="feature">
+							<!--<i class="icon icon-basic-lightbulb"></i>-->
+							<img src="img/icons/icon-gprs.png" width="50" class="center-block img-responsive">
+							<h4 class="">Conexão GPRS</h4>
+							<hr class="linha">
+							<p>Chip e plano de dados inclusos. Não precisa de celular.</p>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6 car">
+						<div class="feature">
+							<img src="img/icons/icon-apoio.png" width="50" class="center-block img-responsive">
+							<h4 class="">Apoio ao Cliente</h4>
+							<hr class="linha">
+							<p>Centro de Relacionamento e suporte 0800 940 3029.</p>
+						</div>
+					</div>
 
 
+					<div class="col-md-2 col-sm-3 col-xs-6 car">
+						<div class="feature">
+							 <img src="img/icons/icon-cpf.png" width="50" class="center-block img-responsive">
+							<h4 class="">CPF ou CNPJ</h4>
+							<hr class="linha">
+							<p>Maior flexibilidade, pode ser contratada por pessoas físicas ou jurídicas.</p>
+						</div>
+					</div>
+					 <div class="col-md-2 col-sm-3 col-xs-6 car">
+						<div class="feature">
+							<img src="img/icons/icon-dinheiro.png" width="50" class="center-block img-responsive">
+							<h4 class="">Dinheiro na Conta</h4>
+							<hr class="linha">
+							<p>Recebimento automático sem taxas extras em sua conta corrente.</p>
+						</div>
+					</div>
+					 <div class="col-md-2 col-sm-3 col-xs-6 car">
+						<div class="feature">
+							 <img src="img/icons/icon-taxas.png" width="50" class="center-block img-responsive">
+							<h4 class="">Melhores Taxas</h4>
+							<hr class="linha">
+							<p>Taxas adequadas de acordo com seu ramo de atividade.</p>
+						</div>
+					</div>
+					 <div class="col-md-2 col-sm-3 col-xs-6 car">
+						<div class="feature">
+							 <img src="img/icons/icon-garantia.png" width="50" class="center-block img-responsive">
+							<h4 class="">3 anos de Garantia</h4>
+							<hr class="linha">
+							<p>Contra defeitos de fabricação. Garantia de recompra.</p>
+						</div>
+					</div>
+					</div>
+					<div data-animation="fadeInRight" data-animation-delay="01">
+					 <div class="col-md-2 col-sm-3 col-xs-6 car">
+						<div class="feature">
+							 <img src="img/icons/icon-portal-novo.png" width="50" class="center-block img-responsive">
+							<h4 class="">Portal Web</h4>
+							<hr class="linha">
+							<p>Todas as informações de vendas e relatórios em um só lugar.</p>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6 car">
+						<div class="feature">
+							 <img src="img/icons/icon-debito.png" width="50" class="center-block img-responsive">
+							<h4 class="">Débito e Crédito</h4>
+							<hr class="linha">
+							<p>Aceitar cartões de débito e de crédito com parcelamento em até 12x.</p>
+						</div>
+					</div>
+					 <div class="col-md-2 col-sm-3 col-xs-6 car">
+						<div class="feature">
+							 <img src="img/icons/icon-frete.png" width="50" class="center-block img-responsive">
+							<h4 class="">Frete Grátis</h4>
+							<hr class="linha">
+							<p>Frete grátis para todo Brasil. Receba em até 15 dias.</p>
+						</div>
+					</div>
+					 <div class="col-md-2 col-sm-3 col-xs-6 car">
+						<div class="feature">
+							 <img src="img/icons/icon-impressora.png" width="50" class="center-block img-responsive">
+							<h4>Impressora Integrada</h4>
+							<hr class="linha">
+							<p>Comprovante impresso ou enviado por SMS.</p>
+						</div>
+					</div>
+					 <div class="col-md-2 col-sm-3 col-xs-6 car">
+						<div class="feature">
+							 <img src="img/icons/icon-cpf.png" width="50" class="center-block img-responsive">
+							<h4>Multiusuário</h4>
+							<hr class="linha">
+							<p>Cadastro de até 6 usuários CPF ou CNPJ.</p>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6 car">
+						<div class="feature">
+							 <img src="img/icons/icon-calendar.png" width="50" class="center-block img-responsive">
+							<h4>Antecipação</h4>
+							<hr class="linha">
+							<p>Opção de receber suas vendas a credito em até 2 dias.</p>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <div class="container-fluid" style="padding-top:100px; padding-bottom:100px; background:#00a6a2; color: #fff">
-            <div class="container">
-                <div class="col-md-6">
-                    <img src="img/computadores.png" class="center-block" width="100%" data-animation="fadeInUp" data-animation-delay="02">
-                </div>
-                
-                   <div class="col-md-6" data-animation="fadeInUp" data-animation-delay="03">
-                        <p style="color: #fff">No Portal Web PAGO, você vê transação por transação, com todos os detalhes. Acompanhe 24 horas por dia suas vendas realizadas e sua agenda de pagamentos. Transparência total de suas vendas. Veja o valor bruto e líquido de cada transação. Acesse do seu computador, tablet e smartphone.
-                    </p>
-                    <p style="color: #fff">Todo cliente credenciado à PAGO possui acesso ao seu Portal. Nele, você pode ver suas vendas realizadas, transações recebidas, lançamentos futuros, cancelamentos, e muito mais!
-                    </p>
-                    <p style="color: #fff">Todas as informações das suas vendas, em um só lugar. No Portal PAGO você pode acompanhar dia a dia sua operação e seu extrato financeiro</p>
-                    <div style="text-align:center; padding-top:30px">
-                    <a class="btn btn-warning" href="#" style="background: #EE3A81; border:none; border-radius: 20px; width: 200px;padding-top: 20px; padding-bottom: 20px">Acessar portal</a><br><br>
-                    <p><h3>Veja suas vendas em tempo real!</h3></p>
-                   </div>
-                </div>
-            </div>
-        </div>
 
-        
-        <div class="container-fluid" style=";padding-top:100px; padding-bottom:100px; text-align:center">
-            <div class="container">
-               <h2 style="color:;padding-bottom:50px">Atendimento quando e como você quiser</h2>
-            <div class="col-md-8" data-animation="zoomInTop" data-animation-delay="01">
 
-<svg width="566px" height="550px" style="font-size:6px">
-    <g transform="translate(0, -180) scale(2)">
-        <g class="regiao norte">
-            <g class="estado teste" id="AC">
-                <path d="M10.462,179.719c0,0,10.152,4.6,19.986,5.234c2.062,1.427,3.807,2.22,3.807,2.22s16.02,8.724,19.668,9.676
-                    l-0.158,1.11l-2.062,1.269l-1.903,0.952l-1.11,1.269l-2.062,0.317l-1.586,0.634l-1.269,1.745l-0.952,0.476l-1.269-0.159
-                    l-1.745-0.793h-2.696h-4.441l-2.062-0.159l-0.476-1.586l-0.159-3.014l0.476-2.062v-2.221l-0.159-1.428l-2.062,1.428l-2.379,1.903
-                    l-1.745,0.634l-4.283-0.476l-0.317-1.903L17.6,193.36l-1.428-0.634h-1.586l0.317-1.11v-1.903l-1.11-1.269l-1.903-2.062
-                    l-1.427-2.855l-1.111-2.221v-1.428L10.462,179.719z"/>
-                <text transform="translate(34, 199)">AC</text>
-            </g>
-            <g class="estado" id="AM">
-                <path d="M10.462,177.657l3.013,1.903c0,0,13.958,4.283,17.131,4.283c0.634,0,1.586,0.793,1.586,0.793l1.904,1.269
-                    c0,0,17.765,9.675,19.669,9.834c1.903,0.159,1.903-0.634,1.903-0.634l1.11-0.952l1.11-1.11l1.903-0.317l2.221,0.634l2.221-0.952
-                    h1.427l1.11-0.476l0.476-1.269l2.062-0.476l2.697-0.159l0.634-1.427l0.952-0.635v-1.427l2.062-1.269l0.158-1.428l6.345-0.317
-                    l0.793,1.586l1.586,1.428l2.062,2.062l1.904-0.159l1.744,0.317h10.469l9.2-0.159l1.586-1.269l0.159-3.172l1.111-2.538l0.317-2.697
-                    l-0.952-2.221l-0.635-1.586l13.482-27.282l0.635-2.379l0.634-1.269l-2.538,0.634l-2.062-1.428l-2.062-1.744l-5.234-0.476
-                    l-1.586-2.379c0,0-3.173-4.367-3.49-4.441c-0.476,0.476-0.248-1.264-0.248-1.264l-0.109-2.206l-0.297-1.785l-1.169-0.139h-1.943
-                    l-2.578,0.04l-0.674,0.179l-1.071,1.467l-1.586,2.102l-0.734,1.169c0,0-0.317,1.547-0.337,1.626
-                    c-0.02,0.08-0.456,0.615-0.456,0.615l-0.992,0.417l-1.705-0.02l-1.229-0.912l-0.773-0.912l-1.051,0.198
-                    c0,0-0.892,0.575-0.952,0.615s-0.654,0.952-0.654,0.952l-0.079,1.586l-0.139,2.419l-0.932,0.179l-1.051,0.02
-                    c0,0-1.031-0.575-1.15-0.634c-0.119-0.06-0.714-0.674-0.714-0.674s-0.912-0.812-1.011-0.912c-0.099-0.099-0.773-0.972-0.773-0.972
-                    s-0.833-0.812-0.873-0.892s-0.456-0.773-0.456-0.773v-0.595l0.04-1.407l-0.119-2.756c0,0-0.199-1.071-0.218-1.13
-                    c-0.02-0.059-0.337-1.864-0.337-1.923c0-0.059-0.04-1.804-0.04-1.804s-0.1-1.468-0.179-1.626c-0.079-0.159-0.654-1.09-0.753-1.229
-                    c-0.099-0.139-0.734-1.309-0.734-1.309l-0.714-1.765c0,0-0.456-1.269-0.634-1.527c-0.179-0.258-0.654-1.249-0.694-1.309
-                    c-0.04-0.059-0.238-0.496-0.238-0.496l-1.844-0.02l-0.278-0.417l-0.575,0.179l-0.575,0.535l-1.448,0.634l-0.297,1.249l-0.991,1.091
-                    l-1.031,1.11l-1.407,0.198l-1.13,0.417l-0.912,0.714l-1.071,0.812l-1.448,1.547l-1.229,0.297l-1.15,0.258l-0.714-0.516l-0.06-0.713
-                    h-0.912l-0.694,0.138l-0.317,0.833l-1.348-0.02l-1.666-0.02l-0.535-0.377c0,0-0.417-0.555-0.476-0.615s-0.853-0.714-0.853-0.714
-                    l-0.674-0.516l-2.597-0.218l-0.08-3.767l-0.734-1.15l-0.436-0.654l-0.417-0.417l-0.932,0.714l-0.813,0.555l-0.456,0.853
-                    l-1.15,0.694l-0.972-1.229l-0.297-0.635l-0.575,0.853l-0.575,0.773l-3.093,0.02l-2.122-0.119l-3.013-0.08
-                    c0,0-0.635,0.159-0.694,0.178c-0.06,0.02-0.873,0.456-0.873,0.456s-0.277,0.615-0.257,0.674s0.159,1.289,0.159,1.289l0.099,0.912
-                    c0,0,0.198,0.337,0.476,0.357s1.189,0.02,1.189,0.02s1.131,0.06,1.229,0.06c0.099,0,0.516,0.337,0.516,0.337
-                    s0.416,0.337,0.456,0.417c0.04,0.08,0.476,0.793,0.476,0.793l0.179,0.893c0,0,0,0.833,0,0.892s-0.198,0.793-0.198,0.793h-0.694
-                    l-1.229,0.079l-0.317-0.317l-1.051-0.08l-0.932,0.377l-1.229,0.06l0.02,1.11l-0.04,3.45l0.595,0.575c0,0,0.713,0.396,0.793,0.476
-                    c0.079,0.08,0.555,0.417,0.674,0.516c0.119,0.099,0.595,0.278,0.595,0.278l0.099,1.685l-0.119,0.813l0.852,1.14l0.387,1.101
-                    l-0.357,4.342v1.993c0,0-0.505,1.546-0.505,1.814s-0.684,1.933-0.684,1.933l-0.03,1.993c0,0-0.387,0.595-0.417,0.803
-                    c-0.03,0.208-0.089,2.677-0.089,2.677s-0.446,1.189-0.476,1.368c-0.03,0.178,0,1.725,0,1.725s-0.654,1.993-0.744,2.142
-                    c-0.089,0.148-0.654,1.07-0.773,1.1c-0.119,0.03-1.249-0.03-1.397-0.03c-0.149,0-1.309-0.416-1.398-0.505s-0.625-0.446-0.625-0.446
-                    h-1.338l-1.011,0.387l-0.417,0.744l-1.576,0.625l-2.23,0.208l-2.022,0.06l-1.189,0.506l-1.368,0.803l-0.952,0.714
-                    c0,0-1.487,1.011-1.487,1.101c0,0.089-1.309,1.695-1.427,1.844c-0.119,0.149-0.506,1.487-0.506,1.487l-0.208,0.952l-0.654,0.922
-                    c0,0-0.536,0.803-0.565,0.892c-0.03,0.089,0.178,1.368,0.178,1.368l0.208,0.862l-0.595,1.576l-1.1,1.011c0,0-1.22,0.654-1.22,0.773
-                    S10.462,177.657,10.462,177.657z"/>
-                <text transform="translate(65 162)">AM</text>
-            </g>
-            <g class="estado" id="RR">
-                <path d="M70.637,101.817c0.238,0,2.498,0,2.498,0l1.071,1.13l1.071,0.833l2.26,0.238l1.546,0.178l0.595,1.189
-                    l1.309,0.119h1.487l0.595-0.892l0.179-1.309l1.07-0.595l1.487-0.417h2.32l1.011-0.297l1.427-1.011l1.368-0.714l1.13-0.535
-                    l1.666-0.179l1.189-1.427l1.249-1.606l0.179-1.189l2.617,0.119l0.595,1.189l-0.595,1.011l-0.476,0.952l0.06,1.189l1.189,0.179
-                    l1.249,0.535l0.833,1.368l0.476,1.071l-0.297,1.071l-0.892,0.892l-0.238,1.13l-0.595,1.963l0.059,0.952l-0.356,0.773v2.26
-                    l0.059,1.19l0.654,0.892l0.595,1.189l0.059,1.844l0.893,0.535l1.427,1.249l0.773,1.071l1.844,1.189l0.536,0.714l0.119,3.509v1.963
-                    l-0.833,0.357h-2.617l-2.558-0.059c0,0-0.536,0.595-0.773,0.654c-0.238,0.059-1.546,1.606-1.546,1.606l-0.595,1.249v0.714
-                    l-0.595,0.476l-0.476,0.595l-0.595,0.833l-0.119,1.071l-0.357,0.535l-0.892,0.178l-0.536-0.535l-0.535-0.714l-1.249-0.773
-                    l-0.952-0.357l-1.071,0.238l-0.833,0.773l-0.833,0.595l-0.892,1.13l-0.179,2.974l-0.416,0.357l-0.893-0.595l-1.368-1.666
-                    l-0.833-0.952l-0.476-0.476l0.713-1.011v-1.13l-0.238-0.654l-0.535-0.892l-0.179-1.13l-0.178-1.487l-0.179-1.25l-0.119-2.022
-                    v-2.201l-0.595-1.07l-0.714-0.833l-0.595-1.011l-0.654-1.368l-0.476-1.189l-0.654-1.487l-0.238-0.654l-0.952-0.833h-0.536
-                    l0.06-2.26c0,0-0.952,0-1.13-0.06c-0.178-0.06-1.606-0.06-1.606-0.06L75.336,113l-1.249-0.238l-0.417-0.238h-0.536
-                    c0,0-0.178-4.818-0.178-4.997c0-0.179,0.714-1.011,0.714-1.011l0.417-0.654v-1.785l-1.428-0.952l-0.952-0.297l-0.892-0.297
-                    l-0.357-0.476L70.637,101.817z"/>
-                <text transform="translate(88, 119)">RR</text>
-            </g>
-            <g class="estado" id="PA">
-                <path d="M109.657,122.755l-0.06,4.521l0.119,1.903c0,0,0.357,2.974,0.357,3.271s0.357,1.546,0.357,1.546l1.07,0.773
-                    l0.595,0.714l0.297,1.368l0.773,1.011l1.011,1.19l0.952,1.011l1.19,0.119l1.13,0.119l0.417,0.178l0.952-0.357l0.833,0.06
-                    l0.892,0.595l1.011,1.19l1.249,0.476l1.309,0.773l1.249,0.06l0.654-0.595l1.011-0.179l1.13,0.595l-0.119,0.952l-0.119,1.011
-                    l-0.595,0.238l-0.595,1.427l-0.357,1.368l-0.892,1.011l-1.309,3.331l-11.123,22.484l0.06,0.893l0.833,1.011l0.119,0.952
-                    c0,0,0.773,0.713,0.713,0.892c-0.059,0.178,0,1.546,0,1.546l0.714,0.773l0.536,0.773l0.535,1.547l0.773,0.892l0.178,1.606
-                    l0.06,2.379l1.368,1.011l1.606,1.309l1.071,1.13l1.309,1.13l0.892,0.238l2.498,0.179l3.331,0.356l0.892,0.357l8.447,0.357
-                    l7.911,0.06l5.234,0.417h5.294l7.197,0.297l2.142,0.06l0.773-1.963l1.784-2.915c0,0,1.309-1.309,1.487-1.428s1.07-1.189,1.07-1.189
-                    l0.654-1.785l0.179-1.844l-0.238-1.249l-0.654-0.714l0.179-1.844l0.714-1.011l0.297-1.368l0.357-1.309c0,0,0.476-0.298,0.773-0.476
-                    c0.297-0.178,1.844-1.487,1.844-1.487l1.189-0.713l0.595-0.893l0.952-1.725l0.06-1.606l-0.06-1.547l-0.654-0.119l-1.189-0.536
-                    l-0.477-1.189l1.487-1.785l3.807-3.271l2.022-0.892l1.487-1.903l2.974-4.759l2.082-2.795l0.119-1.963l0.476-1.19l0.773-1.368
-                    l0.833-1.963l0.297-2.974l0.595-0.773v-1.903l-1.07-0.654h-1.844l-0.535-0.952c0,0-1.845-0.238-2.142-0.357
-                    c-0.298-0.119-1.487-0.238-1.487-0.238l-1.725-0.179l-1.547-0.297l-1.011,0.119l-0.714,0.714l-3.688,3.985l-2.081,2.558
-                    l-1.606,0.892l-1.725,0.06l-0.952-0.595l-0.833,0.06l-0.476,0.714l-0.356,0.714l-1.071-0.417l-1.011-0.833l-2.855-0.536
-                    c0,0-0.892-0.416-1.07-0.535s-0.952-1.189-0.952-1.189l-0.892-1.963l-0.477-0.417h-1.368l-1.844,1.13l-1.725,0.833l-2.736,0.535
-                    l-0.714-0.714l0.357-1.309l1.546-0.297l-0.119-0.713l-1.784-0.238c0,0-0.951-1.011-1.189-1.13c-0.238-0.119-1.13-1.547-1.13-1.547
-                    l-0.238-1.487l-0.893-1.13l-1.844-2.558c0,0-0.297-1.546-0.595-2.022c-0.298-0.476-0.476-1.427-0.476-1.784
-                    s-0.773-1.428-1.131-1.725c-0.356-0.297-0.713-1.725-0.951-2.082c-0.238-0.356-1.189-1.189-1.189-1.189l-1.844-1.071l-1.903-1.368
-                    c0,0-1.427-0.297-1.666-0.476c-0.238-0.179-1.606-0.714-1.725-0.952c-0.119-0.238-0.357-1.785-0.357-1.785l-0.179-1.666
-                    l-0.714-0.892c0,0-1.309,0-1.487,0c-0.179,0-1.546,0.417-1.546,0.417l-0.714,0.535h-1.547l-0.833-0.178l-0.178,0.773l0.059,1.309
-                    v1.19l-0.178,0.535h-1.606h-1.011l-2.796-0.238l-1.427,0.119c0,0-1.606-0.119-1.903-0.059c-0.298,0.059-2.022,1.189-2.022,1.189
-                    l-1.547,0.595l-1.606,0.773l-2.617,0.892l-1.249,0.892L109.657,122.755z"/>
-                <path d="M166.225,141.373l0.714-0.476l0.951-0.238l0.595,0.238l0.714,0.357l0.833-0.476l0.714-0.713l0.833-0.476
-                    l0.832,0.357l0.595-0.357l1.071-0.952l1.309-0.119l1.07-1.546l0.952-1.428l0.237-1.189l0.357-1.189l-1.903-0.119l-1.309-0.238
-                    h-1.666l-0.832,0.119h-1.666l-1.07-0.357l-1.428-0.476l-1.189,0.238l-0.477,1.309l-0.118,1.071l-0.119,1.309
-                    c0,0,0.237,1.309,0,1.666c-0.238,0.357-0.357,1.903-0.357,1.903l-0.119,1.666L166.225,141.373z"/>
-                <polygon points="171.102,131.38 172.292,130.547 171.815,129.477 170.864,129.596 170.15,130.785"/>
-                <path d="M170.031,127.93l-0.595,1.546l-0.119,0.833c0,0-0.714-0.238-1.07-0.238c-0.357,0-1.785-0.238-1.785-0.238
-                    l0.595-1.071l1.071-1.309L170.031,127.93z"/>
-                <polygon points="162.894,132.213 161.585,133.64 161.347,132.213 161.704,130.666 163.013,129.952 164.202,129.952
-                    164.202,130.666 163.727,131.737"/>
-                <polygon points="159.324,135.9 158.254,137.09 157.302,138.637 156.231,139.231 156.945,137.328 158.016,135.425
-                    158.849,134.949"/>
-                <polygon points="163.607,135.543 162.774,135.782 162.299,136.376 163.013,136.614 163.727,136.971
-                    165.035,136.257 164.202,135.306"/>
-                <polygon points="164.083,133.165 165.035,133.165 165.153,131.737 164.321,132.094"/>
-                <polygon points="164.678,138.994 164.559,139.945 163.488,139.945 163.369,138.875 163.488,138.161
-                    164.202,138.161"/>
-                <text transform="translate(145, 165)">PA</text>
-            </g>
-            <g class="estado" id="AP">
-                <path d="M137.614,115.439l1.784,0.595l1.19,0.238l1.07-0.178l0.476-0.536l1.487-0.06h1.25l1.07,0.536l1.13,0.119
-                    l1.547-0.059l1.546-1.011c0,0,0.654-1.011,0.833-1.309s1.309-2.974,1.309-2.974l1.665-2.855l1.547-2.379l1.606-1.963l1.249-1.071
-                    l1.07,0.833l0.773,0.952c0,0,0.119,1.249,0.119,1.487s0.06,3.034,0.06,3.034l0.297,0.892l0.654,1.011c0,0,0.476,0.535,0.476,0.833
-                    c0,0.298,0.238,1.725,0.179,1.904c-0.06,0.178,0.417,2.141,0.417,2.141l0.535,1.071l1.13,1.189l1.249,0.952l1.428,0.238
-                    l0.714,0.713l0.714,1.19l-0.179,1.427c0,0-0.595,0.238-0.773,0.476s-1.546,1.606-2.2,2.201c-0.654,0.595-1.785,2.26-1.785,2.26
-                    l-1.665,1.368c0,0-1.189,0.833-1.666,1.011c-0.476,0.179-1.189,0.892-1.189,1.071c0,0.178-0.773,1.963-0.773,1.963l-0.892,1.249
-                    l-1.071,1.368l-0.416,1.666c0,0-0.298,0.357-0.654,0.357s-1.309,0-1.309,0s-0.476-0.773-0.654-0.952
-                    c-0.179-0.179-0.773-1.25-0.952-1.785c-0.178-0.535-1.07-1.963-1.07-1.963s-0.595-0.952-0.893-1.368
-                    c-0.297-0.416-0.892-1.606-1.189-1.903c-0.297-0.297-0.832-1.011-0.832-1.011s-0.119-1.309-0.179-1.606s-0.595-2.082-1.011-2.439
-                    c-0.417-0.356-1.131-2.319-1.309-2.498c-0.18-0.178-0.536-1.13-1.071-1.309c-0.535-0.178-1.309-0.476-1.785-0.773
-                    c-0.476-0.297-1.487-0.654-1.784-0.713c-0.297-0.06-0.892-0.773-1.546-0.893c-0.654-0.119-1.011-0.416-1.309-0.654
-                    c-0.298-0.238-1.13-1.07-1.13-1.487S137.614,115.439,137.614,115.439z"/>
-                <text transform="translate(152, 123)">AP</text>
-            </g>
-            <g class="estado" id="RO">
-                <path d="M95.679,220.84c0,0-2.26-0.416-2.617-0.416s-2.439,0.06-2.855,0c-0.416-0.059-2.022-0.178-2.022-0.178
-                    l-1.428-0.952l-0.654-1.13l-0.892-0.477l-2.201-0.356l-1.427-0.298l-0.833-0.773l-0.773-0.951l-0.476-0.893L78.846,214l-1.13,0.477
-                    h-1.011l-0.654-0.596l-0.893-0.535l-1.011-0.06l-2.082,0.238l-1.428-0.654l-1.189-1.368l-1.666-1.487l-0.952-0.952l-0.893-1.249
-                    l-0.654-1.963l0.119-2.677l-0.357-1.249l-0.297-1.546l0.773-0.714l0.059-3.093l-0.535-1.13h-1.368c0,0-2.379,0.059-2.736,0.059
-                    s-2.439,0.536-2.439,0.536l-1.428,0.417l-0.297-0.417l0.476-0.654l0.714-0.773c0,0,0.952-0.178,1.13-0.178c0.179,0,1.487,0,1.487,0
-                    l1.844-0.06l1.903-0.357h2.201l0.892-0.595l0.833-1.13l0.714-0.773h3.093c0,0,0.892-0.06,1.011-0.357
-                    c0.119-0.297,0.238-1.368,0.238-1.368l1.071-0.654l0.238-1.368l0.535-0.714l1.011-0.06l0.773-1.427l0.773-0.654l1.13,0.06h1.844
-                    l1.13,0.892l1.725,1.13l1.13,1.25l1.13,1.189l0.892,0.595l0.833,0.119l0.713-0.179h0.893l0.555,1.567l-0.159,0.872l0.238,1.189
-                    l0.158,1.11l-0.08,1.983l-0.396,1.427l0.238,1.983l0.158,1.031v1.031l-0.079,1.507l0.317,0.396l0.159,0.793l2.142-0.159l2.855,0.08
-                    h2.776l0.317,0.952l1.506,0.238l0.873,0.396l-0.159,0.714l-0.873,0.952l-0.079,1.111l0.555,1.506l0.872,1.507l0.08,2.935
-                    l-0.714,0.792l-1.427,2.062L95.679,220.84z"/>
-                <text transform="translate(76, 208)">RO</text>
-            </g>
-        </g>
-        <g class="regiao nordeste">
-            <g class="estado" id="MA">
-                <path d="M195.073,139.351l1.368,0.119l1.189,1.011l1.011,0.119l1.606,0.06l1.309,0.535l0.833,1.13l1.665,1.249
-                    c0,0,0.833,1.13,0.833,1.309c0,0.178,0.237,1.011,0.237,1.249s0,1.249-0.178,1.309c-0.179,0.06-1.309,1.189-1.309,1.189
-                    l-0.298,1.13l0.119,1.428l0.833,0.714l1.07-0.298l0.535-1.189l1.309-0.714h1.071l0.535-0.714c0,0,0.535-0.654,0.951-0.654
-                    c0.417,0,2.261-0.059,2.261-0.059l0.951-0.476l0.773-0.357l1.487,0.297l1.249,0.595l1.487,0.952l1.13,0.536l1.963,0.238l1.13,0.297
-                    l-0.118,1.13l-0.833,0.892l-1.309,0.714l-0.535,0.357l-1.903,0.417l-0.833,1.665l-0.952,1.666l-0.714,1.25
-                    c0,0-0.118,2.141-0.118,3.212c0,1.07,0.535,2.022,0.535,2.438c0,0.417,0.416,1.666,0,2.142c-0.417,0.476-0.773,1.963-1.189,2.32
-                    c-0.417,0.357-0.238,1.963-0.238,1.963l0.119,0.952l1.13,1.309l-0.238,1.725l-0.714,0.952l-1.546,0.119
-                    c0,0-0.952-0.416-1.189-0.416c-0.238,0-1.487,0.059-1.487,0.059l-1.368,0.119l-0.893,0.476l-1.309,1.13l-1.13,1.189l-1.547,1.487
-                    l-1.486,0.595l-2.617,0.714l-1.666,1.428l-0.773,1.784l-0.178,1.19c0,0-0.357,1.487-0.417,1.725
-                    c-0.06,0.238-0.951,1.547-1.07,1.725s-0.714,2.082-0.714,2.26c0,0.179,0.119,2.142,0.119,2.142l0.416,0.952
-                    c0,0,0.417,0.952,0.238,1.13c-0.179,0.179-0.119,2.558-0.119,2.558l-0.714,0.952c0,0-1.011-0.356-1.249-0.416
-                    s-1.07-0.595-1.07-0.595s-0.536-1.547-0.595-1.904c-0.06-0.357-0.119-1.725-0.357-2.022c-0.238-0.298-0.773-0.654-1.07-1.071
-                    c-0.298-0.417-1.131-1.368-1.131-1.546c0-0.179,0.119-1.368,0.119-1.547c0-0.178,0.714-1.666,0.714-1.666s1.309-0.535,1.547-0.654
-                    c0.237-0.119,0.595-1.784,0.595-1.784v-1.546c0,0-0.179-0.238-0.595-0.714c-0.417-0.476-3.093-0.238-3.093-0.238l-1.428-0.892
-                    l-1.487-1.903c0,0-0.773-1.189-0.714-1.428c0.06-0.238,0.595-2.498,0.595-2.498l0.298-5.651l-0.179-1.903l-0.595-1.249
-                    c0,0-2.736-1.785-2.975-1.785c-0.237,0-1.665-0.357-1.665-0.357l-0.356-0.773l1.784-2.082l2.142-1.071l1.367-1.189l1.428-2.26
-                    l1.726-2.796l1.427-2.022l1.25-1.963l0.297-1.189l0.357-1.189l0.237-1.071c0,0,0.298-0.773,0.417-0.952
-                    c0.118-0.179,0.832-1.487,0.832-1.487s0.417-1.784,0.417-1.963c0-0.178,0.297-1.487,0.297-1.666c0-0.178,0.595-2.082,0.595-2.082
-                    L195.073,139.351z"/>
-                <polygon points="205.75,149.751 206.25,147.584 207.084,145.584 208.667,145.584 209.584,147.251 207.917,148.584"/>
-                <text transform="translate(195, 167)">MA</text>
-            </g>
-            <g class="estado" id="BA">
-                <path d="M192.991,206.922l0.119-1.904l0.832-1.784l1.309-0.714l0.833-0.833l1.071-1.19l1.07,0.238l0.714,1.07
-                    l0.833,0.952l1.07,0.357l1.428,0.714l0.951-0.119l1.428-0.833l1.071-0.476h1.903l0.714-0.833l1.665-1.428l1.07-1.784l0.357-0.952
-                    v-1.309l-0.238-0.476l-0.119-1.309l0.595-0.833h1.19l0.714,0.476c0,0,1.189-0.119,1.665,0c0.476,0.119,0.833,0.714,0.833,0.714
-                    h1.665l1.309-0.357l1.666-0.714l2.022-0.476l1.546-0.595l0.952-1.547l1.07-0.714l1.547-0.713l0.951,0.476l0.238,0.714l0.238,1.071
-                    l0.237,1.666l0.952,0.833l1.189,0.238l2.142-1.427l1.309-1.309l1.309-0.357l0.951-1.428l0.833-0.952l0.952-0.357h0.832l0.833,0.357
-                    l1.189,0.476l0.952,0.357l1.546,1.07l0.833,0.714l0.952,0.714l0.951,0.714l0.476,1.666l-0.118,1.07l0.237,0.833l1.071,0.595v0.595
-                    l-0.119,3.688l-0.952,0.476l-0.951,0.476v1.309l0.237,0.952l0.595,1.19l0.833,1.309l1.309,1.189l1.189,0.595l-0.595,1.785
-                    l-1.784,2.141l-1.547,1.785l-1.309,1.547l-0.118-0.715l-1.071-0.713l-1.309-0.119l-1.189,0.357c0,0-0.476,0.713-0.476,1.07
-                    c0,0.356,0.119,1.07,0.119,1.07v1.428l-0.596,1.189l-0.832,1.547l0.237,2.26l0.238,1.189l0.356,0.952l-0.118,1.071l-0.238,0.713
-                    l0.119,3.212l0.237,2.499l-0.118,1.427l0.476,0.952v1.189l-0.238,2.142l-0.595,1.309l-0.237,1.903l-0.477,1.665l-0.595,1.071v2.022
-                    l0.476,0.356v0.952l-1.665,1.546l-1.547,1.903l-0.832,0.238l-1.19-0.714l-0.595-1.189l-0.237-1.189l-0.952-0.714l-0.595-1.07
-                    l-0.238-1.19l0.119-0.951l1.071-1.189l0.832-1.547l1.19-1.189l0.713-1.547v-1.784l-1.903-1.428l-1.784-0.714l-1.547-0.595h-1.665
-                    h-1.665l-0.833-0.476l-0.357-0.952l-1.309-1.309l-1.07-0.595c0,0-1.309-0.238-1.784-0.238c-0.477,0-1.309-0.356-1.309-0.356
-                    l-1.785-0.595l-1.427-1.189l-1.428-0.714l-0.833-0.356l-1.784-0.119l-1.309,0.237l-0.952,0.356l-0.476-0.951l-0.357-1.189
-                    l-0.713-0.951l-2.022-0.357l-1.071,0.119l-1.784,0.476l-1.784,1.309l-2.142,1.071l-1.784,1.189l-1.666,0.832l-1.189,0.952
-                    l0.119-1.665c0,0,0.237-1.785-0.119-2.143c-0.356-0.356-0.833-1.783-0.833-1.783l-0.832-1.309l-0.238-2.38l0.238-1.071l0.237-2.021
-                    v-2.617l-0.476-1.428l-0.357-2.379l0.596-1.189l0.356-1.547l-0.595-1.903L192.991,206.922z"/>
-                <text transform="translate(218, 215)">BA</text>
-            </g>
-            <g class="estado" id="PI">
-                <path d="M223.208,150.414h0.951l1.428,0.476l0.357,0.595l-0.595,0.833l-0.238,0.952l0.119,0.952l0.833,1.309
-                    l0.595,1.428l0.714,1.309v1.309l0.356,1.428v2.736l0.476,4.164l0.119,1.784l0.238,1.309l0.476,2.379l0.476,1.309l0.357,0.952
-                    l1.189,0.833l0.356,1.07c0,0-0.237,0.714-0.595,0.833c-0.356,0.119-0.832,1.309-0.832,1.309l0.118,1.666l0.477,1.309l0.237,1.189
-                    l-0.476,1.428l-2.022,1.189l-2.022,1.546l-1.428,1.309l-1.546,1.666l-1.666,0.952l-1.665,0.119l-1.071,0.714l-1.189,0.357h-1.428
-                    l-0.951-0.119l-1.428-0.476l-1.784-0.357l-0.952,0.119l-0.595,0.714l-0.833,0.952l-0.118,1.428v1.189L209.289,198l-0.714,0.952
-                    l-0.951,0.952l-1.309,0.357l-1.309,0.714l-1.309,0.714l-1.309,0.476c0,0-0.477-0.357-1.19-0.476
-                    c-0.713-0.119-0.713-0.119-0.713-0.119l-0.833-1.071l-0.477-0.833l-0.713-0.476h-1.547l-0.119-1.784l-0.119-1.547v-1.666
-                    l-0.356-1.309l-0.238-1.903l0.595-1.546l0.714-1.309l0.833-1.903l0.476-1.903l0.357-1.309l0.714-0.714l0.951-0.714l1.071-0.357
-                    l1.309-0.476l1.546-0.595l1.547-1.427l1.189-1.309l1.07-0.833l1.547-0.238l1.189-0.119l1.309,0.238h1.309l1.428-0.595l0.833-1.546
-                    l0.119-1.666l-0.357-0.952l-0.595-1.071l0.238-1.546l0.237-1.189l0.477-0.952l0.713-0.952l-0.356-1.189l-0.119-1.784l-0.237-2.142
-                    v-1.428l0.237-1.546l0.714-1.189l0.952-1.666l1.189-0.357l2.498-1.428l1.07-1.427L223.208,150.414z"/>
-                <text transform="translate(215, 184)">PI</text>
-            </g>
-            <g class="estado" id="CE">
-                <path d="M227.609,150.533l-0.476,1.07l-0.357,0.952l0.119,1.309l0.119,0.595l0.476,0.833l0.477,0.952l0.356,0.714
-                    v1.189l0.595,1.19l0.119,1.309v1.903l0.119,1.309l0.119,2.022l0.237,2.022l0.119,2.022l0.238,1.547c0,0,0.119,0.714,0.237,1.309
-                    c0.119,0.595,0.833,1.903,0.833,1.903l1.189,0.595l0.477,0.833l-0.238,1.427c0,0,0.119,0.476-0.238,0.833
-                    c-0.356,0.357-0.237,1.189-0.237,1.189l1.309,0.119l1.665-0.119l1.547-0.119h1.309l1.07,0.356l1.309,0.833l1.07,1.309l0.952-0.119
-                    l1.189-1.189l0.714-0.833l-0.356-1.07l-0.357-0.833v-1.546l0.714-1.546l0.238-1.785l1.189-2.022l1.665-2.022l1.19-2.022l1.07-1.904
-                    l0.951-1.784l1.666-1.071l-3.093-2.736l-2.617-2.022l-0.714-1.071c0,0-1.071-0.714-1.428-0.714c-0.357,0-1.547-0.714-1.547-0.714
-                    l-1.665-1.189l-1.784-1.189l-1.785-0.952l-1.784-0.952h-1.903h-2.498h-1.189L227.609,150.533z"/>
-                <text transform="translate(235, 168)">CE</text>
-            </g>
-            <g class="estado" id="RN">
-                <path d="M251.997,163.619h1.07l1.547,0.595l1.428,0.714l1.903,0.119h2.26h1.904l1.665,0.238l1.309,0.713
-                    l0.833,1.071v0.833l0.714,1.784v1.309l0.237,1.903l-0.356,0.714h-2.022h-2.379l-1.547-0.595l-1.07-0.238l-0.714,0.238l-0.833,0.833
-                    l-0.119,0.952l-0.238,1.07h-1.189l-0.595-0.833l-1.546,0.119h-0.596l-0.356-0.833l0.952-1.666v-1.189l-1.785-0.357l-1.665,0.238
-                    l-0.952,0.952l-1.665,0.952c0,0-0.833,0.238-1.189,0.238c-0.357,0-1.19,0.119-1.19-0.238s1.071-1.784,1.071-1.784l0.832-1.428
-                    l1.785-2.736L251.997,163.619z"/>
-                <text transform="translate(254, 171)">RN</text>
-            </g>
-            <g class="estado" id="PB">
-                <path d="M245.097,175.159l-0.595,1.546l0.238,1.071l0.595,0.952l-0.238,1.427l-0.237,1.071l0.714,0.357l1.428,0.119
-                    l1.903-0.357l1.546-1.071l1.903-1.189l0.714-0.119l1.903,0.357l0.238,1.189l-0.476,0.595l-0.595,2.022v0.833l0.356,0.476
-                    l1.071,0.238l0.832-1.071l1.547-1.071h1.07l2.261-0.357l1.903-0.476l1.428-1.309l0.951-0.714l1.071-0.238h2.022v-1.19
-                    c0,0,0.118-1.428-0.238-1.546c-0.357-0.119-0.714-1.309-0.714-1.309l-0.595-0.476l-2.855-0.476h-1.903l-1.665-0.119h-1.428
-                    l-0.595,1.189l-0.952,1.309l-1.428,0.238l-1.07-0.833l-1.189,0.119l-0.833,0.476l-0.833-0.713l-0.832-1.19l0.595-1.784l0.832-1.19
-                    h-1.07l-1.309,0.714l-0.595,0.952l-1.07,0.476l-0.714,0.119l-1.666,0.119L245.097,175.159z"/>
-                <text transform="translate(257, 181)">PB</text>
-            </g>
-            <g class="estado" id="PE">
-                <polygon points="228.442,188.363 229.751,189.434 230.227,190.386 230.346,191.219 230.94,192.17 230.94,192.646
-                    231.298,193.241 232.13,192.765 232.844,191.932 233.558,190.743 234.747,190.743 235.461,189.672 236.532,188.72 238.078,187.769
-                    239.268,187.412 240.458,187.649 241.767,188.125 243.075,188.363 244.265,189.315 245.811,190.148 246.644,191.219 247.952,191.1
-                    249.261,190.148 250.213,189.553 251.283,190.267 252.592,191.1 253.781,191.457 255.209,192.051 257.47,191.932 259.373,191.813
-                    259.729,191.1 260.562,189.791 261.396,189.196 262.585,188.839 263.894,188.839 265.202,188.839 266.511,188.839 266.986,188.006
-                    267.462,186.698 267.938,185.151 268.652,182.891 268.652,181.226 267.7,180.631 266.272,180.512 265.321,181.106 264.488,181.82
-                    263.418,182.415 262.466,182.891 260.919,183.129 259.729,183.129 258.659,183.605 257.351,184.2 256.756,185.032 255.923,185.984
-                    254.495,186.103 253.662,185.389 253.306,184.081 253.306,182.772 253.544,181.106 253.662,180.512 253.067,180.274
-                    251.997,180.512 250.927,181.226 249.499,182.296 248.428,182.891 246.524,182.772 245.692,182.772 244.621,182.772
-                    242.956,182.772 241.409,182.891 240.101,182.772 239.03,181.463 237.722,180.75 236.65,180.75 234.391,180.512 231.298,180.393
-                    231.535,181.345 231.654,182.177 232.13,183.486 232.13,184.081 231.535,185.151 230.702,186.103 229.632,187.055"/>
-                <text transform="translate(245, 188)">PE</text>
-            </g>
-            <g class="estado" id="AL">
-                <polygon points="248.19,193.241 249.261,193.836 250.569,194.668 251.878,195.145 253.306,195.858 254.139,196.453
-                    255.209,197.048 256.518,198 257.588,198.713 258.659,199.07 259.729,198.118 261.514,196.691 263.061,194.788 264.25,193.36
-                    265.083,192.527 265.559,191.1 265.797,190.148 264.013,189.672 262.466,189.91 261.396,190.267 260.801,191.932 259.492,192.646
-                    257.826,192.884 255.923,192.884 254.139,192.884 253.067,192.408 251.878,191.694 251.164,191.1 250.213,191.1 249.142,191.694
-                    248.547,192.527"/>
-                <text transform="translate(256, 197)">AL</text>
-            </g>
-            <g class="estado" id="SE">
-                <polygon points="249.142,194.906 250.331,195.739 251.759,196.096 253.306,197.048 254.971,198 256.875,199.903
-                    257.351,200.26 256.756,201.092 254.853,203.709 253.425,205.256 252.235,207.041 251.283,207.16 250.094,206.922 249.38,206.089
-                    248.666,205.256 248.19,204.186 248.31,203.115 249.38,202.996 249.975,201.449 250.094,199.189 249.975,197.523 249.38,196.572
-                    248.666,195.739 248.666,194.788"/>
-                <text transform="translate(250, 204)">SE</text>
-            </g>
-        </g>
-        <g class="regiao centro-oeste">
-            <g class="estado" id="MT">
-                <path d="M91.357,189.871l20.382,0.317l0.555-1.348l0.714-1.983l0.158-1.982v-1.666l0.317-1.269l0.317-1.031
-                    l0.555,0.08l0.317,0.396l0.158,0.952l0.714,1.349l0.635,2.141l0.396,3.331l0.952,0.952l5.314,4.362l2.141,0.317l8.645,0.317
-                    l18.876,0.792l13.72,0.952l-0.079,0.714l-0.555,1.824l-1.903,5.313c0,0-0.238-0.159-0.159,2.3c0.079,2.459,0.079,7.614,0.079,7.614
-                    l0.476,2.062c0,0,0.08,2.3-0.872,3.569c-0.951,1.269-1.427,3.648-1.427,3.648l-0.714,4.44l-0.794,1.27l-1.666,0.872l-1.348,1.27
-                    l-1.11,1.586l-0.476,1.427l-0.952,0.556l-1.665,1.11l-1.349,1.189l-1.587,2.617l-1.428,2.062l-1.188,1.586l-1.031,1.19
-                    l-0.159,1.109l-0.079,1.587l0.555,0.872l-0.078,0.555v1.349h-2.539l-0.237-0.872l0.237-1.587l-0.237-0.872l-0.634-1.27l-1.19-0.079
-                    l-1.269,0.873l-0.714,0.634c0,0-1.11,0-1.586,0s-1.586-0.476-1.586-0.476l-0.952,0.159l-2.935,0.158l-1.904-0.793
-                    c0,0-0.317-0.317-1.348-1.031c-1.031-0.714-1.824-0.635-2.142-0.635s-1.982-0.158-2.775,0.159c-0.793,0.316-0.396,0.396-1.19,0.396
-                    c-0.793,0-1.745,0.634-1.983,0.793s-1.031,1.428-1.031,1.428l-0.476,0.873l-1.428-0.08h-0.555l-0.714-0.714l-1.666-1.031
-                    l-1.349-0.316l-1.506-1.032l-0.555-0.792l-0.396-2.696v-1.032l0.634-0.476l0.238-1.03v-0.873l-12.214-0.079l-0.238-2.3l-0.476-2.3
-                    l-0.396-0.556l-0.714-0.555l-0.396-1.031h1.348l0.238-1.665l-0.317-2.38l-0.634-0.951l-0.634-4.203l-0.793-0.635l0.952-0.873
-                    l3.569-5.234l0.079-4.917l-0.713-0.952l-0.397-1.349l0.238-1.031c0,0,0.476-1.507,0.238-1.824
-                    c-0.238-0.317-0.476-0.714-0.713-0.952c-0.238-0.238-2.062-0.714-2.062-0.714s-1.903-0.714-2.142-0.714
-                    c-0.238,0-5.393,0.08-5.393,0.08l0.158-3.172l-0.713-1.348l0.396-1.666L91.357,189.871z"/>
-                <text transform="translate(127, 220)">MT</text>
-            </g>
-            <g class="estado" id="MS">
-                <path d="M116.26,248.479l0.397,1.824c0,0,0.873,1.109,0.952,1.428c0.079,0.317,0.079,1.586,0.079,1.586l-1.11,1.269
-                    l-0.159,2.062c0,0,0.396,1.587,0.317,1.824c-0.079,0.238-1.269,1.823-1.269,1.823l-1.11,1.27l-0.159,1.19l0.952,1.189l-0.714,1.428
-                    c0,0-0.396,0.792-0.476,1.109c-0.08,0.318,0.396,1.03,0.396,1.428c0,0.396,0.635,1.745,0.635,1.983
-                    c0,0.237,0.396,1.269,0.396,1.269v2.142l0.238,2.934v1.745l2.379,0.238l0.555,0.158h3.014l3.41-0.079l2.221,0.476l1.507,0.477
-                    l0.872,0.872l0.714,1.428l0.317,1.903v1.744l0.555,0.477l0.634,1.03l0.159,1.428l0.317,1.903l0.555,0.714l1.904-0.158l0.952-0.556
-                    l1.11-0.555l1.428,0.079l0.634,0.714l0.873,0.158l0.634-0.792l0.159-1.825l1.428-1.11l0.238-1.109l0.873-1.11l1.031-1.19
-                    l3.172-1.665l1.19-1.189l1.982-1.824l3.172-2.459c0,0,0.001-1.03,0.08-1.269c0.079-0.237,0.872-1.189,0.872-1.189l0.158-1.428
-                    l1.111-1.745l1.665-2.3l1.269-1.665l1.269-1.032l0.556-0.396v-4.68l-1.824-0.555l-2.458-0.794c0,0-2.617-1.349-3.015-1.665
-                    c-0.396-0.317-1.507-0.793-1.824-1.031c-0.316-0.237-1.585-0.316-1.982-0.316c-0.396,0-1.269,0.158-1.665-0.159
-                    c-0.397-0.316,0-2.538,0-2.538s-1.429-0.396-1.587-0.714c-0.158-0.316,0.159-0.714-0.316-0.951
-                    c-0.477-0.238-1.665-0.238-2.221-0.238s-1.903,0-1.903,0l-0.476-1.507l0.634-0.714l0.396-0.951l0.317-1.189l-0.634,0.237
-                    l-0.397,0.317l-1.348,0.556h-1.507c0,0-1.507,0.079-1.745,0.079c-0.238,0-1.745,0.158-1.745,0.158s-1.348,0-1.824,0
-                    c-0.476,0-1.189,0.08-1.666-0.237c-0.476-0.318-1.427-0.634-1.665-0.714c-0.238-0.08-1.824-1.11-1.824-1.11
-                    s-0.634-0.317-0.952-0.317s-1.666,0.238-1.903,0.238s-1.983,0.634-1.983,0.634l-1.031,0.794l-1.031,0.792l-1.031,1.031l-0.793,0.08
-                    c0,0-1.189-0.158-1.507-0.238S116.26,248.479,116.26,248.479z"/>
-                <text transform="translate(133, 268)">MS</text>
-            </g>
-            <g class="estado" id="GO">
-                <path d="M165.907,216.359l1.428,0.873l1.348,1.031l1.349,0.237l1.349,1.269l1.665,0.477l0.317-2.142l1.03-0.635
-                    l2.38-0.079l0.237,1.428l0.318,1.031l0.951,0.158l1.666-0.158l1.348,0.158l1.11,0.635l0.555,0.316l1.746,0.08v-0.873l1.665-0.396
-                    l1.189-0.713l1.666-0.396l1.665-0.477l1.428-0.317l0.951,0.079l0.079,2.459l-0.555,0.317l0.158,4.204l0.556,0.713l0.714,0.952
-                    l0.476,0.317v2.617l-0.158,0.476l-0.714-0.079l-0.873-0.714l-0.952-0.397l-1.03,0.08l-0.317,0.952v0.793l-1.427,0.316l-0.952,0.159
-                    v1.03v2.222l0.317,0.872v0.476l0.158,0.951l-1.031,0.08l-1.507,0.158l-0.872,1.666l-0.317,1.27l-0.079,1.269l0.317,1.03
-                    l0.476,0.556l0.635,0.952l0.079,0.714l-0.952,0.793l-0.872,0.951l-0.317,0.873l0.159,0.951l0.714,0.317l0.316,0.555v1.428v0.714
-                    l-0.951,0.714l-1.189,0.635l-0.873,0.951l-0.238,0.635l-0.871-0.476l-1.508-0.318h-1.823l-2.062-0.078c0,0-1.031,0.237-1.269,0.237
-                    c-0.238,0-1.428,0.397-1.428,0.397l-0.952,0.792l-1.903-0.158l-2.538,0.396c0,0-1.11,0.238-1.349,0.238
-                    c-0.237,0-1.348,1.11-1.348,1.11l-1.189,1.428l-0.873,0.951l-1.427,1.666l-1.507-1.111l-1.666-0.872c0,0-0.951-0.555-1.348-0.555
-                    c-0.397,0-1.982-0.952-2.221-0.952s-1.349-0.873-1.587-0.951c-0.237-0.079-0.635-0.635-1.349-0.873
-                    c-0.713-0.238-1.506-0.555-1.506-0.555l-0.714-0.793l-0.159-0.873l-1.189-0.714l-0.317-1.427v-1.27l-0.237-1.11l-0.238-2.22
-                    l1.03-2.301l1.19-0.635l1.189-1.03l0.556-1.666l2.3-2.696l1.348-0.476l1.507-0.635l0.238-0.793l0.635-1.745l1.189-1.666l1.03-0.476
-                    l1.428-1.109l0.477-1.349l0.713-3.093l0.873-1.666l0.397-1.666c0,0,0-1.03,0.316-1.665c0.317-0.635,0.396-2.142,0.714-2.3
-                    c0.316-0.158,0.635-1.666,0.635-1.666L165.907,216.359z"/>
-                <text transform="translate(164, 245)">GO</text>
-            </g>
-            <g class="estado" id="TO">
-                <path d="M178.478,166.236l1.784,0.238l1.428,0.595l1.784,0.714l0.596,1.189l0.595,2.379l-0.238,2.617l-0.119,2.379
-                    l-0.476,1.189l-0.476,1.19l0.118,1.309l1.428,0.952l0.833,1.189l1.07,1.309l1.785,0.833h1.784l0.476,1.309l-0.595,1.07
-                    l-1.189,0.595l-0.833,1.07l-0.237,1.309l-0.238,1.309l0.595,0.952l1.07,1.428l0.714,1.071l0.238,1.309l0.356,1.07l0.833,1.309
-                    l0.714,0.595l1.07,0.713l1.309,0.238l0.477,0.714l-0.833,0.595l-1.07,1.189l-0.714,1.071l-0.833,1.428l-0.119,1.784v1.071
-                    l1.428,0.952c0,0,0.119,0.238,0,0.714c-0.119,0.476,0,2.498,0,2.498l-0.595,0.833v1.427l0.476,0.833l-0.119,1.428l-0.951,0.119
-                    l-2.855,1.189l-2.022,0.476l-2.379,0.356l-1.309,0.238l-0.238,0.714l-1.784-0.952l-1.189-0.476l-1.071-0.476l-1.189-0.714
-                    l-0.951-0.952h-0.952l-1.903,0.119l-1.309,0.952l-0.595,1.189l-1.428-0.476l-1.189-0.477l-0.833-0.951l-1.07-1.903
-                    c0,0,0.237-0.952-0.238-0.952s-1.784,0.952-1.784,0.952l-0.595-2.142v-3.926l0.476-4.283l1.189-3.45l1.071-2.022l0.476-2.142
-                    l0.238-2.498l0.713-1.428l1.904-2.022l0.951-0.952l0.952-1.427l0.714-1.547l0.476-2.022v-1.428l-0.476-1.666l0.118-1.784
-                    l0.477-2.022l1.784-0.952l1.665-1.428l1.19-1.309l0.713-1.785l0.477-2.022v-1.784l-1.071-1.309L178.478,166.236z"/>
-                <text transform="translate(176, 205)">TO</text>
-            </g>
-            <g class="estado" id="DF">
-                <rect x="177" y="233" width="9" height="6"></rect>
-                <text transform="translate(178, 238)">DF</text>
-            </g>
-        </g>
-        <g class="regiao sul">
-            <a href="parana.html" target="estados">
-                <g class="estado" id="PR" style="fill:#00ABB5;">
-                <polygon points="140.449,291.465 140.449,294.479 140.29,296.858 140.29,299.476 139.259,300.665 138.783,300.981
-                    139.338,301.299 140.052,301.299 140.607,300.823 141.083,301.061 142.035,302.568 142.59,303.678 142.908,305.186
-                    144.414,305.899 146.238,306.216 147.983,306.375 149.887,306.454 151.79,306.692 152.504,307.247 154.169,307.723
-                    156.707,308.278 158.689,308.357 159.244,307.803 159.324,306.93 159.801,305.899 161.704,305.819 162.734,305.74 163.607,304.789
-                    164.241,304.233 165.906,304.233 168.128,304.233 169.872,304.233 170.27,305.105 171.062,305.503 171.854,305.424 172.887,304.63
-                    173.917,304.392 175.027,304.392 176.296,304.392 177.089,304.867 177.645,304.867 178.121,303.996 178.438,302.885
-                    179.23,302.093 179.469,301.379 180.024,300.981 179.944,299.792 179.23,299.237 178.2,299.237 177.248,299.157 176.852,298.841
-                    176.931,297.65 176.931,296.699 172.489,296.699 172.093,294.955 171.935,293.209 171.221,292.02 170.189,291.147 170.11,290.116
-                    169.872,287.896 169.713,286.151 168.683,285.12 167.334,284.962 162.418,284.882 161.228,284.089 160.435,283.613
-                    159.482,283.375 158.689,283.217 156.47,283.059 153.932,282.899 153.059,282.899 151.314,282.899 149.966,282.979
-                    148.459,282.979 147.666,282.979 146.317,283.613 144.969,284.724 143.621,285.992 143.146,287.104 141.559,288.848
-                    141.004,289.958"/>
-                <text transform="translate(154, 298)">PR</text>
-            </g>
-            </a>
-            <g class="estado" id="SC">
-                <path d="M143.78,307.328v1.744l0.079,1.744l0.158,0.952l1.348,0.08h1.746l1.585,0.079l1.746,0.237l2.379,0.635
-                    l1.428,0.634l1.109,0.238l1.428,0.476l1.27,0.318l1.031,0.555l5.551,5.313l1.189,0.396l1.587-0.079h1.744
-                    c0,0,0.477-0.237,0.635,0.238c0.159,0.476,0.477,1.03,0.477,1.03l-0.159,0.952l-0.396,0.873l-0.951,1.03l-0.396,0.873l0.951,0.237
-                    l0.952,0.396l0.635-0.952l1.348-1.189l1.189-1.03l2.142-1.111c0,0,0.556-0.476,0.635-0.792c0.078-0.317,0.635-2.301,0.635-2.301
-                    l0.476-1.744l0.158-1.903v-1.825l-0.079-2.141c0,0,0-1.586,0-1.824c0-0.237-0.079-1.983-0.079-1.983l-0.238-1.109l-1.428-1.11
-                    h-1.27l-1.03,0.396l-0.635,0.555l-0.714,0.159l-1.348,0.396l-0.714-0.317l-0.476-0.555l-0.476-0.556l-1.19,0.08l-1.031,0.078
-                    l-1.586,0.238h-1.031l-0.872,0.952l-0.714,0.555l-1.349-0.079l-0.476,0.476l-0.714,0.952l-0.396,0.872h-0.952h-1.109l-1.189-0.158
-                    l-1.666-0.159l-1.586-0.396l-1.349-0.476l-1.269-0.396l-1.269-0.159h-0.873l-1.982-0.316l-1.507-0.159L143.78,307.328z"/>
-                <text transform="translate(164, 315)">SC</text>
-            </g>
-            <g class="estado" id="RS">
-                <path d="M118.401,332.865l1.269-0.158l1.11-0.714l1.269-0.476l1.19,0.237l1.11,1.19l1.824,1.585l1.507,1.666v1.031
-                    l0.634,0.714l0.873-0.238l1.031-0.556l0.714-0.396l0.793,0.714l0.476,0.555l0.714,0.951l1.031,0.873l1.189-0.238l1.031,1.031
-                    l1.19,0.555l0.873,0.635l1.031,1.189l0.793,1.031l1.19-0.079l1.269,0.951l0.238,0.793l0.873,0.794l0.873,1.189
-                    c0,0,0.316-0.001,0.555,0.158s1.189,0.794,1.189,0.794l0.635,0.714l-0.08,1.823l-0.633,0.872c0,0-1.032,0.556-1.032,0.793
-                    c0,0.238-0.079,3.252-0.079,3.252l0.793-0.635l1.189-0.871l1.665-0.794l0.714-1.348l1.349-1.428l0.477-2.062l0.714-1.982
-                    l0.713-1.189v-2.062l0.714-1.189l0.952-0.793l0.079-1.824l1.745-0.396l0.872-0.634l0.237-1.904l1.111-0.793l0.793-3.331
-                    l0.713-0.396l1.111,0.317l0.079,0.555l0.872,0.317l0.635-0.713l0.872-0.238h1.189l-0.079,1.903l-0.792,0.793l-0.952,1.349
-                    l-1.666,1.506l-0.793,1.428l-0.714,1.111l-1.586,1.03l-1.745,1.11c0,0-1.031,0.476-1.269,0.634
-                    c-0.238,0.159-0.873,0.557-0.873,0.557l0.08,0.951l0.634-0.08l0.873-0.079l1.349-0.635l1.585-1.189l1.508-1.428l1.507-1.428
-                    l1.665-1.903l1.903-2.617l1.189-2.22l1.349-2.776l0.556-1.507l0.792-1.824l-0.714-0.476l-1.03-0.238l-0.159-1.507l0.635-1.586
-                    l0.873-1.348v-0.635l-2.142,0.159l-1.745-0.397l-1.269-0.316l-1.666-1.666l-0.951-1.11l-1.269-1.189c0,0-1.348-0.793-1.666-1.031
-                    c-0.317-0.237-1.824-0.635-1.824-0.635s-1.665-0.635-2.142-0.714c-0.476-0.078-1.903-0.078-2.379-0.316s-2.458-0.556-2.696-0.635
-                    s-1.429-0.634-2.935-0.555c-1.507,0.079-3.41,0.079-3.965,0.079s-1.745,0-1.745,0l-1.189,0.872l-1.349,0.952l-1.824,0.871
-                    l-1.428,0.873l-1.269,0.793l-1.269,0.714l-14.117,14.275L118.401,332.865z"/>
-                <text transform="translate(142, 331)">RS</text>
-            </g>
-        </g>
-        <g class="regiao suldeste">
-        <a href="saopaulo.html" target="estados">
-            <g class="estado" id="SP" style="fill:#00ABB5">
-                <path d="M149.648,281.234l2.301,0.158l2.379,0.158h1.903l1.824,0.159l1.428,0.316l1.507,0.952l1.11,0.317h2.221
-                    h1.744h2.062l1.11,0.238l0.476,0.714l0.714,0.714l0.634,0.634l0.318,0.873v1.269v0.951l0.079,1.032l0.316,0.792l0.397,0.159
-                    l0.237,0.793l0.556,0.714l0.158,0.872l-0.079,1.27l0.079,0.713l1.666,0.079h2.22l0.714,0.159l0.397,0.793l0.079,1.11l0.237,0.476
-                    l1.11,0.079l1.111,0.397l0.237,0.396l0.793-0.238l0.793-1.27l1.665-0.951c0,0,0.793-0.634,0.952-0.872
-                    c0.159-0.237,2.459-1.586,2.459-1.586l1.507-1.349l0.873-0.714l1.585-0.634l1.11-0.397l0.873-0.158l1.031-1.031l4.044-0.079
-                    l0.635-1.11l1.824-1.11l0.951-0.396l1.587-0.158l1.03-0.238l-0.079-0.714l0.079-0.714l0.952-0.951v-1.428h-1.189l-1.19-0.793
-                    h-1.427l-1.348,0.555l-1.27,0.476l-1.11,0.556l-1.349,0.476c0,0,0,0.634-0.237,0.714c-0.238,0.08-2.301,0.08-2.301,0.08
-                    l-1.823,0.078l-0.873-0.396l-0.714-1.428l-0.316-1.03c0,0-0.396-1.031-0.476-1.269c-0.08-0.238-0.08-1.824-0.08-1.824l-0.079-1.666
-                    l0.079-1.11l0.237-1.11l-1.189-0.317c0,0-1.189,0-1.428-0.476c-0.237-0.477-0.951-1.428-0.951-1.666
-                    c0-0.237-0.396-1.188-0.396-1.585c0-0.397-0.079-1.27-0.079-1.825c0-0.555-0.079-0.872-0.079-1.11s-0.556-1.586-0.556-1.586
-                    l-0.872-0.635l-1.189-0.158l-0.952,0.237l-2.062,0.397h-2.537l-1.031,0.079l-0.477,1.031l-0.316,0.793l-1.189-0.555l-1.428-0.556
-                    l-0.793-1.19c0,0-0.477-0.714-1.031-0.792c-0.555-0.079-1.19-0.079-1.982-0.079c-0.793,0-3.015,0-3.015,0l-1.506-0.477
-                    l-0.952-0.079l-0.952,0.476l-1.348,0.714l-0.952,1.27l-1.823,1.428l-1.428,1.744l-0.396,1.189l-1.031,1.507l-0.159,1.27
-                    l-0.714,1.109l-0.078,1.032l-0.714,1.189l-1.428,1.03l-1.508,1.349L149.648,281.234z"/>
-                <text transform="translate(173, 281)">SP</text>
-            </g>
-            </a>
-            <g class="estado" id="RJ">
-                <path d="M204.928,281.075l2.141-1.269l1.27-0.238l2.379-0.159l1.586-0.396h0.872h1.189l1.587-0.476l1.349-0.714
-                    l0.714-0.318l0.871-0.396l0.635-0.635l0.873-1.031l0.317-1.427l0.316-1.032l0.08-0.951l1.109-0.714l0.477,0.317l0.396,0.872
-                    c0,0,0.635,0.316,0.873,0.476c0.237,0.159,1.269,0.318,1.269,0.318h1.665h0.714l0.079,2.537l0.396,0.714l-0.078,0.714l-0.714,0.476
-                    l-1.27,0.714l-0.556,0.317l-1.11,0.317l-1.03,0.793l-0.555,1.031l-0.714,1.109l-0.397,0.635v0.873l-1.506,0.158c0,0-2.142,0-2.38,0
-                    s-1.903,0-1.903,0l-0.714-0.634v-0.794h-1.11l-0.793,0.08v1.269l-0.556,0.635c0,0-1.903-0.08-2.142-0.08
-                    c-0.237,0-1.109-0.316-1.109-0.316l-1.189-0.317l-0.635,0.714l-0.635,0.238l-0.396-0.714l0.476-1.111l-0.317-0.872l-0.793-0.317
-                    L204.928,281.075z"/>
-                <text transform="translate(216, 282.5)">RJ</text>
-            </g>
-            <g class="estado" id="MG">
-                <path d="M162.358,262.597l0.06,0.714l2.081-0.06h2.022l2.142,0.119l2.855,0.06l1.428,0.714l0.654,0.713l0.595,0.714
-                    h1.13l0.356-0.476c0,0,0.298-0.416,0.714-0.416c0.417,0,1.487,0.06,1.903,0c0.417-0.06,0.893-0.357,1.131-0.357
-                    c0.237,0,1.844-0.178,1.844-0.178s1.309-0.238,1.487-0.238c0.178,0,1.605,0,1.605,0l1.012,0.356l0.595,0.595l0.595,0.714
-                    l0.356,1.249l0.357,1.309v1.309l0.297,1.131l0.179,0.595l0.476,0.773l0.714,0.832l0.833,0.477l0.714,0.178l0.892,0.417l0.298,0.833
-                    l-0.06,1.011l-0.119,0.952l-0.356,0.832v1.189l0.06,1.131l0.356,0.951l0.298,0.535l0.535,0.833l0.06,0.833l0.119,0.595h1.011
-                    l1.487-0.06l0.297-0.773l0.654-0.832l1.012-0.357l0.356,0.357c0,0,0.833,0.059,1.012-0.06c0.178-0.119,0.714-0.417,0.714-0.417
-                    l1.309-0.416l0.951-0.535l0.773-0.417l1.547-0.356l1.309-0.298l0.892-0.356l0.952-0.298l1.368-0.297l1.309-0.179l0.892-0.179
-                    l1.012-0.118h1.784l1.249-0.06l1.309-0.477c0,0,1.368-0.595,1.368-0.772c0-0.179,1.309-1.012,1.309-1.012l0.714-1.011l0.595-1.487
-                    l0.535-1.428l0.477-0.893l0.595-1.07l0.654-0.833l0.356-1.189l0.417-1.368l0.772-0.951l1.785-0.06l0.476-0.773l0.595-1.428
-                    l0.773-1.011c0,0,0.06-0.773,0.06-1.071c0-0.297,0.416-2.022,0.416-2.022l-0.238-1.011l-0.416-0.535l0.179-1.249l0.595-0.357
-                    l-0.06-1.07l-0.654-0.476c0,0,0.06-0.833,0.06-1.071c0-0.237,0.535-1.189,0.535-1.189l0.298-0.476c0,0,0.06-0.833,0.476-1.071
-                    c0.416-0.237,0.833-0.356,0.833-0.356l0.476-0.06l0.535,0.119h1.368h0.952l0.118-0.535l-1.309-1.19c0,0-0.772-1.13-0.832-1.309
-                    c-0.06-0.178,0.118-1.963,0.118-1.963l0.298-1.784l0.654-0.356h1.011l0.119-0.952l0.477-1.13l0.654-0.773l0.595-0.714l0.06-1.428
-                    l-1.487-0.714l-1.071-0.476l-1.249-0.476c0,0-0.772,0-0.951,0s-1.309,0-1.309,0h-0.833l-0.893,0.356h-0.772l-0.238-0.832
-                    l-0.238-1.19l-0.951-0.832l-0.595-0.773l-0.654-0.298c0,0-0.833-0.119-1.071-0.119c-0.237,0-1.309,0-1.309,0l-0.595-0.059
-                    l-1.07-0.417l-2.082-1.13l-1.368-1.07l-1.011-0.833c0,0-0.714-0.06-0.952-0.06s-1.13,0.119-1.13,0.119l-0.119,0.595l-0.833,0.06
-                    l-1.428-0.06l-1.011-1.071l-0.298-0.713l-0.297-0.654l-0.833-0.535l-1.07-0.18l-1.071,0.061l-2.141,1.486l-3.629,2.32l-3.271,1.605
-                    l-1.487,0.477l-0.951,0.416l-0.119-1.606c0,0-0.714-0.832-0.893-0.832c-0.178,0-1.13,0-1.13,0l-0.714,0.892l-1.011,0.357
-                    l-0.595,0.178l0.06,1.726l0.356,1.249l-0.06,1.368l-0.237,1.011l-1.071,0.595l-0.951-0.118l-1.012,0.476l-0.119,1.07l-0.118,1.784
-                    l0.595,0.833l0.118,1.012l0.119,1.07l-0.119,1.011l-0.892,0.654l-0.417,0.773l0.179,0.952l0.476,0.238l0.179,1.011l-0.237,1.368
-                    l0.178,1.13c0,0-0.356,0.357-0.476,0.714c-0.119,0.357-1.13,1.309-1.13,1.309l-1.368,0.535l-1.13,1.071l-0.654,0.714l-0.773-0.893
-                    c0,0-0.952-0.654-1.249-0.654c-0.298,0-1.19,0-1.19,0h-1.784l-1.605-0.06l-0.952,0.179l-0.654,0.773l-0.951,0.356l-1.368,0.119
-                    l-1.249,0.237l-1.606,0.238l-1.189,0.06c0,0-0.714,0.06-0.893,0.238c-0.179,0.178-0.893,0.416-1.07,1.011
-                    c-0.179,0.595-1.726,2.379-1.726,2.379s-1.13,1.428-1.309,1.726C162.358,261.645,162.358,262.597,162.358,262.597z"/>
-                <text transform="translate(199, 258)">MG</text>
-            </g>
-            <g class="estado" id="ES" >
-                <path d="M223.962,271.479l0.951,0.397l0.872,0.396l2.538-0.317l0.635-0.714l0.793-0.793l0.635-0.873l1.03-1.269
-                    l0.952-1.349l0.476-0.871l0.635-1.666l0.317-1.508l1.586-0.792c0,0,0.555-0.318,0.555-0.635c0-0.317,0.238-1.982,0.238-1.982
-                    l0.238-2.696v-2.062l-0.555-1.587l-1.032-0.634l-1.189-0.872l-0.952-0.238h-1.823l-0.794,0.317l-0.713,0.476l-0.714,0.556v0.951
-                    l0.079,0.872l0.158,1.189l0.477,1.032l-0.477,0.714l-0.079,0.634v1.189l-0.237,1.508l-0.477,1.823l-0.476,1.031l-0.793,0.952
-                    l-0.396,1.03l-0.396,0.714l-1.269,0.238l-0.952,0.476l-0.079,1.349l-0.08,1.348l-0.158,1.508L223.962,271.479z"/>
-                <text transform="translate(228, 266)">ES</text>
-            </g>
-        </g>
-    </g>
+		<!--mobile-->
+		<section class="visible-xs" id="">
+			<div class="container-fluid" style="padding-top: 30px">
+			 <h2 style="color:#54205F; text-align: center" data-animation="swing" data-animation-delay="02">Máquina de cartão PAGO</h2>
+				<div class="row" style="">
+				<div>
+					<div class="col-xs-6 car">
+						<div class="feature">
+							<!--<i class="icon icon-basic-lightbulb"></i>-->
+							<img src="img/icons/icon-gprs.png" width="50" class="center-block img-responsive">
+							<h4 style="font-size: 12px">Conexão GPRS</h4>
+							<hr class="linha">
+							<p>Chip e plano de dados inclusos. Não precisa de celular.</p>
+						</div>
+					</div>
+					<div class="col-xs-6 car">
+						<div class="feature">
+							<img src="img/icons/icon-apoio.png" width="50" class="center-block img-responsive">
+							<h4 style="font-size: 12px">Apoio ao Cliente</h4>
+							<hr class="linha">
+							<p>Centro de Relacionamento e suporte 0800 940 3029.</p>
+						</div>
+					</div>
+
+
+					<div class="col-xs-6 car">
+						<div class="feature">
+							 <img src="img/icons/icon-cpf.png" width="50" class="center-block img-responsive">
+							<h4 style="font-size: 12px">CPF ou CNPJ</h4>
+							<hr class="linha">
+							<p>Pode ser contratada por pessoas físicas ou jurídicas.</p>
+						</div>
+					</div>
+					 <div class="col-xs-6 car">
+						<div class="feature">
+							<img src="img/icons/icon-dinheiro.png" width="50" class="center-block img-responsive">
+							<h4 style="font-size: 12px">Dinheiro na Conta</h4>
+							<hr class="linha">
+							<p>Recebimento automático sem taxas extras em sua conta corrente.</p>
+						</div>
+					</div>
+					 <div class="col-xs-6 car">
+						<div class="feature">
+							 <img src="img/icons/icon-taxas.png" width="50" class="center-block img-responsive">
+							<h4 style="font-size: 12px">Melhores Taxas</h4>
+							<hr class="linha">
+							<p>Taxas adequadas de acordo com seu ramo de atividade.</p>
+						</div>
+					</div>
+					 <div class="col-xs-6 car">
+						<div class="feature">
+							 <img src="img/icons/icon-garantia.png" width="50" class="center-block img-responsive">
+							<h4 style="font-size: 12px">3 anos de Garantia</h4>
+							<hr class="linha">
+							<p>Contra defeitos de fabricação. Garantia de recompra.</p>
+						</div>
+					</div>
+					</div>
+					<div >
+					 <div class="col-xs-6 car">
+						<div class="feature">
+							 <img src="img/icons/icon-portal-novo.png" width="50" class="center-block img-responsive">
+							<h4 style="font-size: 12px">Portal Web</h4>
+							<hr class="linha">
+							<p>Todas as informações de vendas e relatórios em um só lugar.</p>
+						</div>
+					</div>
+					<div class="col-xs-6 car">
+						<div class="feature">
+							 <img src="img/icons/icon-debito.png" width="50" class="center-block img-responsive">
+							<h4 style="font-size: 12px">Débito e Crédito</h4>
+							<hr class="linha">
+							<p>Aceitar cartões de débito e de crédito com parcelamento em até 12x.</p>
+						</div>
+					</div>
+					 <div class="col-xs-6 car">
+						<div class="feature">
+							 <img src="img/icons/icon-frete.png" width="50" class="center-block img-responsive">
+							<h4 style="font-size: 12px">Frete Grátis</h4>
+							<hr class="linha">
+							<p>Frete grátis para todo Brasil. Receba em até 15 dias.</p>
+						</div>
+					</div>
+					 <div class="col-xs-6 car">
+						<div class="feature">
+							 <img src="img/icons/icon-impressora.png" width="50" class="center-block img-responsive">
+							<h4 style="font-size: 12px">Impressora Integrada</h4>
+							<hr class="linha">
+							<p>Comprovante impresso ou enviado por SMS.</p>
+						</div>
+					</div>
+					 <div class="col-xs-6 car">
+						<div class="feature">
+							 <img src="img/icons/icon-cpf.png" width="50" class="center-block img-responsive">
+							<h4 style="font-size: 12px">Multiusuário</h4>
+							<hr class="linha">
+							<p>Cadastro de até 6 usuários CPF ou CNPJ.</p>
+						</div>
+					</div>
+					<div class="col-xs-6 car">
+						<div class="feature">
+							 <img src="img/icons/icon-calendar.png" width="50" class="center-block img-responsive">
+							<h4 style="font-size: 12px">Antecipação</h4>
+							<hr class="linha">
+							<p>Opção de receber suas vendas a credito em até 2 dias.</p>
+						</div>
+					</div>
+					
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+
+		<!-- Portfolio -->
+		<section class="portfolio hidden-xs" id="produtos" style="background-color:#60286D;background-image:url(img/icons/onpago2.png); background-repeat: repeat;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+					   <h4 data-animation="bounce" data-animation-delay="02" style="font-size: 38px; color: #fff; font-weight:800; padding-top: 70px; padding-bottom: 50px">Máquinas de cartão de crédito e débito PAGO<br>
+							<span style="font-size: 16px">As únicas no mundo com sistema multiusuário</span>
+							</h4>
+					</div>
+				</div>
+				
+			</div>
+		
+		<div class="container " style="padding-bottom: 40px" >
+			<div style="margin: 0 auto;">
+				<div class="col-md-5 card" style="" data-animation="fadeInLeft" data-animation-delay="02">
+				<div class="title" style="color:#54205F"><h3>Máquina de cartão PAGO<br>D200 mPOS multiusuário</h3></div>
+				<hr>
+							   <div class="col-md-4">
+
+					<img src="img/d200.png" width="100%" class="center-block">
+				</div>
+			   <div class="col-md-8" style="">
+				   <ul class="list-unstyled" style=" text-align: left; padding-top: 0">
+						   
+							<li>SEM ALUGUEL!</li>
+							<li class="price" style=" font-size: 22px; color:black"><span style="color:black">De: <s>R$ 1.137<sup>,60</sup></s></span><br>Por: <span style="color:#531f5f;">12X</span> de <span style="font-size: 36px;color:#531f5f;">R$72</span><sup>,90</sup><br><span style="font-size: 18px">ou <span style="color:#531f5f">R$ 787<sup>,32</sup></span> no boleto.</span></li>
+							<li class="description">*1 chip para serviço GPRS</li>
+							<li class="description">*Plano de dados incluso</li>
+							<br><br><br><br>
+							
+						</ul>
+				   
+			   </div>
+			   <div class="cta-button"><a href="#rep" class="btn btn-warning btnn" style="background: #531f5f; border-radius: 5px; width: 100%" href="#" >Compre agora</a></div>
+			</div>
+			<div class="col-md-1" style="height: 50px"></div>
+		 
+			
+
+			<div class="col-md-5 card" style="" data-animation="fadeInRight" data-animation-delay="02">
+			<div class="title" style="color:#EE3A81"><h3>Máquina de cartão PAGO<br>D210 POS multiusuário</h3></div>
+			<hr>
+			   <div class="col-md-4">
+					<img src="img/d210.png" width="300px" class="center-block">
+					<br>
+				</div>
+				<div class="col-md-8" style="">
+				   <ul class="list-unstyled" style=" text-align: left">
+							
+							<li>SEM ALUGUEL!</li>
+							<li class="price" style=" font-size: 22px; color:black"><span style="color:black">De: <s>R$ 1.557<sup>,60</sup></s></span><br>Por: <span style="color:#EE3A81;">12X</span> de <span style="font-size: 36px;color:#EE3A81;">R$109</span><sup>,90</sup><br><span style="font-size: 18px">ou <span style="color:#EE3A81">R$ 1.186<sup>,92</sup></span> no boleto.</span></li>
+							<li class="description">*2 chips para serviço GPRS</li>
+							<li class="description">*Plano de dados incluso</li>
+
+						  
+							
+						</ul>
+				   
+			   </div>
+			   <div class="cta-button"><a href="#rep" class="btn btn-warning btnn" style="background: #EE3A81; border-radius: 5px; width: 100%" href="#" s>Compre agora</a></div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+			
+		
+			<div class="container" style="text-align: center; margin: 0 auto" >
+				   <!---->
+				   <div data-animation="bounceInLeft" data-animation-delay="03">
+					   
+					   <h3 style="color:#fff"> Frete grátis para todo Brasil</h3>
+				  
+				   </div>
+
+				   
+			</div>
+		</div>
+
+</section>
+
+
+<!--mobile-->
+ <!-- Portfolio -->
+		<section class="portfolio visible-xs" id="produtos" style="background-color:#60286D;background-image:url(img/icons/onpago2.png); background-repeat: repeat;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+					   <h4 data-animation="bounce" data-animation-delay="02" style="font-size: 20px; color: #fff; font-weight:800; padding-top: 10px; padding-bottom: 30px">Máquinas de cartão de crédito e débito PAGO<br><br>
+							<span style="font-size: 12px; font-weight: 200">As únicas no mundo com sistema multiusuário | até 6 usuários por máquina</span>
+							</h4>
+					</div>
+				</div>
+				
+			</div>
+		
+		<div class="container " style="padding-bottom: 40px" >
+			<div style="margin: 0 auto;">
+				<div class="col-md-5 card" style="">
+				<div class="title" style="color:#54205F"><h3 style="font-size: 16px ">Máquina de cartão PAGO D200 mPOS multiusuário</h3></div>
+				<hr>
+				<div class="col-md-4 col-xs-4">
+
+					<img src="img/d200.png" width="100%" class="center-block">
+				</div>
+			   <div class="col-md-8 col-xs-8" style="">
+				   <ul class="list-unstyled" style=" text-align: left; padding-top: 0">
+						   
+							<li>SEM ALUGUEL!</li>
+							<li class="price" style=" font-size: 18px; color:black"><span style="color:black">De: <s>R$ 1.137<sup>,60</sup></s></span><br>Por: <span style="color:#531f5f;">12X</span> de <span style="font-size: 36px;color:#531f5f;">R$72</span><sup>,90</sup><span style="font-size: 12px"> ou<br><span style="color:#531f5f">R$ 787<sup>,32</sup></span> no boleto.</span></li><br>
+							<li style="font-size: 10px" class="description">*1 chip para serviço GPRS</li>
+							<li style="font-size: 10px"  class="description">*Plano de dados incluso</li>
+						   
+							
+						</ul>
+				   
+			   </div>
+			   <div class="cta-button"><a class="btn btn-warning btnn" style="background: #531f5f; border-radius: 5px; width: 100%" href="#" >Compre aqui</a></div>
+			</div>
+			<div class="col-md-1" style="height: 50px"></div>
+		 
+			
+
+			<div class="col-md-5 card" style="">
+			<div class="title" style="color:#EE3A81"><h3 style="font-size: 16px ">Máquina de cartão PAGO D210 POS multiusuário</h3></div>
+			<hr>
+			   <div class="col-md-4 col-xs-4">
+					<img src="img/d210.png" width="300px" class="center-block">
+					<br>
+				</div>
+				<div class="col-md-8 col-xs-8" style="">
+				   <ul class="list-unstyled" style=" text-align: left">
+							
+							<li>SEM ALUGUEL!</li>
+							<li class="price" style=" font-size: 18px; color:black"><span style="color:black">De: <s>R$ 1.557<sup>,60</sup></s></span><br>Por: <span style="color:#EE3A81;">12X</span> de <span style="font-size: 36px;color:#EE3A81;">R$109</span><sup>,90</sup><span style="font-size: 12px"> ou<br><span style="color:#EE3A81">R$ 1.186<sup>,92</sup></span> no boleto.</span></li><br>
+							 <li style="font-size: 10px" class="description">*2 chips para serviço GPRS</li>
+							 <li style="font-size: 10px" class="description">*Plano de dados incluso</li>
+
+						  
+							
+						</ul>
+				   
+			   </div>
+			   <div class="cta-button"><a class="btn btn-warning btnn" style="background: #EE3A81; border-radius: 5px; width: 100%" href="#" s>Compre aqui</a></div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+			
+		
+			<div class="container" style="text-align: center; margin: 0 auto" >
+				   <!---->
+				   <div data-animation="bounce" data-animation-delay="03">
+					   
+					   <h3 style="color:#fff"> Frete grátis para todo Brasil</h3>
+				  
+				   </div>
+
+				   
+			</div>
+		</div>
+
+</section>
+
+
+		
+		<div class="container-fluid hidden-xs" id="rep" style=";padding-top:100px; padding-bottom:100px; text-align:center">
+			<div class="container">
+			   <h2 style="padding-bottom:50px" data-animation="fadeInDown" data-animation-delay="02">Atendimento quando e como você quiser</h2>
+			<div class="col-md-8" data-animation="bounceInLeft" data-animation-delay="01">
+<svg width="100%" height="550px" style="font-size:6px" >
+	<g transform="translate(0, -180) scale(2)">
+		<g class="regiao norte">
+			<g class="estado teste" id="AC">
+				<path d="M10.462,179.719c0,0,10.152,4.6,19.986,5.234c2.062,1.427,3.807,2.22,3.807,2.22s16.02,8.724,19.668,9.676
+					l-0.158,1.11l-2.062,1.269l-1.903,0.952l-1.11,1.269l-2.062,0.317l-1.586,0.634l-1.269,1.745l-0.952,0.476l-1.269-0.159
+					l-1.745-0.793h-2.696h-4.441l-2.062-0.159l-0.476-1.586l-0.159-3.014l0.476-2.062v-2.221l-0.159-1.428l-2.062,1.428l-2.379,1.903
+					l-1.745,0.634l-4.283-0.476l-0.317-1.903L17.6,193.36l-1.428-0.634h-1.586l0.317-1.11v-1.903l-1.11-1.269l-1.903-2.062
+					l-1.427-2.855l-1.111-2.221v-1.428L10.462,179.719z"/>
+				<text transform="translate(34, 199)">AC</text>
+			</g>
+			<a href="estados.html" target="estados">
+				<g class="estado" id="AM">
+				<path d="M10.462,177.657l3.013,1.903c0,0,13.958,4.283,17.131,4.283c0.634,0,1.586,0.793,1.586,0.793l1.904,1.269
+					c0,0,17.765,9.675,19.669,9.834c1.903,0.159,1.903-0.634,1.903-0.634l1.11-0.952l1.11-1.11l1.903-0.317l2.221,0.634l2.221-0.952
+					h1.427l1.11-0.476l0.476-1.269l2.062-0.476l2.697-0.159l0.634-1.427l0.952-0.635v-1.427l2.062-1.269l0.158-1.428l6.345-0.317
+					l0.793,1.586l1.586,1.428l2.062,2.062l1.904-0.159l1.744,0.317h10.469l9.2-0.159l1.586-1.269l0.159-3.172l1.111-2.538l0.317-2.697
+					l-0.952-2.221l-0.635-1.586l13.482-27.282l0.635-2.379l0.634-1.269l-2.538,0.634l-2.062-1.428l-2.062-1.744l-5.234-0.476
+					l-1.586-2.379c0,0-3.173-4.367-3.49-4.441c-0.476,0.476-0.248-1.264-0.248-1.264l-0.109-2.206l-0.297-1.785l-1.169-0.139h-1.943
+					l-2.578,0.04l-0.674,0.179l-1.071,1.467l-1.586,2.102l-0.734,1.169c0,0-0.317,1.547-0.337,1.626
+					c-0.02,0.08-0.456,0.615-0.456,0.615l-0.992,0.417l-1.705-0.02l-1.229-0.912l-0.773-0.912l-1.051,0.198
+					c0,0-0.892,0.575-0.952,0.615s-0.654,0.952-0.654,0.952l-0.079,1.586l-0.139,2.419l-0.932,0.179l-1.051,0.02
+					c0,0-1.031-0.575-1.15-0.634c-0.119-0.06-0.714-0.674-0.714-0.674s-0.912-0.812-1.011-0.912c-0.099-0.099-0.773-0.972-0.773-0.972
+					s-0.833-0.812-0.873-0.892s-0.456-0.773-0.456-0.773v-0.595l0.04-1.407l-0.119-2.756c0,0-0.199-1.071-0.218-1.13
+					c-0.02-0.059-0.337-1.864-0.337-1.923c0-0.059-0.04-1.804-0.04-1.804s-0.1-1.468-0.179-1.626c-0.079-0.159-0.654-1.09-0.753-1.229
+					c-0.099-0.139-0.734-1.309-0.734-1.309l-0.714-1.765c0,0-0.456-1.269-0.634-1.527c-0.179-0.258-0.654-1.249-0.694-1.309
+					c-0.04-0.059-0.238-0.496-0.238-0.496l-1.844-0.02l-0.278-0.417l-0.575,0.179l-0.575,0.535l-1.448,0.634l-0.297,1.249l-0.991,1.091
+					l-1.031,1.11l-1.407,0.198l-1.13,0.417l-0.912,0.714l-1.071,0.812l-1.448,1.547l-1.229,0.297l-1.15,0.258l-0.714-0.516l-0.06-0.713
+					h-0.912l-0.694,0.138l-0.317,0.833l-1.348-0.02l-1.666-0.02l-0.535-0.377c0,0-0.417-0.555-0.476-0.615s-0.853-0.714-0.853-0.714
+					l-0.674-0.516l-2.597-0.218l-0.08-3.767l-0.734-1.15l-0.436-0.654l-0.417-0.417l-0.932,0.714l-0.813,0.555l-0.456,0.853
+					l-1.15,0.694l-0.972-1.229l-0.297-0.635l-0.575,0.853l-0.575,0.773l-3.093,0.02l-2.122-0.119l-3.013-0.08
+					c0,0-0.635,0.159-0.694,0.178c-0.06,0.02-0.873,0.456-0.873,0.456s-0.277,0.615-0.257,0.674s0.159,1.289,0.159,1.289l0.099,0.912
+					c0,0,0.198,0.337,0.476,0.357s1.189,0.02,1.189,0.02s1.131,0.06,1.229,0.06c0.099,0,0.516,0.337,0.516,0.337
+					s0.416,0.337,0.456,0.417c0.04,0.08,0.476,0.793,0.476,0.793l0.179,0.893c0,0,0,0.833,0,0.892s-0.198,0.793-0.198,0.793h-0.694
+					l-1.229,0.079l-0.317-0.317l-1.051-0.08l-0.932,0.377l-1.229,0.06l0.02,1.11l-0.04,3.45l0.595,0.575c0,0,0.713,0.396,0.793,0.476
+					c0.079,0.08,0.555,0.417,0.674,0.516c0.119,0.099,0.595,0.278,0.595,0.278l0.099,1.685l-0.119,0.813l0.852,1.14l0.387,1.101
+					l-0.357,4.342v1.993c0,0-0.505,1.546-0.505,1.814s-0.684,1.933-0.684,1.933l-0.03,1.993c0,0-0.387,0.595-0.417,0.803
+					c-0.03,0.208-0.089,2.677-0.089,2.677s-0.446,1.189-0.476,1.368c-0.03,0.178,0,1.725,0,1.725s-0.654,1.993-0.744,2.142
+					c-0.089,0.148-0.654,1.07-0.773,1.1c-0.119,0.03-1.249-0.03-1.397-0.03c-0.149,0-1.309-0.416-1.398-0.505s-0.625-0.446-0.625-0.446
+					h-1.338l-1.011,0.387l-0.417,0.744l-1.576,0.625l-2.23,0.208l-2.022,0.06l-1.189,0.506l-1.368,0.803l-0.952,0.714
+					c0,0-1.487,1.011-1.487,1.101c0,0.089-1.309,1.695-1.427,1.844c-0.119,0.149-0.506,1.487-0.506,1.487l-0.208,0.952l-0.654,0.922
+					c0,0-0.536,0.803-0.565,0.892c-0.03,0.089,0.178,1.368,0.178,1.368l0.208,0.862l-0.595,1.576l-1.1,1.011c0,0-1.22,0.654-1.22,0.773
+					S10.462,177.657,10.462,177.657z"/>
+				<text transform="translate(65 162)">AM</text>
+			</g>
+			</a>
+			<a href="estados.html" target="estados">
+				<g class="estado" id="RR">
+				<path d="M70.637,101.817c0.238,0,2.498,0,2.498,0l1.071,1.13l1.071,0.833l2.26,0.238l1.546,0.178l0.595,1.189
+					l1.309,0.119h1.487l0.595-0.892l0.179-1.309l1.07-0.595l1.487-0.417h2.32l1.011-0.297l1.427-1.011l1.368-0.714l1.13-0.535
+					l1.666-0.179l1.189-1.427l1.249-1.606l0.179-1.189l2.617,0.119l0.595,1.189l-0.595,1.011l-0.476,0.952l0.06,1.189l1.189,0.179
+					l1.249,0.535l0.833,1.368l0.476,1.071l-0.297,1.071l-0.892,0.892l-0.238,1.13l-0.595,1.963l0.059,0.952l-0.356,0.773v2.26
+					l0.059,1.19l0.654,0.892l0.595,1.189l0.059,1.844l0.893,0.535l1.427,1.249l0.773,1.071l1.844,1.189l0.536,0.714l0.119,3.509v1.963
+					l-0.833,0.357h-2.617l-2.558-0.059c0,0-0.536,0.595-0.773,0.654c-0.238,0.059-1.546,1.606-1.546,1.606l-0.595,1.249v0.714
+					l-0.595,0.476l-0.476,0.595l-0.595,0.833l-0.119,1.071l-0.357,0.535l-0.892,0.178l-0.536-0.535l-0.535-0.714l-1.249-0.773
+					l-0.952-0.357l-1.071,0.238l-0.833,0.773l-0.833,0.595l-0.892,1.13l-0.179,2.974l-0.416,0.357l-0.893-0.595l-1.368-1.666
+					l-0.833-0.952l-0.476-0.476l0.713-1.011v-1.13l-0.238-0.654l-0.535-0.892l-0.179-1.13l-0.178-1.487l-0.179-1.25l-0.119-2.022
+					v-2.201l-0.595-1.07l-0.714-0.833l-0.595-1.011l-0.654-1.368l-0.476-1.189l-0.654-1.487l-0.238-0.654l-0.952-0.833h-0.536
+					l0.06-2.26c0,0-0.952,0-1.13-0.06c-0.178-0.06-1.606-0.06-1.606-0.06L75.336,113l-1.249-0.238l-0.417-0.238h-0.536
+					c0,0-0.178-4.818-0.178-4.997c0-0.179,0.714-1.011,0.714-1.011l0.417-0.654v-1.785l-1.428-0.952l-0.952-0.297l-0.892-0.297
+					l-0.357-0.476L70.637,101.817z"/>
+				<text transform="translate(88, 119)">RR</text>
+			</g>
+			</a>
+			<a href="estados.html" target="estados">
+				<g class="estado" id="PA">
+				<path d="M109.657,122.755l-0.06,4.521l0.119,1.903c0,0,0.357,2.974,0.357,3.271s0.357,1.546,0.357,1.546l1.07,0.773
+					l0.595,0.714l0.297,1.368l0.773,1.011l1.011,1.19l0.952,1.011l1.19,0.119l1.13,0.119l0.417,0.178l0.952-0.357l0.833,0.06
+					l0.892,0.595l1.011,1.19l1.249,0.476l1.309,0.773l1.249,0.06l0.654-0.595l1.011-0.179l1.13,0.595l-0.119,0.952l-0.119,1.011
+					l-0.595,0.238l-0.595,1.427l-0.357,1.368l-0.892,1.011l-1.309,3.331l-11.123,22.484l0.06,0.893l0.833,1.011l0.119,0.952
+					c0,0,0.773,0.713,0.713,0.892c-0.059,0.178,0,1.546,0,1.546l0.714,0.773l0.536,0.773l0.535,1.547l0.773,0.892l0.178,1.606
+					l0.06,2.379l1.368,1.011l1.606,1.309l1.071,1.13l1.309,1.13l0.892,0.238l2.498,0.179l3.331,0.356l0.892,0.357l8.447,0.357
+					l7.911,0.06l5.234,0.417h5.294l7.197,0.297l2.142,0.06l0.773-1.963l1.784-2.915c0,0,1.309-1.309,1.487-1.428s1.07-1.189,1.07-1.189
+					l0.654-1.785l0.179-1.844l-0.238-1.249l-0.654-0.714l0.179-1.844l0.714-1.011l0.297-1.368l0.357-1.309c0,0,0.476-0.298,0.773-0.476
+					c0.297-0.178,1.844-1.487,1.844-1.487l1.189-0.713l0.595-0.893l0.952-1.725l0.06-1.606l-0.06-1.547l-0.654-0.119l-1.189-0.536
+					l-0.477-1.189l1.487-1.785l3.807-3.271l2.022-0.892l1.487-1.903l2.974-4.759l2.082-2.795l0.119-1.963l0.476-1.19l0.773-1.368
+					l0.833-1.963l0.297-2.974l0.595-0.773v-1.903l-1.07-0.654h-1.844l-0.535-0.952c0,0-1.845-0.238-2.142-0.357
+					c-0.298-0.119-1.487-0.238-1.487-0.238l-1.725-0.179l-1.547-0.297l-1.011,0.119l-0.714,0.714l-3.688,3.985l-2.081,2.558
+					l-1.606,0.892l-1.725,0.06l-0.952-0.595l-0.833,0.06l-0.476,0.714l-0.356,0.714l-1.071-0.417l-1.011-0.833l-2.855-0.536
+					c0,0-0.892-0.416-1.07-0.535s-0.952-1.189-0.952-1.189l-0.892-1.963l-0.477-0.417h-1.368l-1.844,1.13l-1.725,0.833l-2.736,0.535
+					l-0.714-0.714l0.357-1.309l1.546-0.297l-0.119-0.713l-1.784-0.238c0,0-0.951-1.011-1.189-1.13c-0.238-0.119-1.13-1.547-1.13-1.547
+					l-0.238-1.487l-0.893-1.13l-1.844-2.558c0,0-0.297-1.546-0.595-2.022c-0.298-0.476-0.476-1.427-0.476-1.784
+					s-0.773-1.428-1.131-1.725c-0.356-0.297-0.713-1.725-0.951-2.082c-0.238-0.356-1.189-1.189-1.189-1.189l-1.844-1.071l-1.903-1.368
+					c0,0-1.427-0.297-1.666-0.476c-0.238-0.179-1.606-0.714-1.725-0.952c-0.119-0.238-0.357-1.785-0.357-1.785l-0.179-1.666
+					l-0.714-0.892c0,0-1.309,0-1.487,0c-0.179,0-1.546,0.417-1.546,0.417l-0.714,0.535h-1.547l-0.833-0.178l-0.178,0.773l0.059,1.309
+					v1.19l-0.178,0.535h-1.606h-1.011l-2.796-0.238l-1.427,0.119c0,0-1.606-0.119-1.903-0.059c-0.298,0.059-2.022,1.189-2.022,1.189
+					l-1.547,0.595l-1.606,0.773l-2.617,0.892l-1.249,0.892L109.657,122.755z"/>
+				<path d="M166.225,141.373l0.714-0.476l0.951-0.238l0.595,0.238l0.714,0.357l0.833-0.476l0.714-0.713l0.833-0.476
+					l0.832,0.357l0.595-0.357l1.071-0.952l1.309-0.119l1.07-1.546l0.952-1.428l0.237-1.189l0.357-1.189l-1.903-0.119l-1.309-0.238
+					h-1.666l-0.832,0.119h-1.666l-1.07-0.357l-1.428-0.476l-1.189,0.238l-0.477,1.309l-0.118,1.071l-0.119,1.309
+					c0,0,0.237,1.309,0,1.666c-0.238,0.357-0.357,1.903-0.357,1.903l-0.119,1.666L166.225,141.373z"/>
+				<polygon points="171.102,131.38 172.292,130.547 171.815,129.477 170.864,129.596 170.15,130.785"/>
+				<path d="M170.031,127.93l-0.595,1.546l-0.119,0.833c0,0-0.714-0.238-1.07-0.238c-0.357,0-1.785-0.238-1.785-0.238
+					l0.595-1.071l1.071-1.309L170.031,127.93z"/>
+				<polygon points="162.894,132.213 161.585,133.64 161.347,132.213 161.704,130.666 163.013,129.952 164.202,129.952
+					164.202,130.666 163.727,131.737"/>
+				<polygon points="159.324,135.9 158.254,137.09 157.302,138.637 156.231,139.231 156.945,137.328 158.016,135.425
+					158.849,134.949"/>
+				<polygon points="163.607,135.543 162.774,135.782 162.299,136.376 163.013,136.614 163.727,136.971
+					165.035,136.257 164.202,135.306"/>
+				<polygon points="164.083,133.165 165.035,133.165 165.153,131.737 164.321,132.094"/>
+				<polygon points="164.678,138.994 164.559,139.945 163.488,139.945 163.369,138.875 163.488,138.161
+					164.202,138.161"/>
+				<text transform="translate(145, 165)">PA</text>
+			</g>
+			</a>
+				<a href="estados.html" target="estados">
+					<g class="estado" id="AP">
+				<path d="M137.614,115.439l1.784,0.595l1.19,0.238l1.07-0.178l0.476-0.536l1.487-0.06h1.25l1.07,0.536l1.13,0.119
+					l1.547-0.059l1.546-1.011c0,0,0.654-1.011,0.833-1.309s1.309-2.974,1.309-2.974l1.665-2.855l1.547-2.379l1.606-1.963l1.249-1.071
+					l1.07,0.833l0.773,0.952c0,0,0.119,1.249,0.119,1.487s0.06,3.034,0.06,3.034l0.297,0.892l0.654,1.011c0,0,0.476,0.535,0.476,0.833
+					c0,0.298,0.238,1.725,0.179,1.904c-0.06,0.178,0.417,2.141,0.417,2.141l0.535,1.071l1.13,1.189l1.249,0.952l1.428,0.238
+					l0.714,0.713l0.714,1.19l-0.179,1.427c0,0-0.595,0.238-0.773,0.476s-1.546,1.606-2.2,2.201c-0.654,0.595-1.785,2.26-1.785,2.26
+					l-1.665,1.368c0,0-1.189,0.833-1.666,1.011c-0.476,0.179-1.189,0.892-1.189,1.071c0,0.178-0.773,1.963-0.773,1.963l-0.892,1.249
+					l-1.071,1.368l-0.416,1.666c0,0-0.298,0.357-0.654,0.357s-1.309,0-1.309,0s-0.476-0.773-0.654-0.952
+					c-0.179-0.179-0.773-1.25-0.952-1.785c-0.178-0.535-1.07-1.963-1.07-1.963s-0.595-0.952-0.893-1.368
+					c-0.297-0.416-0.892-1.606-1.189-1.903c-0.297-0.297-0.832-1.011-0.832-1.011s-0.119-1.309-0.179-1.606s-0.595-2.082-1.011-2.439
+					c-0.417-0.356-1.131-2.319-1.309-2.498c-0.18-0.178-0.536-1.13-1.071-1.309c-0.535-0.178-1.309-0.476-1.785-0.773
+					c-0.476-0.297-1.487-0.654-1.784-0.713c-0.297-0.06-0.892-0.773-1.546-0.893c-0.654-0.119-1.011-0.416-1.309-0.654
+					c-0.298-0.238-1.13-1.07-1.13-1.487S137.614,115.439,137.614,115.439z"/>
+				<text transform="translate(152, 123)">AP</text>
+			</g>
+				</a>
+			<a href="estados.html" target="estados">
+				<g class="estado" id="RO">
+				<path d="M95.679,220.84c0,0-2.26-0.416-2.617-0.416s-2.439,0.06-2.855,0c-0.416-0.059-2.022-0.178-2.022-0.178
+					l-1.428-0.952l-0.654-1.13l-0.892-0.477l-2.201-0.356l-1.427-0.298l-0.833-0.773l-0.773-0.951l-0.476-0.893L78.846,214l-1.13,0.477
+					h-1.011l-0.654-0.596l-0.893-0.535l-1.011-0.06l-2.082,0.238l-1.428-0.654l-1.189-1.368l-1.666-1.487l-0.952-0.952l-0.893-1.249
+					l-0.654-1.963l0.119-2.677l-0.357-1.249l-0.297-1.546l0.773-0.714l0.059-3.093l-0.535-1.13h-1.368c0,0-2.379,0.059-2.736,0.059
+					s-2.439,0.536-2.439,0.536l-1.428,0.417l-0.297-0.417l0.476-0.654l0.714-0.773c0,0,0.952-0.178,1.13-0.178c0.179,0,1.487,0,1.487,0
+					l1.844-0.06l1.903-0.357h2.201l0.892-0.595l0.833-1.13l0.714-0.773h3.093c0,0,0.892-0.06,1.011-0.357
+					c0.119-0.297,0.238-1.368,0.238-1.368l1.071-0.654l0.238-1.368l0.535-0.714l1.011-0.06l0.773-1.427l0.773-0.654l1.13,0.06h1.844
+					l1.13,0.892l1.725,1.13l1.13,1.25l1.13,1.189l0.892,0.595l0.833,0.119l0.713-0.179h0.893l0.555,1.567l-0.159,0.872l0.238,1.189
+					l0.158,1.11l-0.08,1.983l-0.396,1.427l0.238,1.983l0.158,1.031v1.031l-0.079,1.507l0.317,0.396l0.159,0.793l2.142-0.159l2.855,0.08
+					h2.776l0.317,0.952l1.506,0.238l0.873,0.396l-0.159,0.714l-0.873,0.952l-0.079,1.111l0.555,1.506l0.872,1.507l0.08,2.935
+					l-0.714,0.792l-1.427,2.062L95.679,220.84z"/>
+				<text transform="translate(76, 208)">RO</text>
+			</g>
+			</a>
+		</g>
+		<g class="regiao nordeste">
+				<a href="estados.html" target="estados">
+					<g class="estado" id="MA">
+				<path d="M195.073,139.351l1.368,0.119l1.189,1.011l1.011,0.119l1.606,0.06l1.309,0.535l0.833,1.13l1.665,1.249
+					c0,0,0.833,1.13,0.833,1.309c0,0.178,0.237,1.011,0.237,1.249s0,1.249-0.178,1.309c-0.179,0.06-1.309,1.189-1.309,1.189
+					l-0.298,1.13l0.119,1.428l0.833,0.714l1.07-0.298l0.535-1.189l1.309-0.714h1.071l0.535-0.714c0,0,0.535-0.654,0.951-0.654
+					c0.417,0,2.261-0.059,2.261-0.059l0.951-0.476l0.773-0.357l1.487,0.297l1.249,0.595l1.487,0.952l1.13,0.536l1.963,0.238l1.13,0.297
+					l-0.118,1.13l-0.833,0.892l-1.309,0.714l-0.535,0.357l-1.903,0.417l-0.833,1.665l-0.952,1.666l-0.714,1.25
+					c0,0-0.118,2.141-0.118,3.212c0,1.07,0.535,2.022,0.535,2.438c0,0.417,0.416,1.666,0,2.142c-0.417,0.476-0.773,1.963-1.189,2.32
+					c-0.417,0.357-0.238,1.963-0.238,1.963l0.119,0.952l1.13,1.309l-0.238,1.725l-0.714,0.952l-1.546,0.119
+					c0,0-0.952-0.416-1.189-0.416c-0.238,0-1.487,0.059-1.487,0.059l-1.368,0.119l-0.893,0.476l-1.309,1.13l-1.13,1.189l-1.547,1.487
+					l-1.486,0.595l-2.617,0.714l-1.666,1.428l-0.773,1.784l-0.178,1.19c0,0-0.357,1.487-0.417,1.725
+					c-0.06,0.238-0.951,1.547-1.07,1.725s-0.714,2.082-0.714,2.26c0,0.179,0.119,2.142,0.119,2.142l0.416,0.952
+					c0,0,0.417,0.952,0.238,1.13c-0.179,0.179-0.119,2.558-0.119,2.558l-0.714,0.952c0,0-1.011-0.356-1.249-0.416
+					s-1.07-0.595-1.07-0.595s-0.536-1.547-0.595-1.904c-0.06-0.357-0.119-1.725-0.357-2.022c-0.238-0.298-0.773-0.654-1.07-1.071
+					c-0.298-0.417-1.131-1.368-1.131-1.546c0-0.179,0.119-1.368,0.119-1.547c0-0.178,0.714-1.666,0.714-1.666s1.309-0.535,1.547-0.654
+					c0.237-0.119,0.595-1.784,0.595-1.784v-1.546c0,0-0.179-0.238-0.595-0.714c-0.417-0.476-3.093-0.238-3.093-0.238l-1.428-0.892
+					l-1.487-1.903c0,0-0.773-1.189-0.714-1.428c0.06-0.238,0.595-2.498,0.595-2.498l0.298-5.651l-0.179-1.903l-0.595-1.249
+					c0,0-2.736-1.785-2.975-1.785c-0.237,0-1.665-0.357-1.665-0.357l-0.356-0.773l1.784-2.082l2.142-1.071l1.367-1.189l1.428-2.26
+					l1.726-2.796l1.427-2.022l1.25-1.963l0.297-1.189l0.357-1.189l0.237-1.071c0,0,0.298-0.773,0.417-0.952
+					c0.118-0.179,0.832-1.487,0.832-1.487s0.417-1.784,0.417-1.963c0-0.178,0.297-1.487,0.297-1.666c0-0.178,0.595-2.082,0.595-2.082
+					L195.073,139.351z"/>
+				<polygon points="205.75,149.751 206.25,147.584 207.084,145.584 208.667,145.584 209.584,147.251 207.917,148.584"/>
+				<text transform="translate(195, 167)">MA</text>
+			</g>
+				</a>
+				<a href="estados.html" target="estados">
+					<g class="estado" id="BA">
+				<path d="M192.991,206.922l0.119-1.904l0.832-1.784l1.309-0.714l0.833-0.833l1.071-1.19l1.07,0.238l0.714,1.07
+					l0.833,0.952l1.07,0.357l1.428,0.714l0.951-0.119l1.428-0.833l1.071-0.476h1.903l0.714-0.833l1.665-1.428l1.07-1.784l0.357-0.952
+					v-1.309l-0.238-0.476l-0.119-1.309l0.595-0.833h1.19l0.714,0.476c0,0,1.189-0.119,1.665,0c0.476,0.119,0.833,0.714,0.833,0.714
+					h1.665l1.309-0.357l1.666-0.714l2.022-0.476l1.546-0.595l0.952-1.547l1.07-0.714l1.547-0.713l0.951,0.476l0.238,0.714l0.238,1.071
+					l0.237,1.666l0.952,0.833l1.189,0.238l2.142-1.427l1.309-1.309l1.309-0.357l0.951-1.428l0.833-0.952l0.952-0.357h0.832l0.833,0.357
+					l1.189,0.476l0.952,0.357l1.546,1.07l0.833,0.714l0.952,0.714l0.951,0.714l0.476,1.666l-0.118,1.07l0.237,0.833l1.071,0.595v0.595
+					l-0.119,3.688l-0.952,0.476l-0.951,0.476v1.309l0.237,0.952l0.595,1.19l0.833,1.309l1.309,1.189l1.189,0.595l-0.595,1.785
+					l-1.784,2.141l-1.547,1.785l-1.309,1.547l-0.118-0.715l-1.071-0.713l-1.309-0.119l-1.189,0.357c0,0-0.476,0.713-0.476,1.07
+					c0,0.356,0.119,1.07,0.119,1.07v1.428l-0.596,1.189l-0.832,1.547l0.237,2.26l0.238,1.189l0.356,0.952l-0.118,1.071l-0.238,0.713
+					l0.119,3.212l0.237,2.499l-0.118,1.427l0.476,0.952v1.189l-0.238,2.142l-0.595,1.309l-0.237,1.903l-0.477,1.665l-0.595,1.071v2.022
+					l0.476,0.356v0.952l-1.665,1.546l-1.547,1.903l-0.832,0.238l-1.19-0.714l-0.595-1.189l-0.237-1.189l-0.952-0.714l-0.595-1.07
+					l-0.238-1.19l0.119-0.951l1.071-1.189l0.832-1.547l1.19-1.189l0.713-1.547v-1.784l-1.903-1.428l-1.784-0.714l-1.547-0.595h-1.665
+					h-1.665l-0.833-0.476l-0.357-0.952l-1.309-1.309l-1.07-0.595c0,0-1.309-0.238-1.784-0.238c-0.477,0-1.309-0.356-1.309-0.356
+					l-1.785-0.595l-1.427-1.189l-1.428-0.714l-0.833-0.356l-1.784-0.119l-1.309,0.237l-0.952,0.356l-0.476-0.951l-0.357-1.189
+					l-0.713-0.951l-2.022-0.357l-1.071,0.119l-1.784,0.476l-1.784,1.309l-2.142,1.071l-1.784,1.189l-1.666,0.832l-1.189,0.952
+					l0.119-1.665c0,0,0.237-1.785-0.119-2.143c-0.356-0.356-0.833-1.783-0.833-1.783l-0.832-1.309l-0.238-2.38l0.238-1.071l0.237-2.021
+					v-2.617l-0.476-1.428l-0.357-2.379l0.596-1.189l0.356-1.547l-0.595-1.903L192.991,206.922z"/>
+				<text transform="translate(218, 215)">BA</text>
+			</g>
+				</a>
+				<a href="estados.html" target="estados">
+					<g class="estado" id="PI">
+				<path d="M223.208,150.414h0.951l1.428,0.476l0.357,0.595l-0.595,0.833l-0.238,0.952l0.119,0.952l0.833,1.309
+					l0.595,1.428l0.714,1.309v1.309l0.356,1.428v2.736l0.476,4.164l0.119,1.784l0.238,1.309l0.476,2.379l0.476,1.309l0.357,0.952
+					l1.189,0.833l0.356,1.07c0,0-0.237,0.714-0.595,0.833c-0.356,0.119-0.832,1.309-0.832,1.309l0.118,1.666l0.477,1.309l0.237,1.189
+					l-0.476,1.428l-2.022,1.189l-2.022,1.546l-1.428,1.309l-1.546,1.666l-1.666,0.952l-1.665,0.119l-1.071,0.714l-1.189,0.357h-1.428
+					l-0.951-0.119l-1.428-0.476l-1.784-0.357l-0.952,0.119l-0.595,0.714l-0.833,0.952l-0.118,1.428v1.189L209.289,198l-0.714,0.952
+					l-0.951,0.952l-1.309,0.357l-1.309,0.714l-1.309,0.714l-1.309,0.476c0,0-0.477-0.357-1.19-0.476
+					c-0.713-0.119-0.713-0.119-0.713-0.119l-0.833-1.071l-0.477-0.833l-0.713-0.476h-1.547l-0.119-1.784l-0.119-1.547v-1.666
+					l-0.356-1.309l-0.238-1.903l0.595-1.546l0.714-1.309l0.833-1.903l0.476-1.903l0.357-1.309l0.714-0.714l0.951-0.714l1.071-0.357
+					l1.309-0.476l1.546-0.595l1.547-1.427l1.189-1.309l1.07-0.833l1.547-0.238l1.189-0.119l1.309,0.238h1.309l1.428-0.595l0.833-1.546
+					l0.119-1.666l-0.357-0.952l-0.595-1.071l0.238-1.546l0.237-1.189l0.477-0.952l0.713-0.952l-0.356-1.189l-0.119-1.784l-0.237-2.142
+					v-1.428l0.237-1.546l0.714-1.189l0.952-1.666l1.189-0.357l2.498-1.428l1.07-1.427L223.208,150.414z"/>
+				<text transform="translate(215, 184)">PI</text>
+			</g>
+				</a>
+			<a href="estados.html" target="estados">
+				<g class="estado" id="CE">
+				<path d="M227.609,150.533l-0.476,1.07l-0.357,0.952l0.119,1.309l0.119,0.595l0.476,0.833l0.477,0.952l0.356,0.714
+					v1.189l0.595,1.19l0.119,1.309v1.903l0.119,1.309l0.119,2.022l0.237,2.022l0.119,2.022l0.238,1.547c0,0,0.119,0.714,0.237,1.309
+					c0.119,0.595,0.833,1.903,0.833,1.903l1.189,0.595l0.477,0.833l-0.238,1.427c0,0,0.119,0.476-0.238,0.833
+					c-0.356,0.357-0.237,1.189-0.237,1.189l1.309,0.119l1.665-0.119l1.547-0.119h1.309l1.07,0.356l1.309,0.833l1.07,1.309l0.952-0.119
+					l1.189-1.189l0.714-0.833l-0.356-1.07l-0.357-0.833v-1.546l0.714-1.546l0.238-1.785l1.189-2.022l1.665-2.022l1.19-2.022l1.07-1.904
+					l0.951-1.784l1.666-1.071l-3.093-2.736l-2.617-2.022l-0.714-1.071c0,0-1.071-0.714-1.428-0.714c-0.357,0-1.547-0.714-1.547-0.714
+					l-1.665-1.189l-1.784-1.189l-1.785-0.952l-1.784-0.952h-1.903h-2.498h-1.189L227.609,150.533z"/>
+				<text transform="translate(235, 168)">CE</text>
+			</g>
+			</a>
+				<a href="estados.html" target="estados">
+					<g class="estado" id="RN">
+				<path d="M251.997,163.619h1.07l1.547,0.595l1.428,0.714l1.903,0.119h2.26h1.904l1.665,0.238l1.309,0.713
+					l0.833,1.071v0.833l0.714,1.784v1.309l0.237,1.903l-0.356,0.714h-2.022h-2.379l-1.547-0.595l-1.07-0.238l-0.714,0.238l-0.833,0.833
+					l-0.119,0.952l-0.238,1.07h-1.189l-0.595-0.833l-1.546,0.119h-0.596l-0.356-0.833l0.952-1.666v-1.189l-1.785-0.357l-1.665,0.238
+					l-0.952,0.952l-1.665,0.952c0,0-0.833,0.238-1.189,0.238c-0.357,0-1.19,0.119-1.19-0.238s1.071-1.784,1.071-1.784l0.832-1.428
+					l1.785-2.736L251.997,163.619z"/>
+				<text transform="translate(254, 171)">RN</text>
+			</g>
+				</a>
+				<a href="estados.html" target="estados">
+					<g class="estado" id="PB">
+				<path d="M245.097,175.159l-0.595,1.546l0.238,1.071l0.595,0.952l-0.238,1.427l-0.237,1.071l0.714,0.357l1.428,0.119
+					l1.903-0.357l1.546-1.071l1.903-1.189l0.714-0.119l1.903,0.357l0.238,1.189l-0.476,0.595l-0.595,2.022v0.833l0.356,0.476
+					l1.071,0.238l0.832-1.071l1.547-1.071h1.07l2.261-0.357l1.903-0.476l1.428-1.309l0.951-0.714l1.071-0.238h2.022v-1.19
+					c0,0,0.118-1.428-0.238-1.546c-0.357-0.119-0.714-1.309-0.714-1.309l-0.595-0.476l-2.855-0.476h-1.903l-1.665-0.119h-1.428
+					l-0.595,1.189l-0.952,1.309l-1.428,0.238l-1.07-0.833l-1.189,0.119l-0.833,0.476l-0.833-0.713l-0.832-1.19l0.595-1.784l0.832-1.19
+					h-1.07l-1.309,0.714l-0.595,0.952l-1.07,0.476l-0.714,0.119l-1.666,0.119L245.097,175.159z"/>
+				<text transform="translate(257, 181)">PB</text>
+			</g>
+				</a>
+			<a href="estados.html" target="estados">
+				<g class="estado" id="PE">
+				<polygon points="228.442,188.363 229.751,189.434 230.227,190.386 230.346,191.219 230.94,192.17 230.94,192.646
+					231.298,193.241 232.13,192.765 232.844,191.932 233.558,190.743 234.747,190.743 235.461,189.672 236.532,188.72 238.078,187.769
+					239.268,187.412 240.458,187.649 241.767,188.125 243.075,188.363 244.265,189.315 245.811,190.148 246.644,191.219 247.952,191.1
+					249.261,190.148 250.213,189.553 251.283,190.267 252.592,191.1 253.781,191.457 255.209,192.051 257.47,191.932 259.373,191.813
+					259.729,191.1 260.562,189.791 261.396,189.196 262.585,188.839 263.894,188.839 265.202,188.839 266.511,188.839 266.986,188.006
+					267.462,186.698 267.938,185.151 268.652,182.891 268.652,181.226 267.7,180.631 266.272,180.512 265.321,181.106 264.488,181.82
+					263.418,182.415 262.466,182.891 260.919,183.129 259.729,183.129 258.659,183.605 257.351,184.2 256.756,185.032 255.923,185.984
+					254.495,186.103 253.662,185.389 253.306,184.081 253.306,182.772 253.544,181.106 253.662,180.512 253.067,180.274
+					251.997,180.512 250.927,181.226 249.499,182.296 248.428,182.891 246.524,182.772 245.692,182.772 244.621,182.772
+					242.956,182.772 241.409,182.891 240.101,182.772 239.03,181.463 237.722,180.75 236.65,180.75 234.391,180.512 231.298,180.393
+					231.535,181.345 231.654,182.177 232.13,183.486 232.13,184.081 231.535,185.151 230.702,186.103 229.632,187.055"/>
+				<text transform="translate(245, 188)">PE</text>
+			</g>
+			</a>
+				<a href="estados.html" target="estados">
+					<g class="estado" id="AL">
+				<polygon points="248.19,193.241 249.261,193.836 250.569,194.668 251.878,195.145 253.306,195.858 254.139,196.453
+					255.209,197.048 256.518,198 257.588,198.713 258.659,199.07 259.729,198.118 261.514,196.691 263.061,194.788 264.25,193.36
+					265.083,192.527 265.559,191.1 265.797,190.148 264.013,189.672 262.466,189.91 261.396,190.267 260.801,191.932 259.492,192.646
+					257.826,192.884 255.923,192.884 254.139,192.884 253.067,192.408 251.878,191.694 251.164,191.1 250.213,191.1 249.142,191.694
+					248.547,192.527"/>
+				<text transform="translate(256, 197)">AL</text>
+			</g>
+				</a>
+				<a href="estados.html" target="estados">
+					<g class="estado" id="SE">
+				<polygon points="249.142,194.906 250.331,195.739 251.759,196.096 253.306,197.048 254.971,198 256.875,199.903
+					257.351,200.26 256.756,201.092 254.853,203.709 253.425,205.256 252.235,207.041 251.283,207.16 250.094,206.922 249.38,206.089
+					248.666,205.256 248.19,204.186 248.31,203.115 249.38,202.996 249.975,201.449 250.094,199.189 249.975,197.523 249.38,196.572
+					248.666,195.739 248.666,194.788"/>
+				<text transform="translate(250, 204)">SE</text>
+			</g>
+				</a>
+		</g>
+		<g class="regiao centro-oeste">
+			<a href="estados.html" target="estados">
+				<g class="estado" id="MT">
+				<path d="M91.357,189.871l20.382,0.317l0.555-1.348l0.714-1.983l0.158-1.982v-1.666l0.317-1.269l0.317-1.031
+					l0.555,0.08l0.317,0.396l0.158,0.952l0.714,1.349l0.635,2.141l0.396,3.331l0.952,0.952l5.314,4.362l2.141,0.317l8.645,0.317
+					l18.876,0.792l13.72,0.952l-0.079,0.714l-0.555,1.824l-1.903,5.313c0,0-0.238-0.159-0.159,2.3c0.079,2.459,0.079,7.614,0.079,7.614
+					l0.476,2.062c0,0,0.08,2.3-0.872,3.569c-0.951,1.269-1.427,3.648-1.427,3.648l-0.714,4.44l-0.794,1.27l-1.666,0.872l-1.348,1.27
+					l-1.11,1.586l-0.476,1.427l-0.952,0.556l-1.665,1.11l-1.349,1.189l-1.587,2.617l-1.428,2.062l-1.188,1.586l-1.031,1.19
+					l-0.159,1.109l-0.079,1.587l0.555,0.872l-0.078,0.555v1.349h-2.539l-0.237-0.872l0.237-1.587l-0.237-0.872l-0.634-1.27l-1.19-0.079
+					l-1.269,0.873l-0.714,0.634c0,0-1.11,0-1.586,0s-1.586-0.476-1.586-0.476l-0.952,0.159l-2.935,0.158l-1.904-0.793
+					c0,0-0.317-0.317-1.348-1.031c-1.031-0.714-1.824-0.635-2.142-0.635s-1.982-0.158-2.775,0.159c-0.793,0.316-0.396,0.396-1.19,0.396
+					c-0.793,0-1.745,0.634-1.983,0.793s-1.031,1.428-1.031,1.428l-0.476,0.873l-1.428-0.08h-0.555l-0.714-0.714l-1.666-1.031
+					l-1.349-0.316l-1.506-1.032l-0.555-0.792l-0.396-2.696v-1.032l0.634-0.476l0.238-1.03v-0.873l-12.214-0.079l-0.238-2.3l-0.476-2.3
+					l-0.396-0.556l-0.714-0.555l-0.396-1.031h1.348l0.238-1.665l-0.317-2.38l-0.634-0.951l-0.634-4.203l-0.793-0.635l0.952-0.873
+					l3.569-5.234l0.079-4.917l-0.713-0.952l-0.397-1.349l0.238-1.031c0,0,0.476-1.507,0.238-1.824
+					c-0.238-0.317-0.476-0.714-0.713-0.952c-0.238-0.238-2.062-0.714-2.062-0.714s-1.903-0.714-2.142-0.714
+					c-0.238,0-5.393,0.08-5.393,0.08l0.158-3.172l-0.713-1.348l0.396-1.666L91.357,189.871z"/>
+				<text transform="translate(127, 220)">MT</text>
+			</g>
+			</a>
+			<a href="estados.html" target="estados">
+				<g class="estado" id="MS">
+				<path d="M116.26,248.479l0.397,1.824c0,0,0.873,1.109,0.952,1.428c0.079,0.317,0.079,1.586,0.079,1.586l-1.11,1.269
+					l-0.159,2.062c0,0,0.396,1.587,0.317,1.824c-0.079,0.238-1.269,1.823-1.269,1.823l-1.11,1.27l-0.159,1.19l0.952,1.189l-0.714,1.428
+					c0,0-0.396,0.792-0.476,1.109c-0.08,0.318,0.396,1.03,0.396,1.428c0,0.396,0.635,1.745,0.635,1.983
+					c0,0.237,0.396,1.269,0.396,1.269v2.142l0.238,2.934v1.745l2.379,0.238l0.555,0.158h3.014l3.41-0.079l2.221,0.476l1.507,0.477
+					l0.872,0.872l0.714,1.428l0.317,1.903v1.744l0.555,0.477l0.634,1.03l0.159,1.428l0.317,1.903l0.555,0.714l1.904-0.158l0.952-0.556
+					l1.11-0.555l1.428,0.079l0.634,0.714l0.873,0.158l0.634-0.792l0.159-1.825l1.428-1.11l0.238-1.109l0.873-1.11l1.031-1.19
+					l3.172-1.665l1.19-1.189l1.982-1.824l3.172-2.459c0,0,0.001-1.03,0.08-1.269c0.079-0.237,0.872-1.189,0.872-1.189l0.158-1.428
+					l1.111-1.745l1.665-2.3l1.269-1.665l1.269-1.032l0.556-0.396v-4.68l-1.824-0.555l-2.458-0.794c0,0-2.617-1.349-3.015-1.665
+					c-0.396-0.317-1.507-0.793-1.824-1.031c-0.316-0.237-1.585-0.316-1.982-0.316c-0.396,0-1.269,0.158-1.665-0.159
+					c-0.397-0.316,0-2.538,0-2.538s-1.429-0.396-1.587-0.714c-0.158-0.316,0.159-0.714-0.316-0.951
+					c-0.477-0.238-1.665-0.238-2.221-0.238s-1.903,0-1.903,0l-0.476-1.507l0.634-0.714l0.396-0.951l0.317-1.189l-0.634,0.237
+					l-0.397,0.317l-1.348,0.556h-1.507c0,0-1.507,0.079-1.745,0.079c-0.238,0-1.745,0.158-1.745,0.158s-1.348,0-1.824,0
+					c-0.476,0-1.189,0.08-1.666-0.237c-0.476-0.318-1.427-0.634-1.665-0.714c-0.238-0.08-1.824-1.11-1.824-1.11
+					s-0.634-0.317-0.952-0.317s-1.666,0.238-1.903,0.238s-1.983,0.634-1.983,0.634l-1.031,0.794l-1.031,0.792l-1.031,1.031l-0.793,0.08
+					c0,0-1.189-0.158-1.507-0.238S116.26,248.479,116.26,248.479z"/>
+				<text transform="translate(133, 268)">MS</text>
+			</g>
+			</a>
+			<a href="estados.html" target="estados">
+				<g class="estado" id="GO">
+				<path d="M165.907,216.359l1.428,0.873l1.348,1.031l1.349,0.237l1.349,1.269l1.665,0.477l0.317-2.142l1.03-0.635
+					l2.38-0.079l0.237,1.428l0.318,1.031l0.951,0.158l1.666-0.158l1.348,0.158l1.11,0.635l0.555,0.316l1.746,0.08v-0.873l1.665-0.396
+					l1.189-0.713l1.666-0.396l1.665-0.477l1.428-0.317l0.951,0.079l0.079,2.459l-0.555,0.317l0.158,4.204l0.556,0.713l0.714,0.952
+					l0.476,0.317v2.617l-0.158,0.476l-0.714-0.079l-0.873-0.714l-0.952-0.397l-1.03,0.08l-0.317,0.952v0.793l-1.427,0.316l-0.952,0.159
+					v1.03v2.222l0.317,0.872v0.476l0.158,0.951l-1.031,0.08l-1.507,0.158l-0.872,1.666l-0.317,1.27l-0.079,1.269l0.317,1.03
+					l0.476,0.556l0.635,0.952l0.079,0.714l-0.952,0.793l-0.872,0.951l-0.317,0.873l0.159,0.951l0.714,0.317l0.316,0.555v1.428v0.714
+					l-0.951,0.714l-1.189,0.635l-0.873,0.951l-0.238,0.635l-0.871-0.476l-1.508-0.318h-1.823l-2.062-0.078c0,0-1.031,0.237-1.269,0.237
+					c-0.238,0-1.428,0.397-1.428,0.397l-0.952,0.792l-1.903-0.158l-2.538,0.396c0,0-1.11,0.238-1.349,0.238
+					c-0.237,0-1.348,1.11-1.348,1.11l-1.189,1.428l-0.873,0.951l-1.427,1.666l-1.507-1.111l-1.666-0.872c0,0-0.951-0.555-1.348-0.555
+					c-0.397,0-1.982-0.952-2.221-0.952s-1.349-0.873-1.587-0.951c-0.237-0.079-0.635-0.635-1.349-0.873
+					c-0.713-0.238-1.506-0.555-1.506-0.555l-0.714-0.793l-0.159-0.873l-1.189-0.714l-0.317-1.427v-1.27l-0.237-1.11l-0.238-2.22
+					l1.03-2.301l1.19-0.635l1.189-1.03l0.556-1.666l2.3-2.696l1.348-0.476l1.507-0.635l0.238-0.793l0.635-1.745l1.189-1.666l1.03-0.476
+					l1.428-1.109l0.477-1.349l0.713-3.093l0.873-1.666l0.397-1.666c0,0,0-1.03,0.316-1.665c0.317-0.635,0.396-2.142,0.714-2.3
+					c0.316-0.158,0.635-1.666,0.635-1.666L165.907,216.359z"/>
+				<text transform="translate(164, 245)">GO</text>
+			</g>
+			</a>
+			<a href="estados.html" target="estados">
+				<g class="estado" id="TO">
+				<path d="M178.478,166.236l1.784,0.238l1.428,0.595l1.784,0.714l0.596,1.189l0.595,2.379l-0.238,2.617l-0.119,2.379
+					l-0.476,1.189l-0.476,1.19l0.118,1.309l1.428,0.952l0.833,1.189l1.07,1.309l1.785,0.833h1.784l0.476,1.309l-0.595,1.07
+					l-1.189,0.595l-0.833,1.07l-0.237,1.309l-0.238,1.309l0.595,0.952l1.07,1.428l0.714,1.071l0.238,1.309l0.356,1.07l0.833,1.309
+					l0.714,0.595l1.07,0.713l1.309,0.238l0.477,0.714l-0.833,0.595l-1.07,1.189l-0.714,1.071l-0.833,1.428l-0.119,1.784v1.071
+					l1.428,0.952c0,0,0.119,0.238,0,0.714c-0.119,0.476,0,2.498,0,2.498l-0.595,0.833v1.427l0.476,0.833l-0.119,1.428l-0.951,0.119
+					l-2.855,1.189l-2.022,0.476l-2.379,0.356l-1.309,0.238l-0.238,0.714l-1.784-0.952l-1.189-0.476l-1.071-0.476l-1.189-0.714
+					l-0.951-0.952h-0.952l-1.903,0.119l-1.309,0.952l-0.595,1.189l-1.428-0.476l-1.189-0.477l-0.833-0.951l-1.07-1.903
+					c0,0,0.237-0.952-0.238-0.952s-1.784,0.952-1.784,0.952l-0.595-2.142v-3.926l0.476-4.283l1.189-3.45l1.071-2.022l0.476-2.142
+					l0.238-2.498l0.713-1.428l1.904-2.022l0.951-0.952l0.952-1.427l0.714-1.547l0.476-2.022v-1.428l-0.476-1.666l0.118-1.784
+					l0.477-2.022l1.784-0.952l1.665-1.428l1.19-1.309l0.713-1.785l0.477-2.022v-1.784l-1.071-1.309L178.478,166.236z"/>
+				<text transform="translate(176, 205)">TO</text>
+			</g>
+			</a>
+			<a href="estados.html" target="estados">
+				<g class="estado" id="DF">
+				<rect x="177" y="233" width="9" height="6"></rect>
+				<text transform="translate(178, 238)">DF</text>
+			</g>
+			</a>
+		</g>
+		<g class="regiao sul">
+			<a href="parana.html" target="estados">
+				<g class="estado" id="PR" style="fill:#fff;">
+				<polygon class="parana" style="fill:#60286D" points="140.449,291.465 140.449,294.479 140.29,296.858 140.29,299.476 139.259,300.665 138.783,300.981
+					139.338,301.299 140.052,301.299 140.607,300.823 141.083,301.061 142.035,302.568 142.59,303.678 142.908,305.186
+					144.414,305.899 146.238,306.216 147.983,306.375 149.887,306.454 151.79,306.692 152.504,307.247 154.169,307.723
+					156.707,308.278 158.689,308.357 159.244,307.803 159.324,306.93 159.801,305.899 161.704,305.819 162.734,305.74 163.607,304.789
+					164.241,304.233 165.906,304.233 168.128,304.233 169.872,304.233 170.27,305.105 171.062,305.503 171.854,305.424 172.887,304.63
+					173.917,304.392 175.027,304.392 176.296,304.392 177.089,304.867 177.645,304.867 178.121,303.996 178.438,302.885
+					179.23,302.093 179.469,301.379 180.024,300.981 179.944,299.792 179.23,299.237 178.2,299.237 177.248,299.157 176.852,298.841
+					176.931,297.65 176.931,296.699 172.489,296.699 172.093,294.955 171.935,293.209 171.221,292.02 170.189,291.147 170.11,290.116
+					169.872,287.896 169.713,286.151 168.683,285.12 167.334,284.962 162.418,284.882 161.228,284.089 160.435,283.613
+					159.482,283.375 158.689,283.217 156.47,283.059 153.932,282.899 153.059,282.899 151.314,282.899 149.966,282.979
+					148.459,282.979 147.666,282.979 146.317,283.613 144.969,284.724 143.621,285.992 143.146,287.104 141.559,288.848
+					141.004,289.958"/>
+				<text transform="translate(154, 298)">PR</text>
+			</g>
+			</a>
+			<a href="estados.html" target="estados">
+				<g class="estado" id="SC">
+				<path d="M143.78,307.328v1.744l0.079,1.744l0.158,0.952l1.348,0.08h1.746l1.585,0.079l1.746,0.237l2.379,0.635
+					l1.428,0.634l1.109,0.238l1.428,0.476l1.27,0.318l1.031,0.555l5.551,5.313l1.189,0.396l1.587-0.079h1.744
+					c0,0,0.477-0.237,0.635,0.238c0.159,0.476,0.477,1.03,0.477,1.03l-0.159,0.952l-0.396,0.873l-0.951,1.03l-0.396,0.873l0.951,0.237
+					l0.952,0.396l0.635-0.952l1.348-1.189l1.189-1.03l2.142-1.111c0,0,0.556-0.476,0.635-0.792c0.078-0.317,0.635-2.301,0.635-2.301
+					l0.476-1.744l0.158-1.903v-1.825l-0.079-2.141c0,0,0-1.586,0-1.824c0-0.237-0.079-1.983-0.079-1.983l-0.238-1.109l-1.428-1.11
+					h-1.27l-1.03,0.396l-0.635,0.555l-0.714,0.159l-1.348,0.396l-0.714-0.317l-0.476-0.555l-0.476-0.556l-1.19,0.08l-1.031,0.078
+					l-1.586,0.238h-1.031l-0.872,0.952l-0.714,0.555l-1.349-0.079l-0.476,0.476l-0.714,0.952l-0.396,0.872h-0.952h-1.109l-1.189-0.158
+					l-1.666-0.159l-1.586-0.396l-1.349-0.476l-1.269-0.396l-1.269-0.159h-0.873l-1.982-0.316l-1.507-0.159L143.78,307.328z"/>
+				<text transform="translate(164, 315)">SC</text>
+			</g>
+			</a>
+				<a href="estados.html" target="estados">
+					<g class="estado" id="RS">
+				<path d="M118.401,332.865l1.269-0.158l1.11-0.714l1.269-0.476l1.19,0.237l1.11,1.19l1.824,1.585l1.507,1.666v1.031
+					l0.634,0.714l0.873-0.238l1.031-0.556l0.714-0.396l0.793,0.714l0.476,0.555l0.714,0.951l1.031,0.873l1.189-0.238l1.031,1.031
+					l1.19,0.555l0.873,0.635l1.031,1.189l0.793,1.031l1.19-0.079l1.269,0.951l0.238,0.793l0.873,0.794l0.873,1.189
+					c0,0,0.316-0.001,0.555,0.158s1.189,0.794,1.189,0.794l0.635,0.714l-0.08,1.823l-0.633,0.872c0,0-1.032,0.556-1.032,0.793
+					c0,0.238-0.079,3.252-0.079,3.252l0.793-0.635l1.189-0.871l1.665-0.794l0.714-1.348l1.349-1.428l0.477-2.062l0.714-1.982
+					l0.713-1.189v-2.062l0.714-1.189l0.952-0.793l0.079-1.824l1.745-0.396l0.872-0.634l0.237-1.904l1.111-0.793l0.793-3.331
+					l0.713-0.396l1.111,0.317l0.079,0.555l0.872,0.317l0.635-0.713l0.872-0.238h1.189l-0.079,1.903l-0.792,0.793l-0.952,1.349
+					l-1.666,1.506l-0.793,1.428l-0.714,1.111l-1.586,1.03l-1.745,1.11c0,0-1.031,0.476-1.269,0.634
+					c-0.238,0.159-0.873,0.557-0.873,0.557l0.08,0.951l0.634-0.08l0.873-0.079l1.349-0.635l1.585-1.189l1.508-1.428l1.507-1.428
+					l1.665-1.903l1.903-2.617l1.189-2.22l1.349-2.776l0.556-1.507l0.792-1.824l-0.714-0.476l-1.03-0.238l-0.159-1.507l0.635-1.586
+					l0.873-1.348v-0.635l-2.142,0.159l-1.745-0.397l-1.269-0.316l-1.666-1.666l-0.951-1.11l-1.269-1.189c0,0-1.348-0.793-1.666-1.031
+					c-0.317-0.237-1.824-0.635-1.824-0.635s-1.665-0.635-2.142-0.714c-0.476-0.078-1.903-0.078-2.379-0.316s-2.458-0.556-2.696-0.635
+					s-1.429-0.634-2.935-0.555c-1.507,0.079-3.41,0.079-3.965,0.079s-1.745,0-1.745,0l-1.189,0.872l-1.349,0.952l-1.824,0.871
+					l-1.428,0.873l-1.269,0.793l-1.269,0.714l-14.117,14.275L118.401,332.865z"/>
+				<text transform="translate(142, 331)">RS</text>
+			</g>
+				</a>
+		</g>
+		<g class="regiao suldeste">
+		<a href="saopaulo.html" target="estados">
+			<g class="estado" id="SP" style="fill:#fff">
+				<path class="sampa" style="fill:#60286D" d="M149.648,281.234l2.301,0.158l2.379,0.158h1.903l1.824,0.159l1.428,0.316l1.507,0.952l1.11,0.317h2.221
+					h1.744h2.062l1.11,0.238l0.476,0.714l0.714,0.714l0.634,0.634l0.318,0.873v1.269v0.951l0.079,1.032l0.316,0.792l0.397,0.159
+					l0.237,0.793l0.556,0.714l0.158,0.872l-0.079,1.27l0.079,0.713l1.666,0.079h2.22l0.714,0.159l0.397,0.793l0.079,1.11l0.237,0.476
+					l1.11,0.079l1.111,0.397l0.237,0.396l0.793-0.238l0.793-1.27l1.665-0.951c0,0,0.793-0.634,0.952-0.872
+					c0.159-0.237,2.459-1.586,2.459-1.586l1.507-1.349l0.873-0.714l1.585-0.634l1.11-0.397l0.873-0.158l1.031-1.031l4.044-0.079
+					l0.635-1.11l1.824-1.11l0.951-0.396l1.587-0.158l1.03-0.238l-0.079-0.714l0.079-0.714l0.952-0.951v-1.428h-1.189l-1.19-0.793
+					h-1.427l-1.348,0.555l-1.27,0.476l-1.11,0.556l-1.349,0.476c0,0,0,0.634-0.237,0.714c-0.238,0.08-2.301,0.08-2.301,0.08
+					l-1.823,0.078l-0.873-0.396l-0.714-1.428l-0.316-1.03c0,0-0.396-1.031-0.476-1.269c-0.08-0.238-0.08-1.824-0.08-1.824l-0.079-1.666
+					l0.079-1.11l0.237-1.11l-1.189-0.317c0,0-1.189,0-1.428-0.476c-0.237-0.477-0.951-1.428-0.951-1.666
+					c0-0.237-0.396-1.188-0.396-1.585c0-0.397-0.079-1.27-0.079-1.825c0-0.555-0.079-0.872-0.079-1.11s-0.556-1.586-0.556-1.586
+					l-0.872-0.635l-1.189-0.158l-0.952,0.237l-2.062,0.397h-2.537l-1.031,0.079l-0.477,1.031l-0.316,0.793l-1.189-0.555l-1.428-0.556
+					l-0.793-1.19c0,0-0.477-0.714-1.031-0.792c-0.555-0.079-1.19-0.079-1.982-0.079c-0.793,0-3.015,0-3.015,0l-1.506-0.477
+					l-0.952-0.079l-0.952,0.476l-1.348,0.714l-0.952,1.27l-1.823,1.428l-1.428,1.744l-0.396,1.189l-1.031,1.507l-0.159,1.27
+					l-0.714,1.109l-0.078,1.032l-0.714,1.189l-1.428,1.03l-1.508,1.349L149.648,281.234z"/>
+				<text transform="translate(173, 281)">SP</text>
+			</g>
+			</a>
+			<a href="estados.html" target="estados">
+				<g class="estado" id="RJ">
+				<path d="M204.928,281.075l2.141-1.269l1.27-0.238l2.379-0.159l1.586-0.396h0.872h1.189l1.587-0.476l1.349-0.714
+					l0.714-0.318l0.871-0.396l0.635-0.635l0.873-1.031l0.317-1.427l0.316-1.032l0.08-0.951l1.109-0.714l0.477,0.317l0.396,0.872
+					c0,0,0.635,0.316,0.873,0.476c0.237,0.159,1.269,0.318,1.269,0.318h1.665h0.714l0.079,2.537l0.396,0.714l-0.078,0.714l-0.714,0.476
+					l-1.27,0.714l-0.556,0.317l-1.11,0.317l-1.03,0.793l-0.555,1.031l-0.714,1.109l-0.397,0.635v0.873l-1.506,0.158c0,0-2.142,0-2.38,0
+					s-1.903,0-1.903,0l-0.714-0.634v-0.794h-1.11l-0.793,0.08v1.269l-0.556,0.635c0,0-1.903-0.08-2.142-0.08
+					c-0.237,0-1.109-0.316-1.109-0.316l-1.189-0.317l-0.635,0.714l-0.635,0.238l-0.396-0.714l0.476-1.111l-0.317-0.872l-0.793-0.317
+					L204.928,281.075z"/>
+				<text transform="translate(216, 282.5)">RJ</text>
+			</g>
+			</a>
+				<a href="estados.html" target="estados">
+					<g class="estado" id="MG">
+				<path d="M162.358,262.597l0.06,0.714l2.081-0.06h2.022l2.142,0.119l2.855,0.06l1.428,0.714l0.654,0.713l0.595,0.714
+					h1.13l0.356-0.476c0,0,0.298-0.416,0.714-0.416c0.417,0,1.487,0.06,1.903,0c0.417-0.06,0.893-0.357,1.131-0.357
+					c0.237,0,1.844-0.178,1.844-0.178s1.309-0.238,1.487-0.238c0.178,0,1.605,0,1.605,0l1.012,0.356l0.595,0.595l0.595,0.714
+					l0.356,1.249l0.357,1.309v1.309l0.297,1.131l0.179,0.595l0.476,0.773l0.714,0.832l0.833,0.477l0.714,0.178l0.892,0.417l0.298,0.833
+					l-0.06,1.011l-0.119,0.952l-0.356,0.832v1.189l0.06,1.131l0.356,0.951l0.298,0.535l0.535,0.833l0.06,0.833l0.119,0.595h1.011
+					l1.487-0.06l0.297-0.773l0.654-0.832l1.012-0.357l0.356,0.357c0,0,0.833,0.059,1.012-0.06c0.178-0.119,0.714-0.417,0.714-0.417
+					l1.309-0.416l0.951-0.535l0.773-0.417l1.547-0.356l1.309-0.298l0.892-0.356l0.952-0.298l1.368-0.297l1.309-0.179l0.892-0.179
+					l1.012-0.118h1.784l1.249-0.06l1.309-0.477c0,0,1.368-0.595,1.368-0.772c0-0.179,1.309-1.012,1.309-1.012l0.714-1.011l0.595-1.487
+					l0.535-1.428l0.477-0.893l0.595-1.07l0.654-0.833l0.356-1.189l0.417-1.368l0.772-0.951l1.785-0.06l0.476-0.773l0.595-1.428
+					l0.773-1.011c0,0,0.06-0.773,0.06-1.071c0-0.297,0.416-2.022,0.416-2.022l-0.238-1.011l-0.416-0.535l0.179-1.249l0.595-0.357
+					l-0.06-1.07l-0.654-0.476c0,0,0.06-0.833,0.06-1.071c0-0.237,0.535-1.189,0.535-1.189l0.298-0.476c0,0,0.06-0.833,0.476-1.071
+					c0.416-0.237,0.833-0.356,0.833-0.356l0.476-0.06l0.535,0.119h1.368h0.952l0.118-0.535l-1.309-1.19c0,0-0.772-1.13-0.832-1.309
+					c-0.06-0.178,0.118-1.963,0.118-1.963l0.298-1.784l0.654-0.356h1.011l0.119-0.952l0.477-1.13l0.654-0.773l0.595-0.714l0.06-1.428
+					l-1.487-0.714l-1.071-0.476l-1.249-0.476c0,0-0.772,0-0.951,0s-1.309,0-1.309,0h-0.833l-0.893,0.356h-0.772l-0.238-0.832
+					l-0.238-1.19l-0.951-0.832l-0.595-0.773l-0.654-0.298c0,0-0.833-0.119-1.071-0.119c-0.237,0-1.309,0-1.309,0l-0.595-0.059
+					l-1.07-0.417l-2.082-1.13l-1.368-1.07l-1.011-0.833c0,0-0.714-0.06-0.952-0.06s-1.13,0.119-1.13,0.119l-0.119,0.595l-0.833,0.06
+					l-1.428-0.06l-1.011-1.071l-0.298-0.713l-0.297-0.654l-0.833-0.535l-1.07-0.18l-1.071,0.061l-2.141,1.486l-3.629,2.32l-3.271,1.605
+					l-1.487,0.477l-0.951,0.416l-0.119-1.606c0,0-0.714-0.832-0.893-0.832c-0.178,0-1.13,0-1.13,0l-0.714,0.892l-1.011,0.357
+					l-0.595,0.178l0.06,1.726l0.356,1.249l-0.06,1.368l-0.237,1.011l-1.071,0.595l-0.951-0.118l-1.012,0.476l-0.119,1.07l-0.118,1.784
+					l0.595,0.833l0.118,1.012l0.119,1.07l-0.119,1.011l-0.892,0.654l-0.417,0.773l0.179,0.952l0.476,0.238l0.179,1.011l-0.237,1.368
+					l0.178,1.13c0,0-0.356,0.357-0.476,0.714c-0.119,0.357-1.13,1.309-1.13,1.309l-1.368,0.535l-1.13,1.071l-0.654,0.714l-0.773-0.893
+					c0,0-0.952-0.654-1.249-0.654c-0.298,0-1.19,0-1.19,0h-1.784l-1.605-0.06l-0.952,0.179l-0.654,0.773l-0.951,0.356l-1.368,0.119
+					l-1.249,0.237l-1.606,0.238l-1.189,0.06c0,0-0.714,0.06-0.893,0.238c-0.179,0.178-0.893,0.416-1.07,1.011
+					c-0.179,0.595-1.726,2.379-1.726,2.379s-1.13,1.428-1.309,1.726C162.358,261.645,162.358,262.597,162.358,262.597z"/>
+				<text transform="translate(199, 258)">MG</text>
+			</g>
+				</a>
+			<a href="estados.html" target="estados">
+				<g class="estado" id="ES" >
+				<path d="M223.962,271.479l0.951,0.397l0.872,0.396l2.538-0.317l0.635-0.714l0.793-0.793l0.635-0.873l1.03-1.269
+					l0.952-1.349l0.476-0.871l0.635-1.666l0.317-1.508l1.586-0.792c0,0,0.555-0.318,0.555-0.635c0-0.317,0.238-1.982,0.238-1.982
+					l0.238-2.696v-2.062l-0.555-1.587l-1.032-0.634l-1.189-0.872l-0.952-0.238h-1.823l-0.794,0.317l-0.713,0.476l-0.714,0.556v0.951
+					l0.079,0.872l0.158,1.189l0.477,1.032l-0.477,0.714l-0.079,0.634v1.189l-0.237,1.508l-0.477,1.823l-0.476,1.031l-0.793,0.952
+					l-0.396,1.03l-0.396,0.714l-1.269,0.238l-0.952,0.476l-0.079,1.349l-0.08,1.348l-0.158,1.508L223.962,271.479z"/>
+				<text transform="translate(228, 266)">ES</text>
+			</g>
+			</a>
+		</g>
+	</g>
 </svg>
 
-            </div>
+			</div>
 
-            <div class="container">
-                <div class="col-md-4">
-                <iframe src="estados.html" id="estados" name="estados" widht="100%" height="399" frameborder="0"></iframe>
-            </div>
-            </div>
-        </div>
-                
-        </div>
+			
+				<div class="col-md-4" data-animation="bounce" data-animation-delay="03" style="padding: 0; margin: 0">
+				<iframe src="estados.html" onload="resizeIframe(this)" id="estados" name="estados" frameborder="0" style="width:100%; padding: 0; margin: 0"></iframe>
+		   
+			</div>
+		</div>
+				
+		</div>
 
-        <!-- Contact -->
-        <section id="contato" class="contact" style="background:#60286d; color:#fff">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <header class="section-header">
-                            <h3 class="">Saiba quais taxas pagará. Sem surpresas!</h3>
-                            <p style="color:#fff">Enviaremos taxas justas de acordo com sua atividade.</p>
-                        </header>
-                    </div>
-                </div>
-                <div class="row" style="">
-                    <div class="col-md-7">
-                        <article class="form-detached">
-                            <form action="php/contact-form.php" id="contact-form">
-                                <div class="alert alert-success hidden" id="contact-alert-success">
-                                    <strong>Success!</strong> Thank you for your message. Reply will be in a while!
-                                </div>
-                                <div class="alert alert-danger hidden" id="contact-alert-error">
-                                    <strong>Error!</strong> Something went wrong sending your message.
-                                </div>
-                                <div class="form-group">
-                                    <label class="sr-only" for="name"></label>
-                                    <input type="text" class="form-control" value="" placeholder="Name" data-msg-required="Please enter your name." name="name" id="name">
-                                </div>
-                                 <div class="form-group">
-                                    <label class="sr-only" for="name"></label>
-                                    <input type="mail" class="form-control" value="" placeholder="Email" data-msg-required="Please enter your name." name="email" id="email">
-                                </div>
-                                 
-                                 
-                                
-                            
-                        
-                    </div>
-                    <div class="col-md-5">
-                                <div class="form-group">
-                                    <label class="sr-only" for="email"></label>
-                                    <input type="email" value="" placeholder="E-mail" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." class="form-control" name="email" id="email">
-                                </div>
-                                 <div class="form-group">
-                                    <label class="sr-only" for="email"></label>
-                                    <input type="tel" value="" placeholder="Telefone ou Celular" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." class="form-control" name="email" id="email">
-                                </div>
-                               
-                       </form> 
-                    </div>
-                </div>
-                <div class="container" style="margin: 0; padding:0; width: 100%">
-                    <div>
-                        <div class="form-group">
-                            <label class="sr-only" for="name"></label>
-                            <input type="mail" class="form-control" value="" placeholder="Segmento" data-msg-required="Please enter your name." name="seguimento" id="segmento" style="width:">
-                        </div>
-                    </div>
-                    <div class="col-md-6" style="">
-                        <div class="form-group" style="text-align:left">
-                                    <label class="sr-only" for="name"></label>
-                                    <span>Qual é a média de faturamento mensal do seu negócio?</span><br>  
-                                    <ul class="list-inline">
-                                        <li><input type="checkbox" aria-label="..."> Até 30 mil</li>
-                                        <li><input type="checkbox" aria-label="..."> Até 30 mil</li>
-                                        <li><input type="checkbox" aria-label="..."> Até 30 mil</li>
-                                        <li><input type="checkbox" aria-label="..."> Até 30 mil</li>
-                                </ul> 
-                            </div>
-                    </div>
-                    <div class="col-md-6" style="">
+		<!-- estados responsivo-->
+		<div class="container-fluid visible-xs" style="background:#fff; color: #000; padding-top: 50px; padding-bottom: 50px">
+			<div class="container-fluid" style="text-align: center">
+				<h3>Atendimento quando e como você quiser</h3>
+				<ul class="list-unstyled">
+				<hr>
+				<h4>Paraná</h4>
+					<li>Joao da silva<br><span style="font-size: 10px">00 0000-0000</span></li>
+					<li>Gabriel Pereira<br><span style="font-size: 10px">00 0000-0000</span></li>
+				</ul>
+				<hr>
+				<ul class="list-unstyled">
+				<h4>Sao Paulo</h4>
+					<li>Joao da silva<br><span style="font-size: 10px">00 0000-0000</span></li>
+					<li>Gabriel Pereira<br><span style="font-size: 10px">00 0000-0000</span></li>
+				</ul>
+			</div>
+		</div>
 
-                                <a href="#" class="btn btn-default load-more" role="button" style="background:transparent; color: #fff; border:1px solid #ccc; border-radius: 5px; font-size: 28px; padding-top:0; margin:0; width:100%">Enviar</a>
-                    </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer" style="background:#54205F; color:#fff; border:none">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                       
-                        <div class="col-md-4">
-                        <h2 style="text-align: left; opacity: 0.5">Links</h2>
-                            <ul class="list-unstyled" style="font-size:12px; text-align: left">
-                                <li><a href="" style="color:#fff">OS PRODUTOS</a></li>
-                                <li><a href="" style="color:#fff">AS TAXAS</a></li>
-                                <li><a href="" style="color:#fff">DUVIDAS FREQUENTES</a></li>
-                                <li><a href="" style="color:#fff">CONTATO</a></li>
-                            </ul>
-                        </div>
-                         <div class="col-md-4">
-                         <h2 style="text-align: left; opacity: 0.5">Informações</h2>
-                            <ul class="list-unstyled" style="text-align: left">
-                                 <li><a href="#" class="fa fa-phone-square fa-1x" style="color:#fff"></a><span style="color:; font-size:12px"> 44 9165-4301</span></li>
-                                 <li><a href="#" class="fa fa-comments-o fa-1x" style="color:#fff"></a><span style="color:; font-size:12px"> contato@onpago<wbr>.com.br</span></li>
-                                 <li><a href="#" class="fa fa-phone fa-1x" style="color:#fff"></a><span style="color:; font-size:12px"> 11 3522-3532</span></li><br>
-                                 <li style="font-weight: 900">Central de relacionamento PAGO: </li>
-                                 <li><a href="#" class="fa fa-phone fa-1x" style="color:#fff"></a><span style="color:; font-size:12px"> 0800 940 3029</span></li>
-                            </ul>
-
-                        </div>
-                        <div class="col-md-4">
-                        <h2 style="text-align: left; opacity: 0.5">Redes sociais</h2>
-                            <ul class="list-inline" style="color:#fff; text-align: left">
-                            <li><a href="#" class="fa fa-facebook fa-1x" style="color:#fff"></a></li>
-                            <li><a href="#" class="fa fa-twitter fa-1x" style="color:#fff"></a></li>
-                            <li><a href="#" class="fa fa-pinterest fa-1x" style="color:#fff"></a></li>
-                            <li><a href="#" class="fa fa-flickr fa-1x" style="color:#fff"></a></li>
-                        </ul>
-                        </div>
-                       
-                    </div>
-                </div>
-                
-            </div>
-           
-        </footer>
-         <div class="container-fluid" style="padding-top:50px;padding-bottom:50px; background:#411949; width: 100%">
-
-                    <img src="img/logo2.png" width="50" class="center-block" data-animation="zoomInLeft" data-animation-delay="01">
-                </div>
+		<!-- Contact -->
+		<section id="contato" class="contact" style="background:#60286d; color:#fff">
+		<div>
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-        <script src="js/vendor/fastclick.js"></script>
+			<div class="container" data-animation="flipInY" data-animation-delay="02">
+				<div class="row">
+					<div class="col-md-12">
+						<header class="section-header">
+							<h3 class="">Saiba quais taxas pagará. Sem surpresas!</h3>
+							<p style="color:#fff">Enviaremos taxas justas de acordo com sua atividade.</p>
+						</header>
+					</div>
+				</div>
 
-        <script src="js/bootstrap.min.js"></script>
-
-        <script src="js/vendor/jquery.appear.js"></script>                  <!-- jQuery Appear -->
-        <script src="js/vendor/jquery.easing.1.3.js"></script>              <!-- jQuery Easing -->
-        <script src="js/vendor/imagesloaded.pkgd.min.js"></script>          <!-- Imagesloaded -->
-        <script src="js/vendor/isotope.pkgd.min.js"></script>               <!-- Isotope -->
-        <script src="js/vendor/slick.min.js"></script>                      <!-- Slick carousel -->
-        <script src="js/vendor/jquery.countTo.js"></script>                 <!-- Count To -->
-
-        <script src="js/main.js"></script>
-
-        <script src="js/vendor/jquery.validate.min.js"></script>            <!-- jQuery Validate -->
-        <script src="js/contact.js"></script>
-              <script src="slick/slick.min.js"></script>
-      <script>
-          jQuery(function () {
-              // Init page helpers (Slick Slider plugin)
-              App.initHelpers('slick');
-          });
-          $('.autoplay').slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            centerMode: true,
-            variableWidth: true
-          });
+				<div class="col-md-4" style="">
+					<ul class="list-unstyled esp" style="padding-top: 20px">
+						<li class="con"><a href="contato1.html" target="contat" class="btn btn-default" style="background: #54205F;border:none;border-radius:4px; color: #fff; width: 100%;padding-bottom: 30px; padding-top: 30px">Contato para duvidas</a></li>
+						<li class="con"><a href="contato2.html" target="contat" class="btn btn-default" style="background: #54205F;border:none;border-radius:4px; color: #fff; width: 100%;padding-bottom: 30px; padding-top: 30px">Contato para compras</a></li>
+						<li class="con"><a href="contato3.html" target="contat" class="btn btn-default" style="background: #54205F;border:none;border-radius:4px; color: #fff; width: 100%;padding-bottom: 30px; padding-top: 30px">Contato para outros</a></li>
+					</ul>
+				</div>
+				<div class="col-md-8" style="">
+					<iframe src="contato1.html" onload="resizeIframe(this)" id="contat" name="contat" scrolling="no" style="width: 100%; height: 100%" frameborder="0"></iframe>
+				</div>
 
 
 
-      </script>
 
-        <!--<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-        <script src="js/vendor/gmap3.min.js"></script>
-        <script src="js/mymap.js"></script> -->
 
-    </body>
+
+
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer" style="background:#54205F; color:#fff; border:none">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+					   
+						<div class="col-md-4" data-animation="fadeIn" data-animation-delay="01">
+						<h2 style="text-align: left; opacity: 0.5">Links</h2>
+							<ul class="list-unstyled" style="font-size:12px; text-align: left">
+								<li><a href="#home" style="color:#fff">Home</a></li>
+								<li><a href="#servicos" style="color:#fff">Serviços</a></li>
+								<li><a href="#produtos" style="color:#fff">Produtos</a></li>
+								<li><a href="#contato" style="color:#fff">Contato</a></li>
+								<li><a href="login.html" style="color:#fff;">Acessar portal</a></li>
+							</ul>
+						</div>
+						 <div class="col-md-4" data-animation="fadeIn" data-animation-delay="02">
+						 <h2 style="text-align: left; opacity: 0.5">Informações</h2>
+							<ul class="list-unstyled" style="text-align: left">
+								 <li style="color:#fff"><a href="#" class="fa fa-phone-square fa-1x" style="color:#fff"></a><span style="color:#fff; font-size:12px"> 44 9165-4301</span></li>
+								 <li><a href="#" class="fa fa-comments-o fa-1x" style="color:#fff"></a><span style="color:#fff; font-size:12px"> contato@onpago<wbr>.com.br</span></li>
+								 <li><a href="#" class="fa fa-phone fa-1x" style="color:#fff"></a><span style="color:#fff; font-size:12px"> 11 3522-3532</span></li><!--<br>
+								 <li style="font-weight: 900">Central de relacionamento PAGO: </li>
+								 <li><a href="#" class="fa fa-phone fa-1x" style="color:#fff"></a><span style="color:; font-size:12px"> 0800 940 3029</span></li>-->
+							</ul>
+
+						</div>
+						<div class="col-md-4" data-animation="fadeIn" data-animation-delay="03">
+						<h2 style="text-align: left; opacity: 0.5">Redes sociais</h2>
+							<ul class="list-inline" style="color:#fff; text-align: left">
+							<li><a href="#" class="fa fa-facebook fa-1x" style="color:#fff"></a></li>
+							<li><a href="#" class="fa fa-twitter fa-1x" style="color:#fff"></a></li>
+							<li><a href="#" class="fa fa-pinterest fa-1x" style="color:#fff"></a></li>
+							<li><a href="#" class="fa fa-flickr fa-1x" style="color:#fff"></a></li>
+						</ul>
+						</div>
+					   
+					</div>
+				</div>
+				
+			</div>
+		   
+		</footer>
+		 <div class="container-fluid" style="padding-top:50px;padding-bottom:50px; background:#411949; width: 100%; text-align: center">
+		 <ul class="list-inline">
+			 <li><img src="img/logo2.png" width="50" class="center-block" data-animation="fadeInUp" data-animation-delay="03"></li>
+			 <li><img src="img/backgrounds/autorizado.png" width="100" class="center-block" data-animation="fadeInUp" data-animation-delay="03"></li>
+		 </ul>
+
+					
+					
+				</div>
+
+<script language="javascript" type="text/javascript">
+  function resizeIframe(obj) {
+	obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+		<script src="js/vendor/fastclick.js"></script>
+
+		<script src="js/bootstrap.min.js"></script>
+
+		<script src="js/vendor/jquery.appear.js"></script>                  <!-- jQuery Appear -->
+		<script src="js/vendor/jquery.easing.1.3.js"></script>              <!-- jQuery Easing -->
+		<script src="js/vendor/imagesloaded.pkgd.min.js"></script>          <!-- Imagesloaded -->
+		<script src="js/vendor/isotope.pkgd.min.js"></script>               <!-- Isotope -->
+		<script src="js/vendor/slick.min.js"></script>                      <!-- Slick carousel -->
+		<script src="js/vendor/jquery.countTo.js"></script>                 <!-- Count To -->
+
+		<script src="js/main.js"></script>
+
+		<script src="js/vendor/jquery.validate.min.js"></script>            <!-- jQuery Validate -->
+		<script src="js/contact.js"></script>
+			  <script src="slick/slick.min.js"></script>
+	  <script>
+		  jQuery(function () {
+			  // Init page helpers (Slick Slider plugin)
+			  App.initHelpers('slick');
+		  });
+		  $('.autoplay').slick({
+			dots: true,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			centerMode: true,
+			variableWidth: true
+		  });
+
+
+
+	  </script>
+
+		<!--<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script src="js/vendor/gmap3.min.js"></script>
+		<script src="js/mymap.js"></script> -->
+
+	</body>
 </html>
